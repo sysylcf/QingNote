@@ -179,6 +179,9 @@
   <data name="lblCardTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="txtCardContent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 233</value>
+  </data>
   <data name="btnOpenAttachmentFolder.Location" type="System.Drawing.Point, System.Drawing">
     <value>637, 426</value>
   </data>
@@ -187,6 +190,12 @@
   </data>
   <data name="btnOpenAttachmentFolder.Text" xml:space="preserve">
     <value>フォルダー</value>
+  </data>
+  <data name="lblKeyWords.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 323</value>
+  </data>
+  <data name="lblKeyWords.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 100</value>
   </data>
   <data name="lblKeyWords.Text" xml:space="preserve">
     <value>キーワード：</value>
@@ -202,6 +211,18 @@
   </data>
   <data name="btnSaveCard.Text" xml:space="preserve">
     <value>セーブ</value>
+  </data>
+  <data name="lblMessage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="lblMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 471</value>
+  </data>
+  <data name="lblMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>772, 32</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>772, 503</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>QingNote読書カード</value>

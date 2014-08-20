@@ -88,10 +88,10 @@
       // 
       // tabIndex
       // 
-      resources.ApplyResources(this.tabIndex, "tabIndex");
       this.tabIndex.Controls.Add(this.btnNewCard);
       this.tabIndex.Controls.Add(this.btnSwitchIndexingMethod);
       this.tabIndex.Controls.Add(this.treeView1);
+      resources.ApplyResources(this.tabIndex, "tabIndex");
       this.tabIndex.Name = "tabIndex";
       this.tabIndex.UseVisualStyleBackColor = true;
       // 
@@ -109,11 +109,11 @@
       // 
       // tabSearch
       // 
-      resources.ApplyResources(this.tabSearch, "tabSearch");
       this.tabSearch.Controls.Add(this.rbtSearchKeywordOnly);
       this.tabSearch.Controls.Add(this.rbtSearchFullText);
       this.tabSearch.Controls.Add(this.txtSearchInput);
       this.tabSearch.Controls.Add(this.lstSearchResults);
+      resources.ApplyResources(this.tabSearch, "tabSearch");
       this.tabSearch.Name = "tabSearch";
       this.tabSearch.UseVisualStyleBackColor = true;
       // 
@@ -189,14 +189,14 @@
       // 
       // lblMessage
       // 
-      resources.ApplyResources(this.lblMessage, "lblMessage");
       this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      resources.ApplyResources(this.lblMessage, "lblMessage");
       this.lblMessage.Name = "lblMessage";
       // 
       // FrmMain
       // 
       resources.ApplyResources(this, "$this");
-      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
       this.Controls.Add(this.lblMessage);
       this.Controls.Add(this.btnSaveCard);
       this.Controls.Add(this.btnEditMeta);

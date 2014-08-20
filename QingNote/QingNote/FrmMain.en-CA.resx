@@ -142,8 +142,17 @@
   <data name="btnCopyPath.Text" xml:space="preserve">
     <value>Folder...</value>
   </data>
+  <data name="treeView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 330</value>
+  </data>
+  <data name="btnNewCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 342</value>
+  </data>
   <data name="btnNewCard.Text" xml:space="preserve">
     <value>New...</value>
+  </data>
+  <data name="btnSwitchIndexingMethod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 342</value>
   </data>
   <data name="btnSwitchIndexingMethod.Text" xml:space="preserve">
     <value>Index</value>
