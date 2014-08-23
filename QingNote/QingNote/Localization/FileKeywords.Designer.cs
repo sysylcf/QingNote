@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QingNote.Localization {
+namespace cn.zuoanqh.open.QingNote.Localization {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace QingNote.Localization {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("QingNote.Localization.FileKeywords", typeof(FileKeywords).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("cn.zuoanqh.open.QingNote.Localization.FileKeywords", typeof(FileKeywords).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

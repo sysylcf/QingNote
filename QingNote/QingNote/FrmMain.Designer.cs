@@ -1,4 +1,4 @@
-﻿namespace QingNote
+﻿namespace cn.zuoanqh.open.QingNote
 {
   partial class FrmMain
   {

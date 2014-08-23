@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QingNote
+namespace cn.zuoanqh.open.QingNote
 {
   static class Program
   {
