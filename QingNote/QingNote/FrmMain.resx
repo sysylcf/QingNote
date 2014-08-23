@@ -201,32 +201,44 @@
   <data name="&gt;&gt;btnCopyPath.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="treeView1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="tvwCards.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom</value>
   </data>
-  <data name="treeView1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tvwCards.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 6</value>
   </data>
-  <data name="treeView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 326</value>
+  <data name="tvwCards.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 325</value>
   </data>
-  <data name="treeView1.TabIndex" type="System.Int32, mscorlib">
+  <data name="tvwCards.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;treeView1.Name" xml:space="preserve">
-    <value>treeView1</value>
+  <data name="&gt;&gt;tvwCards.Name" xml:space="preserve">
+    <value>tvwCards</value>
   </data>
-  <data name="&gt;&gt;treeView1.Type" xml:space="preserve">
+  <data name="&gt;&gt;tvwCards.Type" xml:space="preserve">
     <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;treeView1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tvwCards.Parent" xml:space="preserve">
     <value>tabIndex</value>
   </data>
-  <data name="&gt;&gt;treeView1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;tvwCards.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="tctIndexSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
+  </data>
+  <data name="btnNewCard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnNewCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 341</value>
+  </data>
+  <data name="btnNewCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 34</value>
+  </data>
+  <data name="btnNewCard.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;btnNewCard.Name" xml:space="preserve">
     <value>btnNewCard</value>
@@ -239,6 +251,18 @@
   </data>
   <data name="&gt;&gt;btnNewCard.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="btnSwitchIndexingMethod.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnSwitchIndexingMethod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 341</value>
+  </data>
+  <data name="btnSwitchIndexingMethod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 34</value>
+  </data>
+  <data name="btnSwitchIndexingMethod.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;btnSwitchIndexingMethod.Name" xml:space="preserve">
     <value>btnSwitchIndexingMethod</value>
@@ -283,7 +307,7 @@
     <value>True</value>
   </data>
   <data name="rbtSearchKeywordOnly.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 324</value>
+    <value>6, 326</value>
   </data>
   <data name="rbtSearchKeywordOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 16</value>
@@ -310,7 +334,7 @@
     <value>True</value>
   </data>
   <data name="rbtSearchFullText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 351</value>
+    <value>6, 355</value>
   </data>
   <data name="rbtSearchFullText.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 16</value>
@@ -334,7 +358,7 @@
     <value>Bottom</value>
   </data>
   <data name="txtSearchInput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 288</value>
+    <value>3, 290</value>
   </data>
   <data name="txtSearchInput.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 30</value>
@@ -425,54 +449,6 @@
   </data>
   <data name="&gt;&gt;tctIndexSearch.ZOrder" xml:space="preserve">
     <value>9</value>
-  </data>
-  <data name="btnNewCard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="btnNewCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>91, 338</value>
-  </data>
-  <data name="btnNewCard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 34</value>
-  </data>
-  <data name="btnNewCard.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btnNewCard.Name" xml:space="preserve">
-    <value>btnNewCard</value>
-  </data>
-  <data name="&gt;&gt;btnNewCard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnNewCard.Parent" xml:space="preserve">
-    <value>tabIndex</value>
-  </data>
-  <data name="&gt;&gt;btnNewCard.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnSwitchIndexingMethod.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="btnSwitchIndexingMethod.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 338</value>
-  </data>
-  <data name="btnSwitchIndexingMethod.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 34</value>
-  </data>
-  <data name="btnSwitchIndexingMethod.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btnSwitchIndexingMethod.Name" xml:space="preserve">
-    <value>btnSwitchIndexingMethod</value>
-  </data>
-  <data name="&gt;&gt;btnSwitchIndexingMethod.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSwitchIndexingMethod.Parent" xml:space="preserve">
-    <value>tabIndex</value>
-  </data>
-  <data name="&gt;&gt;btnSwitchIndexingMethod.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="lblCardTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -672,6 +648,9 @@
   <data name="&gt;&gt;btnSaveCard.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="lblMessage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
   <data name="lblMessage.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 470</value>
   </data>
@@ -710,6 +689,9 @@
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>794, 558</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>清笔记读书卡（默认语言）</value>

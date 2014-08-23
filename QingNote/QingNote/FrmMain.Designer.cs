@@ -32,7 +32,7 @@
       this.lbl_D_CardBoxName = new System.Windows.Forms.Label();
       this.btnSwitchCardBox = new System.Windows.Forms.Button();
       this.btnCopyPath = new System.Windows.Forms.Button();
-      this.treeView1 = new System.Windows.Forms.TreeView();
+      this.tvwCards = new System.Windows.Forms.TreeView();
       this.tctIndexSearch = new System.Windows.Forms.TabControl();
       this.tabIndex = new System.Windows.Forms.TabPage();
       this.btnNewCard = new System.Windows.Forms.Button();
@@ -73,10 +73,10 @@
       this.btnCopyPath.Name = "btnCopyPath";
       this.btnCopyPath.UseVisualStyleBackColor = true;
       // 
-      // treeView1
+      // tvwCards
       // 
-      resources.ApplyResources(this.treeView1, "treeView1");
-      this.treeView1.Name = "treeView1";
+      resources.ApplyResources(this.tvwCards, "tvwCards");
+      this.tvwCards.Name = "tvwCards";
       // 
       // tctIndexSearch
       // 
@@ -90,7 +90,7 @@
       // 
       this.tabIndex.Controls.Add(this.btnNewCard);
       this.tabIndex.Controls.Add(this.btnSwitchIndexingMethod);
-      this.tabIndex.Controls.Add(this.treeView1);
+      this.tabIndex.Controls.Add(this.tvwCards);
       resources.ApplyResources(this.tabIndex, "tabIndex");
       this.tabIndex.Name = "tabIndex";
       this.tabIndex.UseVisualStyleBackColor = true;
@@ -189,8 +189,8 @@
       // 
       // lblMessage
       // 
-      this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
       resources.ApplyResources(this.lblMessage, "lblMessage");
+      this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
       this.lblMessage.Name = "lblMessage";
       // 
       // FrmMain
@@ -226,7 +226,7 @@
     private System.Windows.Forms.Label lbl_D_CardBoxName;
     private System.Windows.Forms.Button btnSwitchCardBox;
     private System.Windows.Forms.Button btnCopyPath;
-    private System.Windows.Forms.TreeView treeView1;
+    private System.Windows.Forms.TreeView tvwCards;
     private System.Windows.Forms.TabControl tctIndexSearch;
     private System.Windows.Forms.TabPage tabIndex;
     private System.Windows.Forms.TabPage tabSearch;

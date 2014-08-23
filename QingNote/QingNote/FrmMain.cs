@@ -13,14 +13,21 @@ namespace QingNote
 {
   public partial class FrmMain : Form
   {
+  public static readonly int PADDING = 3;
     public FrmMain()
     {
+      //System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en");
       InitializeComponent();
+      //txtCardContent.Text=""+txtCardContent.Height;
+      txtCardContent.Height=lblKeyWords.Top-PADDING-txtCardContent.Top;
+      lstSearchResults.Height=txtSearchInput.Top-PADDING-lstSearchResults.Top;
+      //txtCardContent.Text+=""+txtCardContent.Height;
     }
 
     private void FrmMain_Load(object sender, EventArgs e)
     {
-      //System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("zh-CN");
+      
     }
+
   }
 }

@@ -145,17 +145,14 @@
   <data name="btnCopyPath.Text" xml:space="preserve">
     <value>打开文件夹</value>
   </data>
-  <data name="tabIndex.Text" xml:space="preserve">
-    <value>索引</value>
-  </data>
   <data name="btnNewCard.Text" xml:space="preserve">
     <value>新建卡片</value>
   </data>
   <data name="btnSwitchIndexingMethod.Text" xml:space="preserve">
     <value>索引</value>
   </data>
-  <data name="tabSearch.Text" xml:space="preserve">
-    <value>搜索</value>
+  <data name="tabIndex.Text" xml:space="preserve">
+    <value>索引</value>
   </data>
   <data name="rbtSearchKeywordOnly.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 24</value>
@@ -168,6 +165,9 @@
   </data>
   <data name="rbtSearchFullText.Text" xml:space="preserve">
     <value>搜索全文</value>
+  </data>
+  <data name="tabSearch.Text" xml:space="preserve">
+    <value>搜索</value>
   </data>
   <data name="txtCardContent.Size" type="System.Drawing.Size, System.Drawing">
     <value>407, 264</value>
@@ -198,9 +198,6 @@
   </data>
   <data name="btnSaveCard.Text" xml:space="preserve">
     <value>保存</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>776, 476</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>清笔记读书卡</value>
