@@ -68,6 +68,46 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Localization\FileKeywords.en.Designer.cs">
+      <DependentUpon>FileKeywords.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization\FileKeywords.ja.Designer.cs">
+      <DependentUpon>FileKeywords.ja.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization\FileKeywords.Designer.cs">
+      <DependentUpon>FileKeywords.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization\FileKeywords.zh-Hans.Designer.cs">
+      <DependentUpon>FileKeywords.zh-Hans.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization\Settings.zh-Hans.Designer.cs">
+      <DependentUpon>Settings.zh-Hans.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization\Settings.ja.Designer.cs">
+      <DependentUpon>Settings.ja.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization\Settings.en.Designer.cs">
+      <DependentUpon>Settings.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Settings.resx</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmMain.en.resx">
@@ -81,6 +121,42 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.zh-Hans.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\FileKeywords.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FileKeywords.en.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\FileKeywords.ja.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FileKeywords.ja.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\FileKeywords.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FileKeywords.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\FileKeywords.zh-Hans.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FileKeywords.zh-Hans.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\Settings.zh-Hans.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Settings.zh-Hans.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\Settings.ja.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Settings.ja.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\Settings.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Settings.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\Settings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
