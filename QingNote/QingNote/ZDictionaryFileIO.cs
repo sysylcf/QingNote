@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Reflection;
+using System.Globalization;
+using System.Resources;
 
 namespace cn.zuoanqh.open.QingNote
 {
@@ -11,12 +14,12 @@ namespace cn.zuoanqh.open.QingNote
   {
     public static void writeFile(List<KeyValuePair<string, string>> data, string separator, string fileName)
     {
-      writeFile(data, separator, System.Environment.GetEnvironmentVariable("windir"), fileName);
+      writeFile(data, separator, Directory.GetCurrentDirectory(), fileName);
     }
 
     public static void writeFile(List<KeyValuePair<string, string>> data, string separator, string absolutePath, string fileName)
     {
-      string fpath = absolutePath + "\\" + fileName;
+      string fpath = Path.Combine(absolutePath, fileName);
       using (StreamWriter writer = new StreamWriter(fpath))
       {
         for (int i = 0; i < data.Count; i++)
@@ -31,13 +34,13 @@ namespace cn.zuoanqh.open.QingNote
 
     public static List<KeyValuePair<string, string>> readFile(string separator, string fileName)
     {
-      return readFile(separator, System.Environment.GetEnvironmentVariable("windir"), fileName);
+      return readFile(separator, Directory.GetCurrentDirectory(), fileName);
     }
 
     public static List<KeyValuePair<string, string>> readFile(string separator, string absolutePath, string fileName)
     {
       List<KeyValuePair<string, string>> data = new List<KeyValuePair<string, string>>();
-      string fpath = absolutePath + "\\" + fileName;
+      string fpath = Path.Combine(absolutePath, fileName);
       using (StreamReader reader = new StreamReader(fpath))
       {
         while (true)
@@ -56,12 +59,12 @@ namespace cn.zuoanqh.open.QingNote
 
     public static string peekFile(string fileName)
     {
-      return peekFile(System.Environment.GetEnvironmentVariable("windir"), fileName);
+      return peekFile(Directory.GetCurrentDirectory(), fileName);
     }
 
     public static string peekFile(string absolutePath, string fileName)
     {
-      string fpath = absolutePath + "\\" + fileName;
+      string fpath = Path.Combine(absolutePath, fileName);
       using (StreamReader reader = new StreamReader(fpath))
       {
         if (reader.Peek() == -1) return null;
