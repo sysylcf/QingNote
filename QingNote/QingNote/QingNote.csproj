@@ -73,6 +73,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\ZDialogGit\ZDialog\ZDialog\ZDialog\bin\Debug\ZDialog.dll</HintPath>
     </Reference>
+    <Reference Include="zut">
+      <HintPath>..\..\..\..\zut\zut\bin\Debug\zut.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FrmMain.cs">
@@ -81,9 +84,11 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Instruction.cs" />
     <Compile Include="IO\CardBoxFileData.cs" />
     <Compile Include="IO\CardFileData.cs" />
     <Compile Include="IO\DirectoriesFileData.cs" />
+    <Compile Include="IO\QNoteIO.cs" />
     <Compile Include="IO\SettingsFileData.cs" />
     <Compile Include="ResLang.Designer.cs">
       <AutoGen>True</AutoGen>
