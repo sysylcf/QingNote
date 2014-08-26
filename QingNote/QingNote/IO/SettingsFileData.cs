@@ -15,7 +15,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     public static readonly string DEFAULT_INDEXING = Localization.FileKeywords.CardBox_Index_Chronological;
 
     public delegate void onSettingChanged(string oldValue, string newValue);
-    private static Dictionary<string, onSettingChanged> listeners=null;
+    private static Dictionary<string, onSettingChanged> listeners = null;
 
     private static Dictionary<string, string> settings;
     private static List<KeyValuePair<string, string>> defsetting;
@@ -29,7 +29,7 @@ namespace cn.zuoanqh.open.QingNote.IO
       defsetting.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Settings_DefaultCardBoxIndex,
         DEFAULT_INDEXING));
 
-      if (!File.Exists(Localization.FileKeywords.FileName_Settings + Resources.FilePostfix))
+      if (!File.Exists(FILE_NAME))
         ZDictionaryFileIO.writeFile(defsetting, Localization.Settings.Symbol_NameContent_Seperator, FILE_NAME);
 
       settings = new Dictionary<string, string>();
@@ -39,6 +39,9 @@ namespace cn.zuoanqh.open.QingNote.IO
       foreach (KeyValuePair<string, string> l in defsetting)
         if (!settings.ContainsKey(l.Key)) settings.Add(l.Key, l.Value);
 
+
+      if (!CardBoxFileData.isValidIndex(settings[Localization.FileKeywords.Settings_DefaultCardBoxIndex]))
+        settings[Localization.FileKeywords.Settings_DefaultCardBoxIndex] = DEFAULT_INDEXING;
     }
     public static string getSettingItem(string name)
     {

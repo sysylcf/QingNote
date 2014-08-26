@@ -15,9 +15,9 @@ namespace cn.zuoanqh.open.QingNote
     [STAThread]
     static void Main()
     {
-      //Application.EnableVisualStyles();
-      //Application.SetCompatibleTextRenderingDefault(false);
-      //Application.Run(new FrmMain());
+      Application.EnableVisualStyles();
+      Application.SetCompatibleTextRenderingDefault(false);
+      Application.Run(new FrmMain());
     }
   }
 }
