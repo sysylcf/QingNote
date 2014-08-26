@@ -216,33 +216,6 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string Defaults_CardCategory {
-            get {
-                return ResourceManager.GetString("Defaults_CardCategory", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string Defaults_CardName {
-            get {
-                return ResourceManager.GetString("Defaults_CardName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string Defaults_UsersName {
-            get {
-                return ResourceManager.GetString("Defaults_UsersName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
         internal static string Filename_AttachmentDirectory {
             get {
                 return ResourceManager.GetString("Filename_AttachmentDirectory", resourceCulture);
@@ -288,15 +261,6 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string Format_YMD {
-            get {
-                return ResourceManager.GetString("Format_YMD", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
         internal static string Settings_CurrentLanguage {
             get {
                 return ResourceManager.GetString("Settings_CurrentLanguage", resourceCulture);
@@ -318,24 +282,6 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         internal static string Settings_UsersName {
             get {
                 return ResourceManager.GetString("Settings_UsersName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string Symbol_Item_Seperator {
-            get {
-                return ResourceManager.GetString("Symbol_Item_Seperator", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
-        internal static string Symbol_NameContent_Seperator {
-            get {
-                return ResourceManager.GetString("Symbol_NameContent_Seperator", resourceCulture);
             }
         }
     }

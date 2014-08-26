@@ -172,10 +172,10 @@
     <value>Attachments</value>
   </data>
   <data name="FileName_CardBoxInfo" xml:space="preserve">
-    <value>CardBoxInfo</value>
+    <value>CardBox Info</value>
   </data>
   <data name="FileName_CardInfo" xml:space="preserve">
-    <value>CardInfo</value>
+    <value>Card Info</value>
   </data>
   <data name="FileName_Directory" xml:space="preserve">
     <value>Directories</value>
@@ -184,10 +184,10 @@
     <value>Settings</value>
   </data>
   <data name="Settings_CurrentLanguage" xml:space="preserve">
-    <value>CurrentLanguage</value>
+    <value>Current Language</value>
   </data>
   <data name="Settings_DefaultCardBoxIndex" xml:space="preserve">
-    <value>By Date Created</value>
+    <value>Default Indexing</value>
   </data>
   <data name="Settings_UsersName" xml:space="preserve">
     <value>Username</value>

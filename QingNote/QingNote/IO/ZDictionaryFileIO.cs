@@ -20,7 +20,7 @@ namespace cn.zuoanqh.open.QingNote
     public static void writeFile(List<KeyValuePair<string, string>> data, string separator, string absolutePath, string fileName)
     {
       string fpath = Path.Combine(absolutePath, fileName);
-      using (StreamWriter writer = new StreamWriter(fpath))
+      using (StreamWriter writer = new StreamWriter(fpath, false, Encoding.UTF8))
       {
         for (int i = 0; i < data.Count; i++)
         {
@@ -41,7 +41,7 @@ namespace cn.zuoanqh.open.QingNote
     {
       List<KeyValuePair<string, string>> data = new List<KeyValuePair<string, string>>();
       string fpath = Path.Combine(absolutePath, fileName);
-      using (StreamReader reader = new StreamReader(fpath))
+      using (StreamReader reader = new StreamReader(fpath, Encoding.UTF8))
       {
         while (true)
         {
@@ -65,7 +65,7 @@ namespace cn.zuoanqh.open.QingNote
     public static string peekFile(string absolutePath, string fileName)
     {
       string fpath = Path.Combine(absolutePath, fileName);
-      using (StreamReader reader = new StreamReader(fpath))
+      using (StreamReader reader = new StreamReader(fpath, Encoding.UTF8))
       {
         if (reader.Peek() == -1) return null;
         return reader.ReadLine();

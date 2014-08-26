@@ -81,6 +81,15 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="IO\CardBoxFileData.cs" />
+    <Compile Include="IO\CardFileData.cs" />
+    <Compile Include="IO\DirectoriesFileData.cs" />
+    <Compile Include="IO\SettingsFileData.cs" />
+    <Compile Include="ResLang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResLang.resx</DependentUpon>
+    </Compile>
     <Compile Include="Localization\FileKeywords.en.Designer.cs">
       <DependentUpon>FileKeywords.en.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -123,7 +132,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ZDictionaryFileIO.cs" />
+    <Compile Include="IO\ZByLineFileIO.cs" />
+    <Compile Include="IO\ZDictionaryFileIO.cs" />
     <EmbeddedResource Include="FrmMain.en.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +145,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.zh-Hans.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResLang.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResLang.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization\FileKeywords.en.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -172,12 +186,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
+    <EmbeddedResource Include="Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>

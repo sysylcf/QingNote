@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace cn.zuoanqh.open.QingNote
 {
@@ -14,9 +15,6 @@ namespace cn.zuoanqh.open.QingNote
     [STAThread]
     static void Main()
     {
-    List<string> f = ZDictionaryFileIO.findCultureNames("Settings");
-    foreach(string s in f) Console.WriteLine(s);
-    //Application.
       //Application.EnableVisualStyles();
       //Application.SetCompatibleTextRenderingDefault(false);
       //Application.Run(new FrmMain());

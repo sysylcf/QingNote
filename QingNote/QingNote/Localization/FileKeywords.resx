@@ -168,15 +168,6 @@
   <data name="Card_Text" xml:space="preserve">
     <value />
   </data>
-  <data name="Defaults_CardCategory" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Defaults_CardName" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Defaults_UsersName" xml:space="preserve">
-    <value />
-  </data>
   <data name="Filename_AttachmentDirectory" xml:space="preserve">
     <value />
   </data>
@@ -192,9 +183,6 @@
   <data name="FileName_Settings" xml:space="preserve">
     <value />
   </data>
-  <data name="Format_YMD" xml:space="preserve">
-    <value />
-  </data>
   <data name="Settings_CurrentLanguage" xml:space="preserve">
     <value />
   </data>
@@ -202,12 +190,6 @@
     <value />
   </data>
   <data name="Settings_UsersName" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Symbol_Item_Seperator" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Symbol_NameContent_Seperator" xml:space="preserve">
     <value />
   </data>
 </root>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace cn.zuoanqh.open.QingNote.Properties {
+namespace cn.zuoanqh.open.QingNote {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace cn.zuoanqh.open.QingNote.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("cn.zuoanqh.open.QingNote.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("cn.zuoanqh.open.QingNote.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,15 @@ namespace cn.zuoanqh.open.QingNote.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .qnote.txt.
+        /// </summary>
+        internal static string FilePostfix {
+            get {
+                return ResourceManager.GetString("FilePostfix", resourceCulture);
             }
         }
     }

@@ -133,7 +133,7 @@
     <value>内容概要</value>
   </data>
   <data name="CardBox_Index" xml:space="preserve">
-    <value>インデックス方法</value>
+    <value>インデックス</value>
   </data>
   <data name="CardBox_Index_Category" xml:space="preserve">
     <value>分類順</value>
@@ -187,7 +187,7 @@
     <value>言語</value>
   </data>
   <data name="Settings_DefaultCardBoxIndex" xml:space="preserve">
-    <value>作成日時</value>
+    <value>即定インデックス</value>
   </data>
   <data name="Settings_UsersName" xml:space="preserve">
     <value>ユーザー名</value>

@@ -187,7 +187,7 @@
     <value>当前语言</value>
   </data>
   <data name="Settings_DefaultCardBoxIndex" xml:space="preserve">
-    <value>按时间</value>
+    <value>默认索引方式</value>
   </data>
   <data name="Settings_UsersName" xml:space="preserve">
     <value>当前用户名</value>
