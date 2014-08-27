@@ -81,6 +81,15 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        internal static string Card_Creater {
+            get {
+                return ResourceManager.GetString("Card_Creater", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         internal static string Card_DateCreated {
             get {
                 return ResourceManager.GetString("Card_DateCreated", resourceCulture);

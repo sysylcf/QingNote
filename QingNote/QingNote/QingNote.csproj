@@ -84,10 +84,12 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Instruction.cs" />
+    <Compile Include="IO\FileReadingAdapter.cs" />
+    <Compile Include="IO\Instruction.cs" />
     <Compile Include="IO\CardBoxFileData.cs" />
     <Compile Include="IO\CardFileData.cs" />
     <Compile Include="IO\DirectoriesFileData.cs" />
+    <Compile Include="IO\FileReadingOverseer.cs" />
     <Compile Include="IO\QNoteIO.cs" />
     <Compile Include="IO\SettingsFileData.cs" />
     <Compile Include="Localization\FileKeywords.Designer.cs">

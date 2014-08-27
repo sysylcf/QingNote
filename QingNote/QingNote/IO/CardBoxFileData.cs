@@ -18,7 +18,7 @@ namespace cn.zuoanqh.open.QingNote.IO
 
     static CardBoxFileData()
     {
-
+      index = new Dictionary<string, HashSet<string>>();
       langDefaults = new Dictionary<string, Dictionary<string, string>>();
     }
 
@@ -34,12 +34,12 @@ namespace cn.zuoanqh.open.QingNote.IO
       }
       return index[cname].Contains(s);
     }
-    public static string getFileLang(string s)
-    {
-      if (!s.EndsWith(Resources.FilePostfix)) return null;
-      string t = s.Substring(s.LastIndexOf("\\"));
-      return null;
-    }
+    //public static string getFileLang(string s)
+    //{
+    //  if (!s.EndsWith(Resources.FilePostfix)) return null;
+    //  string t = s.Substring(s.LastIndexOf("\\"));
+    //  return null;
+    //}
 
     public string title, description, indexing, datecreated, creater;
     private string lang;
@@ -47,7 +47,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     public SortedSet<string> categories;
     public HashSet<string> keywords;
 
-    public static CardBoxFileData readFile(CardBoxFileReadingOverseer overseer, string absolutePath)
+    public static CardBoxFileData readFile(FileReadingOverseer overseer, string absolutePath)
     {
       List<string> qnotefiles = Directory.GetFiles(absolutePath).
        Where(s => s.EndsWith(Resources.FilePostfix)).
@@ -190,19 +190,53 @@ namespace cn.zuoanqh.open.QingNote.IO
     }
 
     public void writeFile(string absolutePath)
-    { }
-    public void writeFile(string absolutePath, CultureInfo lang)
-    { }
-
-
-
-    public interface CardBoxFileReadingOverseer
     {
-      KeyValuePair<Instruction, string> onMultipleFileExist(List<string> files);
-      Instruction onFileNotExist();
-      Instruction onFileLangInvalid();
-      Instruction onFileInvalid(string reason, params string[] args);
+      writeFile(absolutePath, new CultureInfo(this.lang));
+    }
 
+    public void writeFile(string absolutePath, CultureInfo lang)
+    {
+      CultureInfo stack = Thread.CurrentThread.CurrentCulture;
+      Thread.CurrentThread.CurrentCulture = lang;
+      string sep = Localization.Settings.Symbol_NameContent_Seperator;
+      string fname = Localization.FileKeywords.FileName_CardBoxInfo + "." + lang.Name + "." + Resources.FilePostfix;
+
+      List<KeyValuePair<string, string>> odata = new List<KeyValuePair<string, string>>();
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_Title, title));
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_Creater, creater));
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_DateCreated, datecreated));
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_Index, indexing));
+      string schapters = "";
+      for (int i = 0; i < chapters.Count; i++) schapters += chapters[i] + sep;
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_ChapterNames, schapters));
+      string scategories = "";
+      foreach (string s in categories) scategories += s + sep;
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_CategoryNames, scategories));
+      string skeywords = "";
+      foreach (string s in keywords) skeywords += s + sep;
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_KeywordNames, skeywords));
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_Description, description));
+
+
+
+      //first deal with file's date, if the file is newly created. Else leave it to default handling
+      if (datecreated.Trim() == "" && !File.Exists(Path.Combine(absolutePath, fname)))
+      {
+        DateTime n = DateTime.Now;
+        datecreated = string.Format(Localization.Settings.Format_YMD, n.Year, n.Month, n.Date);
+      }
+
+      for (int i = 0; i < odata.Count; i++)
+      {//add defaults to empy attributes
+        KeyValuePair<string, string> p = odata[i];
+        if (langDefaults[lang.Name].ContainsKey(p.Key) && p.Value == "")
+          odata[i] = new KeyValuePair<string, string>(p.Key, langDefaults[lang.Name][p.Key]);
+      }
+
+      ZDictionaryFileIO.writeFile(odata, sep, absolutePath,
+        fname);
+
+      Thread.CurrentThread.CurrentCulture = stack;
     }
   }
 }
