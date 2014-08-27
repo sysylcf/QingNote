@@ -1,10 +1,11 @@
-﻿using System;
+﻿using cn.zuoanqh.open.zut;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using cn.zuoanqh.open.zut;
 
 namespace cn.zuoanqh.open.QingNote.IO
 {
@@ -22,12 +23,83 @@ namespace cn.zuoanqh.open.QingNote.IO
       s = zusp.ChopTail(s, ".").Second;
       return s;
     }
-    public static Boolean isFileLangValid(string fileLang)
+
+    public static string formatNow()
+    {
+      DateTime n = DateTime.Now;
+      return string.Format(Localization.Settings.Format_YMD, n.Year, n.Month, n.Date);
+    }
+
+    public static Boolean isSupportedLanguage(string fileLang)
     {
       return resLang.langs.Contains(fileLang);
     }
 
+    public static List<string> GetQNoteFiles(string absolutePath)
+    {
+      List<string> qnotefiles = Directory.GetFiles(absolutePath).
+       Where(s => s.EndsWith(Resources.FilePostfix)).
+       Select(s => s).ToList();
+      return qnotefiles;
+    }
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="overserr"></param>
+    /// <param name="absolutePath"></param>
+    /// <returns>a list of string of files that ends with proper postfix and supported language</returns>
+    public static string Delegated_GetApplicableFileWithFeedback(FileReadingOverseer overseer, string absolutePath)
+    {
+      List<string> qnotefiles = GetQNoteFiles(absolutePath);
+      string fname=null;
+      List<string> vlangfiles = qnotefiles.Where(s => isSupportedLanguage(getFileLang(s))).Select(s => s).ToList();
+      // ---------------------File Finding
 
+      if (qnotefiles.Count == 0)
+      {// no qnote file
+        Instruction i = overseer.onFileNotExist();
+        if (i == Instruction.RESTART)
+          return Delegated_GetApplicableFileWithFeedback(overseer, absolutePath);
+        else
+          return null;
+      }
+      if (vlangfiles.Count == 0)
+      { //no qnote file of supported language
+        Instruction i = overseer.onFileLangInvalid();
+        // TODO: finish this
+
+      }
+      else if (vlangfiles.Count > 1)
+      {
+        KeyValuePair<Instruction, string> i = overseer.onMultipleFileExist(qnotefiles);
+        switch (i.Key)
+        {
+          case Instruction.RESTART:
+            return Delegated_GetApplicableFileWithFeedback(overseer, absolutePath);
+          case Instruction.CHOOSE:
+            fname = i.Value;
+            break;
+          case Instruction.CONTINUE:
+            fname = qnotefiles[0];
+            break;
+          default:
+            return null;
+        }
+      }
+      else if (vlangfiles.Count == 1) fname = vlangfiles[0];
+      return fname;
+    }
+    public static HashSet<string> CheckFDataHaveAllDefaults(List<KeyValuePair<string,string>> fdata,Dictionary<string,string> defaults)
+    {      
+    //construct a set of file attributes that we want to ensure they are there and cross them off so its linear time to number of lines
+      HashSet<string> items = new HashSet<string>();
+      foreach (string s in defaults.Keys) items.Add(s);
+
+      foreach (KeyValuePair<string, string> line in fdata)
+        if (items.Contains(line.Key)) items.Remove(line.Key);
+
+      return items;
+    }
 
     private class Lang : IEnumerable<string>
     {

@@ -159,7 +159,7 @@
   <data name="Card_DateCreated" xml:space="preserve">
     <value>作成日時</value>
   </data>
-  <data name="Card_Keyword" xml:space="preserve">
+  <data name="Card_Keywords" xml:space="preserve">
     <value>キーワード</value>
   </data>
   <data name="Card_Name" xml:space="preserve">

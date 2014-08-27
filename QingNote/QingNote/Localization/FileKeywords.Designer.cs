@@ -99,9 +99,9 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string Card_Keyword {
+        internal static string Card_Keywords {
             get {
-                return ResourceManager.GetString("Card_Keyword", resourceCulture);
+                return ResourceManager.GetString("Card_Keywords", resourceCulture);
             }
         }
         
