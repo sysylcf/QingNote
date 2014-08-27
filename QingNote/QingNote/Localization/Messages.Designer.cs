@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace cn.zuoanqh.open.QingNote {
+namespace cn.zuoanqh.open.QingNote.Localization {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace cn.zuoanqh.open.QingNote {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ResLang {
+    internal class Messages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ResLang() {
+        internal Messages() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace cn.zuoanqh.open.QingNote {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("cn.zuoanqh.open.QingNote.ResLang", typeof(ResLang).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("cn.zuoanqh.open.QingNote.Localization.Messages", typeof(Messages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,20 +61,38 @@ namespace cn.zuoanqh.open.QingNote {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to en ja zh-Hans.
+        ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string FileKeywords {
+        internal static string FileIO_FieldMissing {
             get {
-                return ResourceManager.GetString("FileKeywords", resourceCulture);
+                return ResourceManager.GetString("FileIO_FieldMissing", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to en ja zh-Hans.
+        ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string Settings {
+        internal static string FileIO_FieldValueNotValid {
             get {
-                return ResourceManager.GetString("Settings", resourceCulture);
+                return ResourceManager.GetString("FileIO_FieldValueNotValid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string FileIO_FileMissing {
+            get {
+                return ResourceManager.GetString("FileIO_FileMissing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string FileIO_LanguageNotSupported {
+            get {
+                return ResourceManager.GetString("FileIO_LanguageNotSupported", resourceCulture);
             }
         }
     }

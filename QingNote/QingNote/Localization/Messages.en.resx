@@ -117,10 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="FileKeywords" xml:space="preserve">
-    <value>en ja zh-Hans</value>
+  <data name="FileIO_FieldMissing" xml:space="preserve">
+    <value>Cannot find attribute "{0}" in the file.</value>
   </data>
-  <data name="Settings" xml:space="preserve">
-    <value>en ja zh-Hans</value>
+  <data name="FileIO_FieldValueNotValid" xml:space="preserve">
+    <value>Value for arrtibute "
+{0}" is not valid. Valid values are : {1}</value>
+  </data>
+  <data name="FileIO_FileMissing" xml:space="preserve">
+    <value>Can't find any file.</value>
+  </data>
+  <data name="FileIO_LanguageNotSupported" xml:space="preserve">
+    <value>File name is not valid. Please follow other file's sytle, and try to use a language we support, such as :{0}</value>
   </data>
 </root>

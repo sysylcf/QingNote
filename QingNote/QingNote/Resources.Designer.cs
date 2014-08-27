@@ -68,5 +68,14 @@ namespace cn.zuoanqh.open.QingNote {
                 return ResourceManager.GetString("FilePostfix", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to en ja zh-Hans.
+        /// </summary>
+        internal static string ResLang {
+            get {
+                return ResourceManager.GetString("ResLang", resourceCulture);
+            }
+        }
     }
 }

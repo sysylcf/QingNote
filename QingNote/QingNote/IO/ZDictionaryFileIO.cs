@@ -40,7 +40,8 @@ namespace cn.zuoanqh.open.QingNote
     public static List<KeyValuePair<string, string>> readFile(string separator, string absolutePath, string fileName)
     {
       List<KeyValuePair<string, string>> data = new List<KeyValuePair<string, string>>();
-      string fpath = Path.Combine(absolutePath, fileName);
+
+      string fpath = (fileName.StartsWith(absolutePath)) ? fileName : Path.Combine(absolutePath, fileName);
       using (StreamReader reader = new StreamReader(fpath, Encoding.UTF8))
       {
         while (true)

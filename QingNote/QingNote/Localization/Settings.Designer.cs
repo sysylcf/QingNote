@@ -63,6 +63,15 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        internal static string Defaults_CardBoxName {
+            get {
+                return ResourceManager.GetString("Defaults_CardBoxName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         internal static string Defaults_CardCategory {
             get {
                 return ResourceManager.GetString("Defaults_CardCategory", resourceCulture);
@@ -84,6 +93,15 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         internal static string Defaults_ChapterName {
             get {
                 return ResourceManager.GetString("Defaults_ChapterName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Defaults_UnknownDate {
+            get {
+                return ResourceManager.GetString("Defaults_UnknownDate", resourceCulture);
             }
         }
         

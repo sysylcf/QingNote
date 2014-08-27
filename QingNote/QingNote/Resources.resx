@@ -120,4 +120,7 @@
   <data name="FilePostfix" xml:space="preserve">
     <value>.qnote.txt</value>
   </data>
+  <data name="ResLang" xml:space="preserve">
+    <value>en ja zh-Hans</value>
+  </data>
 </root>

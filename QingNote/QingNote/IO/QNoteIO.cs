@@ -10,11 +10,9 @@ namespace cn.zuoanqh.open.QingNote.IO
 {
   class QNoteIO
   {
-    public static IEnumerable<string> FileKeywordsLang = fkwLang;
-    public static IEnumerable<string> SettingsLang = sLang;
+    public static IEnumerable<string> ResourceLang = resLang;
 
-    private static Lang fkwLang = new Lang(ResLang.FileKeywords);
-    private static Lang sLang = new Lang(ResLang.Settings);
+    private static Lang resLang = new Lang(Resources.ResLang);
 
     public static string getFileLang(string fileName)
     {
@@ -26,7 +24,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     }
     public static Boolean isFileLangValid(string fileLang)
     {
-      return fkwLang.langs.Contains(fileLang);
+      return resLang.langs.Contains(fileLang);
     }
 
 

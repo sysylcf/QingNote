@@ -117,31 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Defaults_CardBoxName" xml:space="preserve">
-    <value>未命名</value>
+  <data name="FileIO_FieldMissing" xml:space="preserve">
+    <value>プロパティ「{0}」が見つかりませんでした。</value>
   </data>
-  <data name="Defaults_CardCategory" xml:space="preserve">
-    <value>未分类</value>
+  <data name="FileIO_FieldValueNotValid" xml:space="preserve">
+    <value>プロパティ「{0}」の値が無効です。有効の値は「{1}」のいずれです。</value>
   </data>
-  <data name="Defaults_CardName" xml:space="preserve">
-    <value>未命名</value>
+  <data name="FileIO_FileMissing" xml:space="preserve">
+    <value>ファイルが見つかりませんでした。</value>
   </data>
-  <data name="Defaults_ChapterName" xml:space="preserve">
-    <value>不属于任何章节</value>
-  </data>
-  <data name="Defaults_UnknownDate" xml:space="preserve">
-    <value>未知</value>
-  </data>
-  <data name="Defaults_UsersName" xml:space="preserve">
-    <value>（匿名用户）</value>
-  </data>
-  <data name="Format_YMD" xml:space="preserve">
-    <value>{0}年{1}月{2}日</value>
-  </data>
-  <data name="Symbol_Item_Seperator" xml:space="preserve">
-    <value>，</value>
-  </data>
-  <data name="Symbol_NameContent_Seperator" xml:space="preserve">
-    <value>：</value>
+  <data name="FileIO_LanguageNotSupported" xml:space="preserve">
+    <value>フアイル名が無効です。他のファイルのように修正して、サポートされている言語を使ってください。以下の言語はサポートされている：{0}</value>
   </data>
 </root>

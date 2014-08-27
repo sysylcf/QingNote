@@ -127,12 +127,18 @@
   <data name="Defaults_ChapterName" xml:space="preserve">
     <value>Not Declared In a Chapter</value>
   </data>
+  <data name="Defaults_UnknownDate" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
   <data name="Defaults_UsersName" xml:space="preserve">
     <value>(Anonymous User)</value>
   </data>
   <data name="Format_YMD" xml:space="preserve">
     <value>Year{0}Month{1}Day{2}</value>
     <comment>Avoid confusions from using dots, dashes and other stuff</comment>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value>Unnamed</value>
   </data>
   <data name="Symbol_Item_Seperator" xml:space="preserve">
     <value>, </value>
