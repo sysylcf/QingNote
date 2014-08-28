@@ -77,6 +77,7 @@ namespace cn.zuoanqh.open.QingNote.IO
 
         string att = fdata[l].Key;
         string val = fdata[l].Value;
+
         while (l + 1 < fdata.Count && fdata[l + 1].Key.Trim().Length == 0)
         {
           l++;
@@ -185,6 +186,9 @@ namespace cn.zuoanqh.open.QingNote.IO
       //first deal with file's date, if the file is newly created. Else leave it to default handling
       if (datecreated.Trim() == "" && !File.Exists(Path.Combine(absolutePath, fname)))
         datecreated = QNoteIO.formatNow();
+
+      //ensures there's a default for this language
+      getDefaults(lang.Name);
 
       for (int i = 0; i < odata.Count; i++)
       {//add defaults to empy attributes

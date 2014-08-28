@@ -109,11 +109,49 @@ namespace cn.zuoanqh.open.QingNote.IO
       this.dateCreated = dateCreated;
       this.text = text;
     }
-
+    /// <summary>
+    /// write file with this file's lang parameter when it was read from a file. if there's no such parameter, use the current language.
+    /// </summary>
+    /// <param name="absolutePath"></param>
     public void writeFile(string absolutePath)
-    { }
+    { writeFile(absolutePath, new CultureInfo(this.lang)); }
 
     public void writeFile(string absolutePath, CultureInfo lang)
-    { }
+    {
+      CultureInfo stack = Thread.CurrentThread.CurrentCulture;
+      Thread.CurrentThread.CurrentCulture = lang;
+      string sep = Localization.Settings.Symbol_NameContent_Seperator;
+      string fname = Localization.FileKeywords.FileName_CardBoxInfo + "." + lang.Name + "." + Resources.FilePostfix;
+
+      List<KeyValuePair<string, string>> odata = new List<KeyValuePair<string, string>>();
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Name, name));
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Creater, creater));
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_DateCreated, dateCreated));
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_ChapterName, chapterName));
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Category, category));
+      string skeywords = "";
+      foreach (string s in keywords) skeywords += s + sep;
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Keywords, skeywords));
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Text, text));
+
+      //first deal with file's date, if the file is newly created. Else leave it to default handling
+      if (dateCreated.Trim() == "" && !File.Exists(Path.Combine(absolutePath, fname)))
+        dateCreated = QNoteIO.formatNow();
+
+      //ensures there's a default for this language
+      getDefaults(lang.Name);
+
+      for (int i = 0; i < odata.Count; i++)
+      {//add defaults to empy attributes
+        KeyValuePair<string, string> p = odata[i];
+        if (langDefaults[lang.Name].ContainsKey(p.Key) && p.Value == "")
+          odata[i] = new KeyValuePair<string, string>(p.Key, langDefaults[lang.Name][p.Key]);
+      }
+
+      ZDictionaryFileIO.writeFile(odata, sep, absolutePath, fname);
+
+      Thread.CurrentThread.CurrentCulture = stack;
+
+    }
   }
 }
