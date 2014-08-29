@@ -225,15 +225,6 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string Filename_AttachmentDirectory {
-            get {
-                return ResourceManager.GetString("Filename_AttachmentDirectory", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .
-        /// </summary>
         internal static string FileName_CardBoxInfo {
             get {
                 return ResourceManager.GetString("FileName_CardBoxInfo", resourceCulture);
@@ -261,6 +252,24 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        internal static string Filename_Directory_Attachment {
+            get {
+                return ResourceManager.GetString("Filename_Directory_Attachment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Filename_Directory_Cardbox {
+            get {
+                return ResourceManager.GetString("Filename_Directory_Cardbox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         internal static string FileName_Settings {
             get {
                 return ResourceManager.GetString("FileName_Settings", resourceCulture);
@@ -282,6 +291,15 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         internal static string Settings_DefaultCardBoxIndex {
             get {
                 return ResourceManager.GetString("Settings_DefaultCardBoxIndex", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Settings_LastPath {
+            get {
+                return ResourceManager.GetString("Settings_LastPath", resourceCulture);
             }
         }
         

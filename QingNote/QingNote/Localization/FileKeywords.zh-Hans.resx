@@ -168,11 +168,11 @@
   <data name="Card_Text" xml:space="preserve">
     <value>内容</value>
   </data>
-  <data name="Filename_AttachmentDirectory" xml:space="preserve">
+  <data name="Filename_Directory_Attachment" xml:space="preserve">
     <value>附件</value>
   </data>
   <data name="FileName_CardBoxInfo" xml:space="preserve">
-    <value>卡盒文件</value>
+    <value>卡盒信息</value>
   </data>
   <data name="FileName_CardInfo" xml:space="preserve">
     <value>卡片信息</value>
@@ -194,5 +194,11 @@
   </data>
   <data name="Card_Creater" xml:space="preserve">
     <value>作者</value>
+  </data>
+  <data name="Settings_LastPath" xml:space="preserve">
+    <value>上次使用的路径</value>
+  </data>
+  <data name="Filename_Directory_Cardbox" xml:space="preserve">
+    <value>目录</value>
   </data>
 </root>

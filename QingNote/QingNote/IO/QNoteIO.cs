@@ -23,6 +23,11 @@ namespace cn.zuoanqh.open.QingNote.IO
       s = zusp.ChopTail(s, ".").Second;
       return s;
     }
+    public static string getPathLast(string path)
+    {
+      if (path == null) return null;
+      return path.Substring(path.LastIndexOf(@"\"));
+    }
 
     public static string formatNow()
     {
@@ -51,7 +56,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     public static string Delegated_GetApplicableFileWithFeedback(FileReadingOverseer overseer, string absolutePath)
     {
       List<string> qnotefiles = GetQNoteFiles(absolutePath);
-      string fname=null;
+      string fname = null;
       List<string> vlangfiles = qnotefiles.Where(s => isSupportedLanguage(getFileLang(s))).Select(s => s).ToList();
       // ---------------------File Finding
 
@@ -89,9 +94,9 @@ namespace cn.zuoanqh.open.QingNote.IO
       else if (vlangfiles.Count == 1) fname = vlangfiles[0];
       return fname;
     }
-    public static HashSet<string> CheckFDataHaveAllDefaults(List<KeyValuePair<string,string>> fdata,Dictionary<string,string> defaults)
-    {      
-    //construct a set of file attributes that we want to ensure they are there and cross them off so its linear time to number of lines
+    public static HashSet<string> CheckFDataHaveAllDefaults(List<KeyValuePair<string, string>> fdata, Dictionary<string, string> defaults)
+    {
+      //construct a set of file attributes that we want to ensure they are there and cross them off so its linear time to number of lines
       HashSet<string> items = new HashSet<string>();
       foreach (string s in defaults.Keys) items.Add(s);
 

@@ -168,7 +168,7 @@
   <data name="Card_Text" xml:space="preserve">
     <value>Card Content</value>
   </data>
-  <data name="Filename_AttachmentDirectory" xml:space="preserve">
+  <data name="Filename_Directory_Attachment" xml:space="preserve">
     <value>Attachments</value>
   </data>
   <data name="FileName_CardBoxInfo" xml:space="preserve">
@@ -194,5 +194,11 @@
   </data>
   <data name="Card_Creater" xml:space="preserve">
     <value>Creater</value>
+  </data>
+  <data name="Settings_LastPath" xml:space="preserve">
+    <value>Last Directory Used</value>
+  </data>
+  <data name="Filename_Directory_Cardbox" xml:space="preserve">
+    <value>CardBox Content</value>
   </data>
 </root>

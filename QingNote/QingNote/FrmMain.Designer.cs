@@ -211,6 +211,7 @@
       this.Controls.Add(this.btnSwitchCardBox);
       this.Controls.Add(this.lbl_D_CardBoxName);
       this.Name = "FrmMain";
+      this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
       this.Load += new System.EventHandler(this.FrmMain_Load);
       this.tctIndexSearch.ResumeLayout(false);
       this.tabIndex.ResumeLayout(false);
