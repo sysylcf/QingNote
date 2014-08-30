@@ -13,12 +13,12 @@ namespace cn.zuoanqh.open.QingNote.IO
   {
     public static IEnumerable<string> ResourceLang = resLang;
 
-    private static Lang resLang = new Lang(Resources.ResLang);
+    private static Lang resLang = new Lang(SystemResources.ResLang);
 
     public static string getFileLang(string fileName)
     {
-      if (!fileName.EndsWith(Resources.FilePostfix)) return null;
-      string s = zusp.Left(fileName, fileName.Length - Resources.FilePostfix.Length);
+      if (!fileName.EndsWith(SystemResources.FilePostfix)) return null;
+      string s = zusp.Left(fileName, fileName.Length - SystemResources.FilePostfix.Length);
       if (s.LastIndexOf(".") < 0) return null;
       s = zusp.ChopTail(s, ".").Second;
       return s;
@@ -43,7 +43,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     public static List<string> GetQNoteFiles(string absolutePath)
     {
       List<string> qnotefiles = Directory.GetFiles(absolutePath).
-       Where(s => s.EndsWith(Resources.FilePostfix)).
+       Where(s => s.EndsWith(SystemResources.FilePostfix)).
        Select(s => s).ToList();
       return qnotefiles;
     }

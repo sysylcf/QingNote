@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using cn.zuoanqh.open.QingNote.IO;
 using cn.zuoanqh.open.zut;
+using cn.zuoanqh.open.ZDialog;
 using System.IO;
 
 namespace cn.zuoanqh.open.QingNote
@@ -19,8 +20,8 @@ namespace cn.zuoanqh.open.QingNote
     public static readonly int PADDING = 3;
     public string currentPath;
     private CardBoxFileData cBox;
-    private CardFileData cFile;
-    private List<Pair<string, List<string>>> findexed;
+    private CardFileData cCard;
+    private CardBoxTree cTree;
     public FrmMain()
     {
       System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo
@@ -29,7 +30,6 @@ namespace cn.zuoanqh.open.QingNote
       txtCardContent.Height = lblKeyWords.Top - PADDING - txtCardContent.Top;
       lstSearchResults.Height = txtSearchInput.Top - PADDING - lstSearchResults.Top;
 
-      findexed = new List<Pair<string, List<string>>>();
 
       setPathAndLoad(SettingsFileData.getSettingItem(Localization.FileKeywords.Settings_LastPath).Trim());
     }
@@ -39,21 +39,23 @@ namespace cn.zuoanqh.open.QingNote
       if (currentPath.Length > 0)
       {
         cBox = CardBoxFileData.readFile(new FileReadingAdapter(), currentPath);
-        if (cBox != null)
-        {
-          string[] indexes = Directory.GetDirectories(Path.Combine(currentPath, cBox.title));
-          for (int i = 0; i < indexes.Length; i++)
-          {
-            tvwCards.Nodes.Add(new TreeNode(indexes[i]));
-            string[] cards = Directory.GetDirectories(indexes[i]);
-            
-          }
-        }
+        string boxpath = Path.Combine(currentPath, cBox.title);
+        cTree = new CardBoxTree(boxpath);
       }
     }
-    public void selectCard(CardFileData cardFile)
+    private string cardPath;
+    public void selectCard(string parent, string name)
     {
-      //update GUI
+      cTree.loadCard(parent, name);
+
+      cardPath = Path.Combine(currentPath, parent, name);
+      if (cTree.loadedCards.ContainsKey(cardPath))
+      {
+        cCard = cTree.loadedCards[cardPath];
+        lblCardTitle.Text = cCard.name;
+        lblKeyWords.Text = cCard.getKeywords();
+        txtCardContent.Text = cCard.text;
+      }
     }
 
     private void FrmMain_Load(object sender, EventArgs e)
@@ -64,6 +66,16 @@ namespace cn.zuoanqh.open.QingNote
     private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
     {
       SettingsFileData.saveSettings();
+    }
+
+    private void btnSaveCard_Click(object sender, EventArgs e)
+    {
+      cCard.writeFile(cardPath);
+    }
+
+    private void btnNewCard_Click(object sender, EventArgs e)
+    {
+      new DialogNewCard().ShowDialog();
     }
 
 

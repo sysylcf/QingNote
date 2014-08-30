@@ -208,7 +208,7 @@
     <value>3, 6</value>
   </data>
   <data name="tvwCards.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 325</value>
+    <value>195, 329</value>
   </data>
   <data name="tvwCards.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -235,7 +235,7 @@
     <value>91, 341</value>
   </data>
   <data name="btnNewCard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 34</value>
+    <value>107, 34</value>
   </data>
   <data name="btnNewCard.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -252,28 +252,28 @@
   <data name="&gt;&gt;btnNewCard.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnSwitchIndexingMethod.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="btnMamageBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
-  <data name="btnSwitchIndexingMethod.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnMamageBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 341</value>
   </data>
-  <data name="btnSwitchIndexingMethod.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnMamageBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 34</value>
   </data>
-  <data name="btnSwitchIndexingMethod.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnMamageBox.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;btnSwitchIndexingMethod.Name" xml:space="preserve">
-    <value>btnSwitchIndexingMethod</value>
+  <data name="&gt;&gt;btnMamageBox.Name" xml:space="preserve">
+    <value>btnMamageBox</value>
   </data>
-  <data name="&gt;&gt;btnSwitchIndexingMethod.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnMamageBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnSwitchIndexingMethod.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnMamageBox.Parent" xml:space="preserve">
     <value>tabIndex</value>
   </data>
-  <data name="&gt;&gt;btnSwitchIndexingMethod.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnMamageBox.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="tabIndex.Location" type="System.Drawing.Point, System.Drawing">
@@ -361,7 +361,7 @@
     <value>3, 290</value>
   </data>
   <data name="txtSearchInput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 30</value>
+    <value>195, 30</value>
   </data>
   <data name="txtSearchInput.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -388,7 +388,7 @@
     <value>3, 6</value>
   </data>
   <data name="lstSearchResults.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 264</value>
+    <value>195, 264</value>
   </data>
   <data name="lstSearchResults.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

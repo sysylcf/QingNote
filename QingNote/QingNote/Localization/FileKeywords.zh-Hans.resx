@@ -154,7 +154,7 @@
     <value>分类</value>
   </data>
   <data name="Card_ChapterName" xml:space="preserve">
-    <value>章节名</value>
+    <value>章节</value>
   </data>
   <data name="Card_DateCreated" xml:space="preserve">
     <value>创建日期</value>
@@ -163,7 +163,7 @@
     <value>关键字</value>
   </data>
   <data name="Card_Name" xml:space="preserve">
-    <value>卡片名</value>
+    <value>标题</value>
   </data>
   <data name="Card_Text" xml:space="preserve">
     <value>内容</value>

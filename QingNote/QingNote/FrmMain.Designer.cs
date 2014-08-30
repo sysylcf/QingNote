@@ -36,7 +36,7 @@
       this.tctIndexSearch = new System.Windows.Forms.TabControl();
       this.tabIndex = new System.Windows.Forms.TabPage();
       this.btnNewCard = new System.Windows.Forms.Button();
-      this.btnSwitchIndexingMethod = new System.Windows.Forms.Button();
+      this.btnMamageBox = new System.Windows.Forms.Button();
       this.tabSearch = new System.Windows.Forms.TabPage();
       this.rbtSearchKeywordOnly = new System.Windows.Forms.RadioButton();
       this.rbtSearchFullText = new System.Windows.Forms.RadioButton();
@@ -89,7 +89,7 @@
       // tabIndex
       // 
       this.tabIndex.Controls.Add(this.btnNewCard);
-      this.tabIndex.Controls.Add(this.btnSwitchIndexingMethod);
+      this.tabIndex.Controls.Add(this.btnMamageBox);
       this.tabIndex.Controls.Add(this.tvwCards);
       resources.ApplyResources(this.tabIndex, "tabIndex");
       this.tabIndex.Name = "tabIndex";
@@ -100,12 +100,13 @@
       resources.ApplyResources(this.btnNewCard, "btnNewCard");
       this.btnNewCard.Name = "btnNewCard";
       this.btnNewCard.UseVisualStyleBackColor = true;
+      this.btnNewCard.Click += new System.EventHandler(this.btnNewCard_Click);
       // 
-      // btnSwitchIndexingMethod
+      // btnMamageBox
       // 
-      resources.ApplyResources(this.btnSwitchIndexingMethod, "btnSwitchIndexingMethod");
-      this.btnSwitchIndexingMethod.Name = "btnSwitchIndexingMethod";
-      this.btnSwitchIndexingMethod.UseVisualStyleBackColor = true;
+      resources.ApplyResources(this.btnMamageBox, "btnMamageBox");
+      this.btnMamageBox.Name = "btnMamageBox";
+      this.btnMamageBox.UseVisualStyleBackColor = true;
       // 
       // tabSearch
       // 
@@ -186,6 +187,7 @@
       resources.ApplyResources(this.btnSaveCard, "btnSaveCard");
       this.btnSaveCard.Name = "btnSaveCard";
       this.btnSaveCard.UseVisualStyleBackColor = true;
+      this.btnSaveCard.Click += new System.EventHandler(this.btnSaveCard_Click);
       // 
       // lblMessage
       // 
@@ -233,7 +235,7 @@
     private System.Windows.Forms.TabPage tabSearch;
     private System.Windows.Forms.TextBox txtSearchInput;
     private System.Windows.Forms.ListBox lstSearchResults;
-    private System.Windows.Forms.Button btnSwitchIndexingMethod;
+    private System.Windows.Forms.Button btnMamageBox;
     private System.Windows.Forms.RadioButton rbtSearchKeywordOnly;
     private System.Windows.Forms.RadioButton rbtSearchFullText;
     private System.Windows.Forms.Label lblCardTitle;

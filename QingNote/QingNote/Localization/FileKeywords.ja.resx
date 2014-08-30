@@ -151,7 +151,7 @@
     <value>ボックス名</value>
   </data>
   <data name="Card_Category" xml:space="preserve">
-    <value>カード分類</value>
+    <value>分類</value>
   </data>
   <data name="Card_ChapterName" xml:space="preserve">
     <value>所属章名</value>

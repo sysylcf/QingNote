@@ -11,7 +11,7 @@ namespace cn.zuoanqh.open.QingNote.IO
 {
   class SettingsFileData
   {
-    public static readonly string FILE_NAME = Localization.FileKeywords.FileName_Settings + Resources.FilePostfix;
+    public static readonly string FILE_NAME = Localization.FileKeywords.FileName_Settings + SystemResources.FilePostfix;
     public static readonly string DEFAULT_INDEXING = Localization.FileKeywords.CardBox_Index_Chronological;
 
     public delegate void onSettingChanged(string oldValue, string newValue);

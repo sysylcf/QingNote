@@ -22,14 +22,14 @@ namespace cn.zuoanqh.open.QingNote {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class IconScheme {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal IconScheme() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace cn.zuoanqh.open.QingNote {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("cn.zuoanqh.open.QingNote.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("cn.zuoanqh.open.QingNote.IconScheme", typeof(IconScheme).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,20 +61,32 @@ namespace cn.zuoanqh.open.QingNote {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .qnote.txt.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string FilePostfix {
+        internal static System.Drawing.Bitmap Remove_Multiple {
             get {
-                return ResourceManager.GetString("FilePostfix", resourceCulture);
+                object obj = ResourceManager.GetObject("Remove_Multiple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to en ja zh-Hans.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string ResLang {
+        internal static System.Drawing.Bitmap Remove_Single {
             get {
-                return ResourceManager.GetString("ResLang", resourceCulture);
+                object obj = ResourceManager.GetObject("Remove_Single", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UpArrow {
+            get {
+                object obj = ResourceManager.GetObject("UpArrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

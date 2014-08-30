@@ -148,8 +148,8 @@
   <data name="btnNewCard.Text" xml:space="preserve">
     <value>新建卡片</value>
   </data>
-  <data name="btnSwitchIndexingMethod.Text" xml:space="preserve">
-    <value>索引</value>
+  <data name="btnMamageBox.Text" xml:space="preserve">
+    <value>管理</value>
   </data>
   <data name="tabIndex.Text" xml:space="preserve">
     <value>索引</value>

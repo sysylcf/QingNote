@@ -165,7 +165,7 @@ namespace cn.zuoanqh.open.QingNote.IO
       CultureInfo stack = Thread.CurrentThread.CurrentCulture;
       Thread.CurrentThread.CurrentCulture = lang;
       string sep = Localization.Settings.Symbol_NameContent_Seperator;
-      string fname = Localization.FileKeywords.FileName_CardBoxInfo + "." + lang.Name + "." + Resources.FilePostfix;
+      string fname = Localization.FileKeywords.FileName_CardBoxInfo + "." + lang.Name + "." + SystemResources.FilePostfix;
 
       List<KeyValuePair<string, string>> odata = new List<KeyValuePair<string, string>>();
       odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_Title, title));
