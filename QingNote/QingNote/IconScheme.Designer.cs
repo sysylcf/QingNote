@@ -63,6 +63,36 @@ namespace cn.zuoanqh.open.QingNote {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap By_Category {
+            get {
+                object obj = ResourceManager.GetObject("By_Category", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap By_Chapters {
+            get {
+                object obj = ResourceManager.GetObject("By_Chapters", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap By_Time {
+            get {
+                object obj = ResourceManager.GetObject("By_Time", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Remove_Multiple {
             get {
                 object obj = ResourceManager.GetObject("Remove_Multiple", resourceCulture);

@@ -10,7 +10,7 @@ using System.Resources;
 
 namespace cn.zuoanqh.open.QingNote
 {
-  public class ZDictionaryFileIO
+  class ZDictionaryFileIO
   {
     public static void writeFile(List<KeyValuePair<string, string>> data, string separator, string fileName)
     {

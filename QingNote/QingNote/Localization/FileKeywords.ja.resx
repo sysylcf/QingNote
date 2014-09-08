@@ -139,7 +139,7 @@
     <value>分類順</value>
   </data>
   <data name="CardBox_Index_Chapters" xml:space="preserve">
-    <value>章順</value>
+    <value>章番号順</value>
   </data>
   <data name="CardBox_Index_Chronological" xml:space="preserve">
     <value>作成日時順</value>
@@ -154,7 +154,7 @@
     <value>分類</value>
   </data>
   <data name="Card_ChapterName" xml:space="preserve">
-    <value>所属章名</value>
+    <value>所属章題</value>
   </data>
   <data name="Card_DateCreated" xml:space="preserve">
     <value>作成日時</value>

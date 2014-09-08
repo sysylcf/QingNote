@@ -90,6 +90,7 @@
       // 
       resources.ApplyResources(this.label2, "label2");
       this.label2.Name = "label2";
+      this.label2.Click += new System.EventHandler(this.label2_Click);
       // 
       // label3
       // 
@@ -189,7 +190,7 @@
       // DialogNewCard
       // 
       resources.ApplyResources(this, "$this");
-      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
       this.Controls.Add(this.txtNewKeyword);
       this.Controls.Add(this.btnDoneLower);
       this.Controls.Add(this.txtText);
@@ -202,8 +203,6 @@
       this.Controls.Add(this.label6);
       this.Controls.Add(this.btnRemoveKeyword);
       this.Controls.Add(this.btnAddKeyword);
-      this.Controls.Add(this.label5);
-      this.Controls.Add(this.label4);
       this.Controls.Add(this.lstKeywords);
       this.Controls.Add(this.label3);
       this.Controls.Add(this.label2);
@@ -212,12 +211,15 @@
       this.Controls.Add(this.btnDoneUpper);
       this.Controls.Add(this.txtName);
       this.Controls.Add(this.label1);
+      this.Controls.Add(this.label4);
+      this.Controls.Add(this.label5);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
       this.MaximizeBox = false;
       this.MinimizeBox = false;
       this.Name = "DialogNewCard";
       this.ShowInTaskbar = false;
       this.TopMost = true;
+      this.Load += new System.EventHandler(this.DialogNewCard_Load);
       this.ResumeLayout(false);
       this.PerformLayout();
 

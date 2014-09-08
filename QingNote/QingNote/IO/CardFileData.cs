@@ -10,7 +10,7 @@ using cn.zuoanqh.open.zut;
 
 namespace cn.zuoanqh.open.QingNote.IO
 {
-  class CardFileData
+  public class CardFileData
   {
 
     private static Dictionary<string, Dictionary<string, string>> langDefaults;

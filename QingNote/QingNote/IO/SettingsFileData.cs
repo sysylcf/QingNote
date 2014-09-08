@@ -9,7 +9,7 @@ using System.Threading;
 
 namespace cn.zuoanqh.open.QingNote.IO
 {
-  class SettingsFileData
+  public class SettingsFileData
   {
     public static readonly string FILE_NAME = Localization.FileKeywords.FileName_Settings + SystemResources.FilePostfix;
     public static readonly string DEFAULT_INDEXING = Localization.FileKeywords.CardBox_Index_Chronological;

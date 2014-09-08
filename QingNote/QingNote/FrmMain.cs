@@ -27,7 +27,7 @@ namespace cn.zuoanqh.open.QingNote
       System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo
         (SettingsFileData.getSettingItem(Localization.FileKeywords.Settings_CurrentLanguage));
       InitializeComponent();
-      txtCardContent.Height = lblKeyWords.Top - PADDING - txtCardContent.Top;
+      //txtCardContent.Height = lblKeyWords.Top - PADDING - txtCardContent.Top;
       lstSearchResults.Height = txtSearchInput.Top - PADDING - lstSearchResults.Top;
 
 
@@ -75,7 +75,7 @@ namespace cn.zuoanqh.open.QingNote
 
     private void btnNewCard_Click(object sender, EventArgs e)
     {
-      new DialogNewCard().ShowDialog();
+      new DialogNewCard(cBox).ShowDialog();
     }
 
 

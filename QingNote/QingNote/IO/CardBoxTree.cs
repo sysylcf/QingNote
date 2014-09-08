@@ -9,7 +9,7 @@ using System.IO;
 
 namespace cn.zuoanqh.open.QingNote.IO
 {
-  class CardBoxTree
+  public class CardBoxTree
   {
     public List<Pair<string, List<string>>> tree;
     public Dictionary<string, CardFileData> loadedCards;//key=absolutepath

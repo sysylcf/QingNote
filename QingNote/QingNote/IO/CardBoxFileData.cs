@@ -8,7 +8,7 @@ using System.Threading;
 
 namespace cn.zuoanqh.open.QingNote.IO
 {
-  class CardBoxFileData
+  public class CardBoxFileData
   {
     private static Dictionary<string, HashSet<string>> index;
     private static Dictionary<string, Dictionary<string, string>> langDefaults;

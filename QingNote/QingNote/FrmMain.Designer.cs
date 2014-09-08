@@ -197,8 +197,8 @@
       // 
       // FrmMain
       // 
+      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
       resources.ApplyResources(this, "$this");
-      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
       this.Controls.Add(this.lblMessage);
       this.Controls.Add(this.btnSaveCard);
       this.Controls.Add(this.btnEditMeta);

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace cn.zuoanqh.open.QingNote.IO
 {
-  class DirectoriesFileData
+  public class DirectoriesFileData
   {
     public static readonly string FILE_NAME = Localization.FileKeywords.FileName_Directory + SystemResources.FilePostfix;
 

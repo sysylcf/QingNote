@@ -153,8 +153,8 @@
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="txtChapter.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -189,8 +189,8 @@
   <data name="btnChangeCreater.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="btnRemoveKeyword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="lblDate.Location" type="System.Drawing.Point, System.Drawing">
     <value>107, 256</value>
@@ -247,7 +247,7 @@
     <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>19</value>
   </data>
   <data name="&gt;&gt;label10.Name" xml:space="preserve">
     <value>label10</value>
@@ -257,9 +257,6 @@
   </data>
   <data name="txtText.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 364</value>
-  </data>
-  <data name="txtChapter.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -274,7 +271,7 @@
     <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>14</value>
   </data>
   <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -290,6 +287,9 @@
   </data>
   <data name="btnRemoveKeyword.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
+  </data>
+  <data name="&gt;&gt;txtName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnRemoveKeyword.Parent" xml:space="preserve">
     <value>$this</value>
@@ -388,7 +388,7 @@
     <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>20</value>
   </data>
   <data name="&gt;&gt;txtNewKeyword.Parent" xml:space="preserve">
     <value>$this</value>
@@ -429,9 +429,6 @@
   <data name="lblCreater.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="btnChangeDate.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
   <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>224, 32</value>
   </data>
@@ -456,9 +453,6 @@
   <data name="btnAddKeyword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="&gt;&gt;btnDoneLower.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
   </data>
@@ -471,8 +465,8 @@
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;txtName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;lstKeywords.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -486,8 +480,11 @@
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
+  <data name="&gt;&gt;btnChangeCreater.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;txtChapter.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>15</value>
   </data>
   <data name="btnDoneUpper.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 32</value>
@@ -501,11 +498,17 @@
   <data name="&gt;&gt;btnChangeDate.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="btnRemoveKeyword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
   <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="&gt;&gt;lstKeywords.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;btnChangeDate.Name" xml:space="preserve">
     <value>btnChangeDate</value>
@@ -556,13 +559,13 @@
     <value>MiddleLeft</value>
   </data>
   <data name="btnRemoveKeyword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 84</value>
+    <value>38, 84</value>
   </data>
   <data name="&gt;&gt;btnChangeCreater.Name" xml:space="preserve">
     <value>btnChangeCreater</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>21</value>
   </data>
   <data name="&gt;&gt;txtText.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -580,22 +583,16 @@
     <value>286, 28</value>
   </data>
   <data name="txtNewKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>144, 212</value>
+    <value>147, 211</value>
   </data>
   <data name="&gt;&gt;txtName.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>11, 20</value>
+    <value>18</value>
   </data>
   <data name="lblCreater.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
-  </data>
-  <data name="btnAddKeyword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 12pt, style=Bold</value>
   </data>
   <data name="txtName.Location" type="System.Drawing.Point, System.Drawing">
     <value>107, 10</value>
@@ -643,16 +640,16 @@
     <value>11, 46</value>
   </data>
   <data name="&gt;&gt;txtCategory.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>16</value>
   </data>
   <data name="&gt;&gt;btnDoneUpper.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>17</value>
   </data>
-  <data name="&gt;&gt;btnChangeCreater.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;btnDoneLower.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lstKeywords.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="btnAddKeyword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei, 12pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
@@ -673,7 +670,7 @@
     <value>btnAddKeyword</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;btnDoneLower.Name" xml:space="preserve">
     <value>btnDoneLower</value>
@@ -684,8 +681,8 @@
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 32</value>
   </data>
-  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="btnChangeDate.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -718,6 +715,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ja</value>
+    <value>ja-JP</value>
   </metadata>
 </root>
