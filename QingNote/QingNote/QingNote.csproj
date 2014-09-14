@@ -177,6 +177,9 @@
     <EmbeddedResource Include="DialogNewBox.resx">
       <DependentUpon>DialogNewBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DialogNewBox.zh-Hans.resx">
+      <DependentUpon>DialogNewBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DialogNewCard.en.resx">
       <DependentUpon>DialogNewCard.cs</DependentUpon>
     </EmbeddedResource>
