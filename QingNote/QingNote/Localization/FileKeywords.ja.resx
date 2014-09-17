@@ -133,16 +133,16 @@
     <value>内容概要</value>
   </data>
   <data name="CardBox_Index" xml:space="preserve">
-    <value>インデックス</value>
+    <value>索引</value>
   </data>
   <data name="CardBox_Index_Category" xml:space="preserve">
-    <value>分類順</value>
+    <value>分類</value>
   </data>
   <data name="CardBox_Index_Chapters" xml:space="preserve">
-    <value>章番号順</value>
+    <value>章番号</value>
   </data>
   <data name="CardBox_Index_Chronological" xml:space="preserve">
-    <value>作成日時順</value>
+    <value>作成日時</value>
   </data>
   <data name="CardBox_KeywordNames" xml:space="preserve">
     <value>使用したキーワード</value>

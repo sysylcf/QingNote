@@ -116,11 +116,13 @@
       this.Controls.Add(this.rbtByTime);
       this.Controls.Add(this.rbtByChapter);
       this.Controls.Add(this.rbtByCategory);
-      this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+      this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
       this.MaximizeBox = false;
       this.MinimizeBox = false;
       this.Name = "DialogNewBox";
+      this.ShowIcon = false;
       this.ShowInTaskbar = false;
+      this.TopMost = true;
       this.ResumeLayout(false);
       this.PerformLayout();
 

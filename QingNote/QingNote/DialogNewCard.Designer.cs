@@ -217,6 +217,7 @@
       this.MaximizeBox = false;
       this.MinimizeBox = false;
       this.Name = "DialogNewCard";
+      this.ShowIcon = false;
       this.ShowInTaskbar = false;
       this.TopMost = true;
       this.Load += new System.EventHandler(this.DialogNewCard_Load);

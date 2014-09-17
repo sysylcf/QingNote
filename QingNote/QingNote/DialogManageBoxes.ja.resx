@@ -117,108 +117,147 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 32</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lstBoxes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblBoxName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>458, 10</value>
+  </data>
+  <data name="lblBoxName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 30</value>
+  </data>
+  <data name="lblBoxName.Text" xml:space="preserve">
     <value>名前：</value>
   </data>
-  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="lblDateCreated.Location" type="System.Drawing.Point, System.Drawing">
+    <value>458, 47</value>
   </data>
-  <data name="btnDoneUpper.Text" xml:space="preserve">
-    <value>決定</value>
+  <data name="lblDateCreated.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 32</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 32</value>
+  <data name="lblDateCreated.Text" xml:space="preserve">
+    <value>日付：</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>分類：</value>
+  <data name="btnEditBoxName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>692, 9</value>
   </data>
-  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="btnEditBoxName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 32</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 32</value>
+  <data name="btnEditBoxName.Text" xml:space="preserve">
+    <value>編集</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>章題：</value>
+  <data name="lblCreator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>458, 85</value>
   </data>
-  <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="lblCreator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 32</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 126</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 47</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>キー　
-ワード：</value>
-  </data>
-  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 211</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 32</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>（追加）</value>
-  </data>
-  <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="btnRemoveKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 126</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 32</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>日時：</value>
-  </data>
-  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 293</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 32</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
+  <data name="lblCreator.Text" xml:space="preserve">
     <value>作成者：</value>
   </data>
-  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="lblBoxIndexing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>458, 123</value>
   </data>
-  <data name="lblDate.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="lblBoxIndexing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 32</value>
   </data>
-  <data name="lblCreater.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="lblBoxIndexing.Text" xml:space="preserve">
+    <value>索引：</value>
   </data>
-  <data name="btnChangeDate.Text" xml:space="preserve">
-    <value>編集</value>
+  <data name="lstIndexItems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 56</value>
   </data>
-  <data name="btnChangeCreater.Text" xml:space="preserve">
-    <value>編集</value>
+  <data name="lblListCaption.Location" type="System.Drawing.Point, System.Drawing">
+    <value>253, 16</value>
   </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 32</value>
+  <data name="lblListCaption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 32</value>
   </data>
-  <data name="label10.Text" xml:space="preserve">
+  <data name="lblListCaption.Text" xml:space="preserve">
     <value>内容：</value>
   </data>
-  <data name="label10.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="btnSaveBoxInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>452, 402</value>
   </data>
-  <data name="btnDoneLower.Text" xml:space="preserve">
-    <value>決定</value>
+  <data name="btnSaveBoxInfo.Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="buttonOpenBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>555, 402</value>
+  </data>
+  <data name="buttonOpenBox.Text" xml:space="preserve">
+    <value>ボックスを開く</value>
+  </data>
+  <data name="btnAddIndexItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 402</value>
+  </data>
+  <data name="btnAddIndexItem.Text" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="btnEditDateCreated.Location" type="System.Drawing.Point, System.Drawing">
+    <value>692, 47</value>
+  </data>
+  <data name="btnEditDateCreated.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 32</value>
+  </data>
+  <data name="btnEditDateCreated.Text" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="btnEditCreator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>692, 85</value>
+  </data>
+  <data name="btnEditCreator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 32</value>
+  </data>
+  <data name="btnEditCreator.Text" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="btnChooseIndexing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>692, 123</value>
+  </data>
+  <data name="btnChooseIndexing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 32</value>
+  </data>
+  <data name="btnChooseIndexing.Text" xml:space="preserve">
+    <value>変更</value>
+  </data>
+  <data name="btnRemoveIndexItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 402</value>
+  </data>
+  <data name="btnRemoveIndexItem.Text" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="lblDescriptionCaption.Location" type="System.Drawing.Point, System.Drawing">
+    <value>452, 168</value>
+  </data>
+  <data name="lblDescriptionCaption.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 32</value>
+  </data>
+  <data name="lblDescriptionCaption.Text" xml:space="preserve">
+    <value>内容概要：</value>
+  </data>
+  <data name="btnUnlistBox.Text" xml:space="preserve">
+    <value>除名</value>
+  </data>
+  <data name="btnOpenBoxFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>341, 16</value>
+  </data>
+  <data name="btnOpenBoxFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 32</value>
+  </data>
+  <data name="btnOpenBoxFolder.Text" xml:space="preserve">
+    <value>フォルダ</value>
+  </data>
+  <data name="btnNewBox.Text" xml:space="preserve">
+    <value>新ボックス</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>QingNote　ー　ボックス管理</value>
   </data>
 </root>
