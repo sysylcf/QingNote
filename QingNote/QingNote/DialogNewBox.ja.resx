@@ -147,56 +147,68 @@
   </data>
   <data name="rbtByCategory.Text" xml:space="preserve">
     <value>
-按照分类：
-将卡片收入不同的分类中，如同百科全书</value>
+【百科事典】
+カードの分類によるフォルダでそれを保存する。</value>
+  </data>
+  <data name="rbtByCategory.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
   </data>
   <data name="rbtByChapter.Text" xml:space="preserve">
     <value>
-按照章节：
-由你决定章节顺序，像一本故事书。</value>
+【物語】
+カードを順番のある章節フォルダに保存する。</value>
+  </data>
+  <data name="rbtByChapter.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
   </data>
   <data name="rbtByTime.Text" xml:space="preserve">
     <value>
-按照日期：
-像日记一样，记录你每一天的进度。</value>
+【日記】
+毎日の進展を別々のフォルダに保存する。</value>
+  </data>
+  <data name="rbtByTime.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>名称：</value>
+    <value>名前：</value>
   </data>
   <data name="txtBoxName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 33</value>
+    <value>257, 27</value>
   </data>
   <data name="btnCommit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 16.2pt</value>
+    <value>MS Gothic, 16.2pt, style=Bold</value>
   </data>
   <data name="btnCommit.Text" xml:space="preserve">
-    <value>确定，创建卡盒</value>
+    <value>決定</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 16.2pt</value>
+    <value>MS Gothic, 16.2pt, style=Bold</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 87</value>
+    <value>139, 82</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>288, 33</value>
+    <value>288, 30</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>选择一种索引方式：</value>
+    <value>スタイルを選択する</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>位置：</value>
+    <value>保存先：</value>
   </data>
   <data name="txtBoxPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 33</value>
+    <value>257, 27</value>
+  </data>
+  <data name="btnBrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 46</value>
   </data>
   <data name="btnBrowse.Text" xml:space="preserve">
-    <value>浏览</value>
+    <value>選択</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 12pt</value>
+    <value>MS Gothic, 12pt, style=Bold</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>清笔记 - 创建新卡盒</value>
+    <value>QingNote　ー　ボックスの作成</value>
   </data>
 </root>

@@ -76,8 +76,8 @@
       // 
       // btnCommit
       // 
-      this.btnCommit.DialogResult = System.Windows.Forms.DialogResult.OK;
       resources.ApplyResources(this.btnCommit, "btnCommit");
+      this.btnCommit.DialogResult = System.Windows.Forms.DialogResult.OK;
       this.btnCommit.Name = "btnCommit";
       this.btnCommit.UseVisualStyleBackColor = true;
       // 
@@ -104,8 +104,8 @@
       // 
       // DialogNewBox
       // 
-      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
       resources.ApplyResources(this, "$this");
+      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
       this.Controls.Add(this.btnBrowse);
       this.Controls.Add(this.txtBoxPath);
       this.Controls.Add(this.label3);

@@ -198,6 +198,15 @@
     <EmbeddedResource Include="DialogManageBoxes.resx">
       <DependentUpon>DialogManageBoxes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DialogManageBoxes.zh-Hans.resx">
+      <DependentUpon>DialogManageBoxes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogNewBox.en.resx">
+      <DependentUpon>DialogNewBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogNewBox.ja.resx">
+      <DependentUpon>DialogNewBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DialogNewBox.resx">
       <DependentUpon>DialogNewBox.cs</DependentUpon>
     </EmbeddedResource>
