@@ -41,5 +41,10 @@ namespace cn.zuoanqh.open.QingNote
       txtNewKeyword.Items.AddRange(boxData.keywords.ToArray());
     }
 
+    private void label5_Click(object sender, EventArgs e)
+    {
+
+    }
+
   }
 }

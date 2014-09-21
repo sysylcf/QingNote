@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-10, 9</value>
+  </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 32</value>
   </data>
@@ -128,25 +131,28 @@
     <value>MiddleRight</value>
   </data>
   <data name="txtName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 10</value>
+    <value>108, 10</value>
   </data>
   <data name="txtName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 30</value>
+    <value>223, 30</value>
   </data>
   <data name="btnDoneUpper.Text" xml:space="preserve">
     <value>Done</value>
   </data>
   <data name="txtCategory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 48</value>
+    <value>108, 46</value>
   </data>
   <data name="txtCategory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>303, 28</value>
+    <value>324, 32</value>
   </data>
   <data name="txtChapter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 85</value>
+    <value>108, 83</value>
   </data>
   <data name="txtChapter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>303, 28</value>
+    <value>324, 32</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-10, 44</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 32</value>
@@ -157,6 +163,9 @@
   <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-10, 81</value>
+  </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 32</value>
   </data>
@@ -166,11 +175,18 @@
   <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lstKeywords.ItemHeight" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
   <data name="lstKeywords.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 126</value>
+    <value>108, 120</value>
   </data>
   <data name="lstKeywords.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 84</value>
+    <value>266, 148</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-10, 118</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 32</value>
@@ -182,7 +198,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 185</value>
+    <value>-10, 246</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 52</value>
@@ -194,7 +210,16 @@
     <value>BottomRight</value>
   </data>
   <data name="btnAddKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 211</value>
+    <value>108, 270</value>
+  </data>
+  <data name="btnRemoveKeyword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 120</value>
+  </data>
+  <data name="btnRemoveKeyword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 148</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-10, 307</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 32</value>
@@ -204,6 +229,9 @@
   </data>
   <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-10, 345</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 32</value>
@@ -215,16 +243,10 @@
     <value>MiddleRight</value>
   </data>
   <data name="lblDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 256</value>
+    <value>107, 307</value>
   </data>
   <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 32</value>
-  </data>
-  <data name="lblCreater.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 293</value>
-  </data>
-  <data name="lblCreater.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 32</value>
+    <value>223, 32</value>
   </data>
   <data name="btnChangeDate.Text" xml:space="preserve">
     <value>Edit...</value>
@@ -233,7 +255,7 @@
     <value>Edit...</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 330</value>
+    <value>-2, 377</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Text:</value>
@@ -245,10 +267,13 @@
     <value>Done</value>
   </data>
   <data name="txtNewKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>167, 212</value>
+    <value>148, 270</value>
   </data>
   <data name="txtNewKeyword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 28</value>
+    <value>284, 32</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 12pt, style=Bold</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>QingNote - Create New Card</value>

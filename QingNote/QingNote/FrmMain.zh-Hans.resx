@@ -145,26 +145,66 @@
   <data name="btnCopyPath.Text" xml:space="preserve">
     <value>打开文件夹</value>
   </data>
+  <data name="tvwCards.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 319</value>
+  </data>
+  <data name="btnNewCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 331</value>
+  </data>
   <data name="btnNewCard.Text" xml:space="preserve">
     <value>新建卡片</value>
+  </data>
+  <data name="btnMamageBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 331</value>
   </data>
   <data name="btnMamageBox.Text" xml:space="preserve">
     <value>管理</value>
   </data>
+  <data name="tabIndex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 36</value>
+  </data>
+  <data name="tabIndex.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 372</value>
+  </data>
   <data name="tabIndex.Text" xml:space="preserve">
     <value>索引</value>
   </data>
+  <data name="rbtSearchKeywordOnly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 314</value>
+  </data>
   <data name="rbtSearchKeywordOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 24</value>
+    <value>153, 31</value>
   </data>
   <data name="rbtSearchKeywordOnly.Text" xml:space="preserve">
     <value>只搜索关键字</value>
   </data>
+  <data name="rbtSearchFullText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 343</value>
+  </data>
   <data name="rbtSearchFullText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 24</value>
+    <value>113, 31</value>
   </data>
   <data name="rbtSearchFullText.Text" xml:space="preserve">
     <value>搜索全文</value>
+  </data>
+  <data name="txtSearchInput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 275</value>
+  </data>
+  <data name="txtSearchInput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 33</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lstSearchResults.ItemHeight" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="lstSearchResults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 247</value>
+  </data>
+  <data name="tabSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 36</value>
+  </data>
+  <data name="tabSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 372</value>
   </data>
   <data name="tabSearch.Text" xml:space="preserve">
     <value>搜索</value>
@@ -198,6 +238,9 @@
   </data>
   <data name="btnSaveCard.Text" xml:space="preserve">
     <value>保存</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 12pt</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>清笔记读书卡</value>

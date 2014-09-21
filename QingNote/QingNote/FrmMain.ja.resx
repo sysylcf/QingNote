@@ -144,10 +144,13 @@
     <value>130, 39</value>
   </data>
   <data name="btnCopyPath.Text" xml:space="preserve">
-    <value>フォルダー</value>
+    <value>フォルダ</value>
   </data>
   <data name="tvwCards.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 325</value>
+  </data>
+  <data name="tabIndex.Text" xml:space="preserve">
+    <value>目次</value>
   </data>
   <data name="btnNewCard.Location" type="System.Drawing.Point, System.Drawing">
     <value>72, 341</value>
@@ -164,8 +167,8 @@
   <data name="btnMamageBox.Text" xml:space="preserve">
     <value>管理</value>
   </data>
-  <data name="tabIndex.Text" xml:space="preserve">
-    <value>目次</value>
+  <data name="tabSearch.Text" xml:space="preserve">
+    <value>検索</value>
   </data>
   <data name="rbtSearchKeywordOnly.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 329</value>
@@ -188,8 +191,11 @@
   <data name="txtSearchInput.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 296</value>
   </data>
-  <data name="tabSearch.Text" xml:space="preserve">
-    <value>検索</value>
+  <data name="txtSearchInput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 27</value>
+  </data>
+  <data name="lstSearchResults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 284</value>
   </data>
   <data name="lblCardTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -201,7 +207,7 @@
     <value>130, 37</value>
   </data>
   <data name="btnOpenAttachmentFolder.Text" xml:space="preserve">
-    <value>フォルダー</value>
+    <value>フォルダ</value>
   </data>
   <data name="lblKeyWords.Text" xml:space="preserve">
     <value>キーワード：</value>

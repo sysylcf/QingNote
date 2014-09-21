@@ -165,7 +165,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 211</value>
+    <value>-3, 268</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 32</value>
@@ -176,8 +176,8 @@
   <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <data name="btnRemoveKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 126</value>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 345</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 32</value>
@@ -189,7 +189,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 293</value>
+    <value>-2, 308</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 32</value>

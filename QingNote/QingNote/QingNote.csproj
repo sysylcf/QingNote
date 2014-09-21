@@ -78,6 +78,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DialogEditBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogEditBox.Designer.cs">
+      <DependentUpon>DialogEditBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="DialogManageBoxes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IO\ZByLineFileIO.cs" />
     <Compile Include="IO\ZDictionaryFileIO.cs" />
+    <EmbeddedResource Include="DialogEditBox.resx">
+      <DependentUpon>DialogEditBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogManageBoxes.en.resx">
+      <DependentUpon>DialogManageBoxes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DialogManageBoxes.ja.resx">
       <DependentUpon>DialogManageBoxes.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,9 +207,6 @@
     <EmbeddedResource Include="DialogNewCard.en.resx">
       <DependentUpon>DialogNewCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogNewCard.ja-JP.resx">
-      <DependentUpon>DialogNewCard.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DialogNewCard.ja.resx">
       <DependentUpon>DialogNewCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +217,9 @@
       <DependentUpon>DialogNewCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.en.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.ja-JP.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.ja.resx">

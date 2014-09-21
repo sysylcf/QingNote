@@ -117,166 +117,69 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 9</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 32</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>标题：</value>
-  </data>
-  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="txtName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 10</value>
-  </data>
-  <data name="txtName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 33</value>
-  </data>
-  <data name="btnDoneUpper.Text" xml:space="preserve">
-    <value>完成</value>
-  </data>
-  <data name="txtCategory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 48</value>
-  </data>
-  <data name="txtCategory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>312, 35</value>
-  </data>
-  <data name="txtChapter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 85</value>
-  </data>
-  <data name="txtChapter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>312, 35</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 48</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 32</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>分类：</value>
-  </data>
-  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 85</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 32</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>章节：</value>
-  </data>
-  <data name="label3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lstKeywords.ItemHeight" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="lstBoxes.ItemHeight" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
-  <data name="lstKeywords.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 126</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lstBoxes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 364</value>
   </data>
-  <data name="lstKeywords.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 139</value>
+  <data name="lblBoxName.Text" xml:space="preserve">
+    <value>Name: </value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 126</value>
+  <data name="lblDateCreated.Text" xml:space="preserve">
+    <value>Date:</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 32</value>
+  <data name="btnEditBoxName.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>关键字：</value>
+  <data name="lblCreator.Text" xml:space="preserve">
+    <value>Creator:</value>
   </data>
-  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="lblBoxIndexing.Text" xml:space="preserve">
+    <value>Indexing:</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 236</value>
+  <data name="lstIndexItems.ItemHeight" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 63</value>
+  <data name="lstIndexItems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 340</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>添加  
-关键字：</value>
+  <data name="lblListCaption.Text" xml:space="preserve">
+    <value>Items:</value>
   </data>
-  <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomRight</value>
+  <data name="btnSaveBoxInfo.Text" xml:space="preserve">
+    <value>Save</value>
   </data>
-  <data name="btnAddKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>122, 267</value>
+  <data name="buttonOpenBox.Text" xml:space="preserve">
+    <value>View Box</value>
   </data>
-  <data name="btnRemoveKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 126</value>
+  <data name="btnEditDateCreated.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
-  <data name="btnRemoveKeyword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 139</value>
+  <data name="btnEditCreator.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 307</value>
+  <data name="btnChooseIndexing.Text" xml:space="preserve">
+    <value>Change</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 32</value>
+  <data name="lblDescriptionCaption.Text" xml:space="preserve">
+    <value>Box Description:</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>日期：</value>
+  <data name="btnUnlistBox.Text" xml:space="preserve">
+    <value>Unlist</value>
   </data>
-  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="btnOpenBoxFolder.Text" xml:space="preserve">
+    <value>Open Folder...</value>
   </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 32</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>作者：</value>
-  </data>
-  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="lblDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 307</value>
-  </data>
-  <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 32</value>
-  </data>
-  <data name="lblCreater.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 345</value>
-  </data>
-  <data name="lblCreater.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 32</value>
-  </data>
-  <data name="btnChangeDate.Text" xml:space="preserve">
-    <value>修改...</value>
-  </data>
-  <data name="btnChangeCreater.Text" xml:space="preserve">
-    <value>修改...</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>内容：</value>
-  </data>
-  <data name="label10.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="btnDoneLower.Text" xml:space="preserve">
-    <value>完成</value>
-  </data>
-  <data name="txtNewKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 268</value>
-  </data>
-  <data name="txtNewKeyword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 35</value>
+  <data name="btnNewBox.Text" xml:space="preserve">
+    <value>New Box</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei UI, 12pt</value>
+    <value>Arial Narrow, 12pt, style=Bold</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>清笔记 - 新建读书卡</value>
+    <value>QingNote - Manage Card Boxes</value>
   </data>
 </root>

@@ -125,10 +125,10 @@
     <value>Current Box:</value>
   </data>
   <data name="btnSwitchCardBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>499, 9</value>
+    <value>476, 9</value>
   </data>
   <data name="btnSwitchCardBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 39</value>
+    <value>163, 39</value>
   </data>
   <data name="btnSwitchCardBox.Text" xml:space="preserve">
     <value>Open/Create</value>
@@ -142,8 +142,15 @@
   <data name="btnCopyPath.Text" xml:space="preserve">
     <value>Folder...</value>
   </data>
+  <data name="tvwCards.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 326</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnNewCard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btnNewCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 341</value>
+    <value>95, 338</value>
   </data>
   <data name="btnNewCard.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 34</value>
@@ -151,26 +158,60 @@
   <data name="btnNewCard.Text" xml:space="preserve">
     <value>New...</value>
   </data>
+  <data name="btnMamageBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnMamageBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 338</value>
+  </data>
   <data name="btnMamageBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 34</value>
   </data>
   <data name="btnMamageBox.Text" xml:space="preserve">
     <value>Manage</value>
   </data>
+  <data name="tabIndex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 33</value>
+  </data>
+  <data name="tabIndex.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 375</value>
+  </data>
   <data name="tabIndex.Text" xml:space="preserve">
     <value>Index</value>
   </data>
+  <data name="rbtSearchKeywordOnly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 319</value>
+  </data>
   <data name="rbtSearchKeywordOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 24</value>
+    <value>150, 28</value>
   </data>
   <data name="rbtSearchKeywordOnly.Text" xml:space="preserve">
     <value>Keywords Only</value>
   </data>
+  <data name="rbtSearchFullText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 348</value>
+  </data>
   <data name="rbtSearchFullText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 24</value>
+    <value>97, 28</value>
   </data>
   <data name="rbtSearchFullText.Text" xml:space="preserve">
     <value>Full Text</value>
+  </data>
+  <data name="txtSearchInput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 287</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lstSearchResults.ItemHeight" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lstSearchResults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 268</value>
+  </data>
+  <data name="tabSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 33</value>
+  </data>
+  <data name="tabSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 375</value>
   </data>
   <data name="tabSearch.Text" xml:space="preserve">
     <value>Search</value>
@@ -198,6 +239,9 @@
   </data>
   <data name="btnSaveCard.Text" xml:space="preserve">
     <value>Save</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial Narrow, 12pt, style=Bold</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>QingNote - Manage Your Reading Cards</value>

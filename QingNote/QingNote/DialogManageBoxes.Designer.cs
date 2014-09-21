@@ -39,11 +39,9 @@
       this.lblListCaption = new System.Windows.Forms.Label();
       this.btnSaveBoxInfo = new System.Windows.Forms.Button();
       this.buttonOpenBox = new System.Windows.Forms.Button();
-      this.btnAddIndexItem = new System.Windows.Forms.Button();
       this.btnEditDateCreated = new System.Windows.Forms.Button();
       this.btnEditCreator = new System.Windows.Forms.Button();
       this.btnChooseIndexing = new System.Windows.Forms.Button();
-      this.btnRemoveIndexItem = new System.Windows.Forms.Button();
       this.lblDescriptionCaption = new System.Windows.Forms.Label();
       this.btnUnlistBox = new System.Windows.Forms.Button();
       this.btnOpenBoxFolder = new System.Windows.Forms.Button();
@@ -106,12 +104,6 @@
       this.buttonOpenBox.Name = "buttonOpenBox";
       this.buttonOpenBox.UseVisualStyleBackColor = true;
       // 
-      // btnAddIndexItem
-      // 
-      resources.ApplyResources(this.btnAddIndexItem, "btnAddIndexItem");
-      this.btnAddIndexItem.Name = "btnAddIndexItem";
-      this.btnAddIndexItem.UseVisualStyleBackColor = true;
-      // 
       // btnEditDateCreated
       // 
       resources.ApplyResources(this.btnEditDateCreated, "btnEditDateCreated");
@@ -129,12 +121,6 @@
       resources.ApplyResources(this.btnChooseIndexing, "btnChooseIndexing");
       this.btnChooseIndexing.Name = "btnChooseIndexing";
       this.btnChooseIndexing.UseVisualStyleBackColor = true;
-      // 
-      // btnRemoveIndexItem
-      // 
-      resources.ApplyResources(this.btnRemoveIndexItem, "btnRemoveIndexItem");
-      this.btnRemoveIndexItem.Name = "btnRemoveIndexItem";
-      this.btnRemoveIndexItem.UseVisualStyleBackColor = true;
       // 
       // lblDescriptionCaption
       // 
@@ -173,11 +159,9 @@
       this.Controls.Add(this.btnOpenBoxFolder);
       this.Controls.Add(this.btnUnlistBox);
       this.Controls.Add(this.lblDescriptionCaption);
-      this.Controls.Add(this.btnRemoveIndexItem);
       this.Controls.Add(this.btnChooseIndexing);
       this.Controls.Add(this.btnEditCreator);
       this.Controls.Add(this.btnEditDateCreated);
-      this.Controls.Add(this.btnAddIndexItem);
       this.Controls.Add(this.buttonOpenBox);
       this.Controls.Add(this.btnSaveBoxInfo);
       this.Controls.Add(this.lstIndexItems);
@@ -212,11 +196,9 @@
     private System.Windows.Forms.Label lblListCaption;
     private System.Windows.Forms.Button btnSaveBoxInfo;
     private System.Windows.Forms.Button buttonOpenBox;
-    private System.Windows.Forms.Button btnAddIndexItem;
     private System.Windows.Forms.Button btnEditDateCreated;
     private System.Windows.Forms.Button btnEditCreator;
     private System.Windows.Forms.Button btnChooseIndexing;
-    private System.Windows.Forms.Button btnRemoveIndexItem;
     private System.Windows.Forms.Label lblDescriptionCaption;
     private System.Windows.Forms.Button btnUnlistBox;
     private System.Windows.Forms.Button btnOpenBoxFolder;

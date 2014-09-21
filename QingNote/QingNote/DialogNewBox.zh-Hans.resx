@@ -163,6 +163,9 @@
   <data name="label1.Text" xml:space="preserve">
     <value>名称：</value>
   </data>
+  <data name="txtBoxName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 33</value>
+  </data>
   <data name="btnCommit.Text" xml:space="preserve">
     <value>确定，创建卡盒</value>
   </data>
@@ -178,10 +181,16 @@
   <data name="label3.Text" xml:space="preserve">
     <value>位置：</value>
   </data>
+  <data name="txtBoxPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 33</value>
+  </data>
   <data name="btnBrowse.Text" xml:space="preserve">
     <value>浏览</value>
   </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft YaHei UI, 12pt</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>创建新卡盒</value>
+    <value>清笔记 - 创建新卡盒</value>
   </data>
 </root>

@@ -39,7 +39,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     //}
 
     public string title, description, indexing, datecreated, creater;
-    private string lang;
+    public string lang;
     public List<string> chapters;
     public SortedSet<string> categories;
     public HashSet<string> keywords;
