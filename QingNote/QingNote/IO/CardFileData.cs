@@ -19,6 +19,11 @@ namespace cn.zuoanqh.open.QingNote.IO
     public HashSet<string> keywords;
     private string lang;
 
+    static CardFileData()
+    {
+      langDefaults = new Dictionary<string, Dictionary<string, string>>();
+    }
+
     public static CardFileData readFile(FileReadingOverseer overseer, string absolutePath)
     {
       string cfname = QNoteIO.Delegated_GetApplicableFileWithFeedback(overseer, absolutePath);

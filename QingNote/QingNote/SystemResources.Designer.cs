@@ -61,7 +61,7 @@ namespace cn.zuoanqh.open.QingNote {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .qnote.txt.
+        ///   Looks up a localized string similar to qnote.txt.
         /// </summary>
         internal static string FilePostfix {
             get {

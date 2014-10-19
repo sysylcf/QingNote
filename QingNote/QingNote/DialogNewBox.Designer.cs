@@ -45,7 +45,6 @@
       // 
       resources.ApplyResources(this.rbtByCategory, "rbtByCategory");
       this.rbtByCategory.Name = "rbtByCategory";
-      this.rbtByCategory.TabStop = true;
       this.rbtByCategory.UseVisualStyleBackColor = true;
       // 
       // rbtByChapter
@@ -59,6 +58,7 @@
       // rbtByTime
       // 
       resources.ApplyResources(this.rbtByTime, "rbtByTime");
+      this.rbtByTime.Checked = true;
       this.rbtByTime.Image = global::cn.zuoanqh.open.QingNote.IconScheme.By_Time;
       this.rbtByTime.Name = "rbtByTime";
       this.rbtByTime.TabStop = true;
@@ -76,10 +76,11 @@
       // 
       // btnCommit
       // 
-      resources.ApplyResources(this.btnCommit, "btnCommit");
       this.btnCommit.DialogResult = System.Windows.Forms.DialogResult.OK;
+      resources.ApplyResources(this.btnCommit, "btnCommit");
       this.btnCommit.Name = "btnCommit";
       this.btnCommit.UseVisualStyleBackColor = true;
+      this.btnCommit.Click += new System.EventHandler(this.btnCommit_Click);
       // 
       // label2
       // 
@@ -101,11 +102,12 @@
       resources.ApplyResources(this.btnBrowse, "btnBrowse");
       this.btnBrowse.Name = "btnBrowse";
       this.btnBrowse.UseVisualStyleBackColor = true;
+      this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
       // 
       // DialogNewBox
       // 
-      resources.ApplyResources(this, "$this");
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+      resources.ApplyResources(this, "$this");
       this.Controls.Add(this.btnBrowse);
       this.Controls.Add(this.txtBoxPath);
       this.Controls.Add(this.label3);
@@ -122,7 +124,6 @@
       this.Name = "DialogNewBox";
       this.ShowIcon = false;
       this.ShowInTaskbar = false;
-      this.TopMost = true;
       this.ResumeLayout(false);
       this.PerformLayout();
 

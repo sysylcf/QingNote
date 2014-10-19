@@ -148,7 +148,7 @@
   <data name="rbtByCategory.Text" xml:space="preserve">
     <value>
 【百科事典】
-カードの分類によるフォルダでそれを保存する。</value>
+カードの分類によるフォルダでカードを保存する。</value>
   </data>
   <data name="rbtByCategory.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>

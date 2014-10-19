@@ -41,6 +41,7 @@ namespace cn.zuoanqh.open.QingNote
         cBox = CardBoxFileData.readFile(new FileReadingAdapter(), currentPath);
         string boxpath = Path.Combine(currentPath, cBox.title);
         cTree = new CardBoxTree(boxpath);
+        cTree.loadFromDirectory();
       }
     }
     private string cardPath;
@@ -75,7 +76,12 @@ namespace cn.zuoanqh.open.QingNote
 
     private void btnNewCard_Click(object sender, EventArgs e)
     {
-      new DialogNewCard(cBox).ShowDialog();
+      if (cCard!=null) new DialogNewCard(cBox).ShowDialog();
+    }
+
+    private void btnSwitchCardBox_Click(object sender, EventArgs e)
+    {
+      new DialogManageBoxes().ShowDialog();
     }
 
 

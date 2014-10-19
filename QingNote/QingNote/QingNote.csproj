@@ -59,8 +59,12 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ookii.Dialogs">
+      <HintPath>..\..\..\..\..\..\..\DLL Libraries\Ookii.Dialogs\Ookii.Dialogs.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -113,7 +117,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>IconScheme.resx</DependentUpon>
     </Compile>
-    <Compile Include="IO\CardBoxTree.cs" />
+    <Compile Include="Controller\CardBoxTree.cs" />
     <Compile Include="IO\FileReadingAdapter.cs" />
     <Compile Include="IO\Instruction.cs" />
     <Compile Include="IO\CardBoxFileData.cs" />
@@ -226,9 +230,6 @@
       <DependentUpon>DialogNewCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.en.resx">
-      <DependentUpon>FrmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMain.ja-JP.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.ja.resx">

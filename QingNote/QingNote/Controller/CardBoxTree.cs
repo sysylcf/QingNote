@@ -13,16 +13,34 @@ namespace cn.zuoanqh.open.QingNote.IO
   {
     public List<Pair<string, List<string>>> tree;
     public Dictionary<string, CardFileData> loadedCards;//key=absolutepath
-    public readonly string directory;
+    public CardBoxFileData boxData;
+    public readonly string BoxFolderDirectory;
+    public readonly string mainDirectory;
+
+    /// <summary>
+    /// Creates an empty controller.
+    /// </summary>
+    public CardBoxTree()
+    {
+      tree = new List<Pair<string, List<string>>>();
+      loadedCards = new Dictionary<string, CardFileData>();
+    }
+
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="BoxDirectory">This should be the directory that contains the folders used to index files</param>
+    /// <param name="BoxDirectory">This should be the directory that contains the box file.</param>
     public CardBoxTree(string BoxDirectory)
+      : this()
     {
-      this.directory = BoxDirectory;
-      tree = new List<Pair<string, List<string>>>();
-      string[] subFull = Directory.GetDirectories(this.directory).OrderBy(s => s).ToArray();//ensure things are in whatever orders
+      this.mainDirectory = BoxDirectory;
+    }
+    /// <summary>
+    /// Load card folder names into tree. Use when there's already files in it.
+    /// </summary>
+    public void loadFromDirectory()
+    {
+      string[] subFull = Directory.GetDirectories(this.BoxFolderDirectory).OrderBy(s => s).ToArray();//ensure things are in whatever orders
       string[] subNames = subFull.Select(s => QNoteIO.getPathLast(s)).ToArray();
       for (int i = 0; i < subNames.Length; i++)
       {
@@ -30,21 +48,19 @@ namespace cn.zuoanqh.open.QingNote.IO
         string sf = subFull[i];
         tree.Add(new Pair<string, List<string>>(sn, Directory.GetDirectories(sf).Select(s => QNoteIO.getPathLast(s)).ToList()));
       }
-
     }
+    
+    public void mkBoxFile(string title, string indexing, string dateCreated, string creater){}
+
     public void loadCard(string parent, string name)
     {
-      string path = Path.Combine(directory, parent, name);
+      string path = Path.Combine(BoxFolderDirectory, parent, name);
       if (!loadedCards.ContainsKey(path))
       {
         CardFileData card = CardFileData.readFile(new FileReadingAdapter(), path);
         if (card != null) loadedCards.Add(path, card);
       }
     }
-
-
-
-
 
   }
 }

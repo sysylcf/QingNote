@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="FilePostfix" xml:space="preserve">
-    <value>.qnote.txt</value>
+    <value>qnote.txt</value>
   </data>
   <data name="ResLang" xml:space="preserve">
     <value>en ja zh-Hans</value>

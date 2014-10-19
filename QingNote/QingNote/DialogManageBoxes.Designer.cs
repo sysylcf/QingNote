@@ -54,6 +54,7 @@
       resources.ApplyResources(this.lstBoxes, "lstBoxes");
       this.lstBoxes.FormattingEnabled = true;
       this.lstBoxes.Name = "lstBoxes";
+      this.lstBoxes.SelectedIndexChanged += new System.EventHandler(this.lstBoxes_SelectedIndexChanged);
       // 
       // lblBoxName
       // 
@@ -144,6 +145,7 @@
       resources.ApplyResources(this.btnNewBox, "btnNewBox");
       this.btnNewBox.Name = "btnNewBox";
       this.btnNewBox.UseVisualStyleBackColor = true;
+      this.btnNewBox.Click += new System.EventHandler(this.btnNewBox_Click);
       // 
       // txtBoxDescription
       // 
@@ -178,7 +180,6 @@
       this.Name = "DialogManageBoxes";
       this.ShowIcon = false;
       this.ShowInTaskbar = false;
-      this.TopMost = true;
       this.ResumeLayout(false);
       this.PerformLayout();
 

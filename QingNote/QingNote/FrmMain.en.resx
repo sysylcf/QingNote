@@ -216,6 +216,9 @@
   <data name="tabSearch.Text" xml:space="preserve">
     <value>Search</value>
   </data>
+  <data name="lblCardTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="txtCardContent.Size" type="System.Drawing.Size, System.Drawing">
     <value>407, 265</value>
   </data>

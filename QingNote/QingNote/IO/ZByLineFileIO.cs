@@ -26,9 +26,15 @@ namespace cn.zuoanqh.open.QingNote
     }
     public static List<string> readFile(string fileName)
     {
-      return readFile(Directory.GetCurrentDirectory(), fileName);
+      return readFile(Directory.GetCurrentDirectory(), fileName,false,false);
     }
-    public static List<string> readFile(string absolutePath, string fileName)
+
+    public static List<string> readFileNoWhitespace(string fileName)
+    {
+      return readFile(Directory.GetCurrentDirectory(), fileName,true, true);
+    }
+
+    public static List<string> readFile(string absolutePath, string fileName, bool ignoreSpace, bool ignoreEmptyLine)
     {
       List<string> lines = new List<string>();
       string fpath = Path.Combine(absolutePath, fileName);

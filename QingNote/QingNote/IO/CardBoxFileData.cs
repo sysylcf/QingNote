@@ -38,7 +38,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     //  return null;
     //}
 
-    public string title, description, indexing, datecreated, creater;
+    public string title, description, indexing, datecreated, creator;
     public string lang;
     public List<string> chapters;
     public SortedSet<string> categories;
@@ -88,7 +88,7 @@ namespace cn.zuoanqh.open.QingNote.IO
         else if (att == Localization.FileKeywords.CardBox_Description)
         { cbd.description = val; }
         else if (att == Localization.FileKeywords.CardBox_Creater)
-        { cbd.creater = val; }
+        { cbd.creator = val; }
         else if (att == Localization.FileKeywords.CardBox_DateCreated)
         { cbd.datecreated = val; }
         else if (att == Localization.FileKeywords.CardBox_Index)
@@ -147,9 +147,15 @@ namespace cn.zuoanqh.open.QingNote.IO
     }
 
 
-    public CardBoxFileData() { }
+    public CardBoxFileData()
+    {
+      this.chapters = new List<string>();
+      this.categories = new SortedSet<string>();
+      this.keywords = new HashSet<string>();
+    }
 
     public CardBoxFileData(string title, string description)
+      : this()
     {
       this.title = title;
       this.description = description;
@@ -157,7 +163,7 @@ namespace cn.zuoanqh.open.QingNote.IO
 
     public void writeFile(string absolutePath)
     {
-      writeFile(absolutePath, new CultureInfo(this.lang));
+      writeFile(absolutePath, (this.lang == null) ? (Thread.CurrentThread.CurrentCulture) : (new CultureInfo(this.lang)));
     }
 
     public void writeFile(string absolutePath, CultureInfo lang)
@@ -169,7 +175,7 @@ namespace cn.zuoanqh.open.QingNote.IO
 
       List<KeyValuePair<string, string>> odata = new List<KeyValuePair<string, string>>();
       odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_Title, title));
-      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_Creater, creater));
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_Creater, creator));
       odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_DateCreated, datecreated));
       odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_Index, indexing));
       string schapters = "";

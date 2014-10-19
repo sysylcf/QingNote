@@ -18,7 +18,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     public static string getFileLang(string fileName)
     {
       if (!fileName.EndsWith(SystemResources.FilePostfix)) return null;
-      string s = zusp.Left(fileName, fileName.Length - SystemResources.FilePostfix.Length);
+      string s = zusp.Left(fileName, fileName.Length - (SystemResources.FilePostfix.Length+1));
       if (s.LastIndexOf(".") < 0) return null;
       s = zusp.ChopTail(s, ".").Second;
       return s;
@@ -32,12 +32,12 @@ namespace cn.zuoanqh.open.QingNote.IO
     public static string formatNow()
     {
       DateTime n = DateTime.Now;
-      return string.Format(Localization.Settings.Format_YMD, n.Year, n.Month, n.Date);
+      return string.Format(Localization.Settings.Format_YMD, n.Year, n.Month, n.Day);
     }
 
     public static Boolean isSupportedLanguage(string fileLang)
     {
-      return resLang.langs.Contains(fileLang);
+      return resLang.langs.Exists((s)=>s.Equals(fileLang)||fileLang.StartsWith(s));
     }
 
     public static List<string> GetQNoteFiles(string absolutePath)
