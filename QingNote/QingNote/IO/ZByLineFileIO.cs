@@ -24,20 +24,30 @@ namespace cn.zuoanqh.open.QingNote
         }
       }
     }
+
     public static List<string> readFileVerbatim(string fileName)
     {
-      return readFile(Directory.GetCurrentDirectory(), fileName, false, false);
+      return readFileVerbatim(fileName, Directory.GetCurrentDirectory());
+    }
+
+    public static List<string> readFileVerbatim(string fileName, string absolutePath)
+    {
+      return readFile(fileName, absolutePath, false, false);
     }
 
     public static List<string> readFileNoWhitespace(string fileName)
     {
-      return readFile(Directory.GetCurrentDirectory(), fileName, true, true);
+      return readFileNoWhitespace(fileName, Directory.GetCurrentDirectory());
+    }
+    public static List<string> readFileNoWhitespace(string fileName, string absolutePath)
+    {
+      return readFile(fileName, absolutePath, true, true);
     }
 
-    public static List<string> readFile(string absolutePath, string fileName, bool ignoreSpace, bool ignoreEmptyLine)
+    public static List<string> readFile(string fileName, string absolutePath, bool ignoreSpace, bool ignoreEmptyLine)
     {
       List<string> lines = new List<string>();
-      string fpath = Path.Combine(absolutePath, fileName);
+      string fpath = (fileName.StartsWith(absolutePath)) ? fileName : Path.Combine(absolutePath, fileName);
       using (StreamReader reader = new StreamReader(fpath, Encoding.UTF8))
       {
         while (true)

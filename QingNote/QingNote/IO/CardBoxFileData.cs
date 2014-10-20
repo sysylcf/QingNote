@@ -67,23 +67,13 @@ namespace cn.zuoanqh.open.QingNote.IO
       }
       //now the file should have all nesscairy properties.
 
-
       CardBoxFileData cbd = new CardBoxFileData();
       cbd.lang = flang;
-      int l = 0;//line number
-      while (true)
+      foreach (var entry in fdata)
       {
-        if (l >= fdata.Count) break;
+        string att = entry.Key;
+        string val = entry.Value;
 
-        string att = fdata[l].Key;
-        string val = fdata[l].Value;
-
-        while (l + 1 < fdata.Count && fdata[l + 1].Key.Trim().Length == 0)
-        {
-          l++;
-          //if (fdata[l].Value.Trim().Length > 0) 
-          val += "\r\n" + fdata[l].Value;
-        }
         if (att == Localization.FileKeywords.CardBox_Title)
         { cbd.title = val; }
         else if (att == Localization.FileKeywords.CardBox_Description)
@@ -106,8 +96,6 @@ namespace cn.zuoanqh.open.QingNote.IO
           cbd.keywords = new HashSet<string>();
           cbd.keywords.UnionWith(zusp.Split(val, Localization.Settings.Symbol_NameContent_Seperator).ToList());
         }
-
-        l++;
       }
 
       if (!isValidIndex(cbd.indexing))

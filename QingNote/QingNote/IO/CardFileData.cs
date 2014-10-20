@@ -48,18 +48,11 @@ namespace cn.zuoanqh.open.QingNote.IO
 
       CardFileData cfd = new CardFileData();
       cfd.lang = flang;
-      int l = 0;
-      while (true)
+      foreach (var entry in fdata)
       {
-        if (l >= fdata.Count) break;
+        string att = entry.Key;
+        string val = entry.Value;
 
-        string att = fdata[l].Key;
-        string val = fdata[l].Value;
-        while (l + 1 < fdata.Count && fdata[l + 1].Key.Trim().Length == 0)
-        {
-          l++;
-          if (fdata[l + 1].Value.Trim().Length > 0) val += "\n" + fdata[l + 1].Value;
-        }
         if (att == Localization.FileKeywords.Card_Name)
         { cfd.name = val; }
         else if (att == Localization.FileKeywords.Card_Text)
@@ -77,8 +70,6 @@ namespace cn.zuoanqh.open.QingNote.IO
           cfd.keywords = new HashSet<string>();
           cfd.keywords.UnionWith(zusp.Split(val, Localization.Settings.Symbol_NameContent_Seperator).ToList());
         }
-
-        l++;
       }
 
       Thread.CurrentThread.CurrentCulture = stack;

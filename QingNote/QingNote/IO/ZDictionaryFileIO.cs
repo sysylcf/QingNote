@@ -40,20 +40,23 @@ namespace cn.zuoanqh.open.QingNote
     public static List<KeyValuePair<string, string>> readFile(string separator, string absolutePath, string fileName)
     {
       List<KeyValuePair<string, string>> data = new List<KeyValuePair<string, string>>();
-
-      string fpath = (fileName.StartsWith(absolutePath)) ? fileName : Path.Combine(absolutePath, fileName);
-      using (StreamReader reader = new StreamReader(fpath, Encoding.UTF8))
+      List<string> lines = ZByLineFileIO.readFileVerbatim(fileName, absolutePath);
+      int l = 0;//line number
+      while (true)
       {
-        while (true)
+        if (l >= lines.Count) break;
+        string s = lines[l];
+        int ind = s.IndexOf(separator);
+
+        string tails = "";
+        while (l + 1 < lines.Count && lines[l + 1].IndexOf(separator) < 0)
         {
-          if (reader.Peek() == -1) break;
-          string s = reader.ReadLine();
-          int ind = s.IndexOf(separator);
-          if (ind < 0)
-            data.Add(new KeyValuePair<string, string>("", s));
-          else
-            data.Add(new KeyValuePair<string, string>(s.Substring(0, ind), s.Substring(ind + separator.Length)));
+          l++;
+          tails += "\r\n" + lines[l];
         }
+
+        data.Add(new KeyValuePair<string, string>(s.Substring(0, ind), s.Substring(ind + separator.Length) + tails));
+        l++;
       }
       return data;
     }
