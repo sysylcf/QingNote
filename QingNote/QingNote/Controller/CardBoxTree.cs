@@ -41,12 +41,12 @@ namespace cn.zuoanqh.open.QingNote.IO
     public void loadFromDirectory()
     {
       string[] subFull = Directory.GetDirectories(this.BoxFolderDirectory).OrderBy(s => s).ToArray();//ensure things are in whatever orders
-      string[] subNames = subFull.Select(s => QNoteIO.getPathLast(s)).ToArray();
+      string[] subNames = subFull.Select(s => IOUtil.getPathLast(s)).ToArray();
       for (int i = 0; i < subNames.Length; i++)
       {
         string sn = subNames[i];
         string sf = subFull[i];
-        tree.Add(new Pair<string, List<string>>(sn, Directory.GetDirectories(sf).Select(s => QNoteIO.getPathLast(s)).ToList()));
+        tree.Add(new Pair<string, List<string>>(sn, Directory.GetDirectories(sf).Select(s => IOUtil.getPathLast(s)).ToList()));
       }
     }
     

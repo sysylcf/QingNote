@@ -26,16 +26,16 @@ namespace cn.zuoanqh.open.QingNote.IO
 
     public static CardFileData readFile(FileReadingOverseer overseer, string absolutePath)
     {
-      string cfname = QNoteIO.Delegated_GetApplicableFileWithFeedback(overseer, absolutePath);
+      string cfname = IOUtil.Delegated_GetApplicableFileWithFeedback(overseer, absolutePath);
       if (cfname == null) return null;
-      string flang = QNoteIO.getFileLang(cfname);
+      string flang = IOUtil.getFileLang(cfname);
 
       CultureInfo stack = Thread.CurrentThread.CurrentCulture;
       Thread.CurrentThread.CurrentCulture = new CultureInfo(flang);
 
       List<KeyValuePair<string, string>> fdata = ZDictionaryFileIO.readFile(Localization.Settings.Symbol_NameContent_Seperator, absolutePath, cfname);
 
-      HashSet<string> missingfields = QNoteIO.CheckFDataHaveAllDefaults(fdata, getDefaults(flang));
+      HashSet<string> missingfields = IOUtil.CheckFDataHaveAllDefaults(fdata, getDefaults(flang));
 
       if (missingfields.Count > 0)
       {
@@ -141,7 +141,7 @@ namespace cn.zuoanqh.open.QingNote.IO
 
       //first deal with file's date, if the file is newly created. Else leave it to default handling
       if (dateCreated.Trim() == "" && !File.Exists(Path.Combine(absolutePath, fname)))
-        dateCreated = QNoteIO.formatNow();
+        dateCreated = IOUtil.formatNow();
 
       //ensures there's a default for this language
       getDefaults(lang.Name);

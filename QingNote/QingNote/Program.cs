@@ -17,7 +17,7 @@ namespace cn.zuoanqh.open.QingNote
     {
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new FrmMain());
+      Application.Run(new View.FrmMain());
     }
   }
 }

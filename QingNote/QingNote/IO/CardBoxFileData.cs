@@ -38,7 +38,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     //  return null;
     //}
 
-    public string title, description, indexing, datecreated, creator;
+    public string title, description, indexing, dateCreated, creator;
     public string lang;
     public List<string> chapters;
     public SortedSet<string> categories;
@@ -46,8 +46,8 @@ namespace cn.zuoanqh.open.QingNote.IO
 
     public static CardBoxFileData readFile(FileReadingOverseer overseer, string absolutePath)
     {
-      string bfname = QNoteIO.Delegated_GetApplicableFileWithFeedback(overseer, absolutePath);
-      string flang = QNoteIO.getFileLang(bfname);
+      string bfname = IOUtil.Delegated_GetApplicableFileWithFeedback(overseer, absolutePath);
+      string flang = IOUtil.getFileLang(bfname);
 
       CultureInfo stack = Thread.CurrentThread.CurrentCulture;
       Thread.CurrentThread.CurrentCulture = new CultureInfo(flang);
@@ -55,7 +55,7 @@ namespace cn.zuoanqh.open.QingNote.IO
       List<KeyValuePair<string, string>> fdata = ZDictionaryFileIO.readFile(Localization.Settings.Symbol_NameContent_Seperator, absolutePath, bfname);
 
       //construct a set of file attributes that we want to ensure they are there and cross them off so its linear time to number of lines
-      HashSet<string> missingfields = QNoteIO.CheckFDataHaveAllDefaults(fdata, getDefaults(flang));
+      HashSet<string> missingfields = IOUtil.CheckFDataHaveAllDefaults(fdata, getDefaults(flang));
 
       if (missingfields.Count > 0)
       {
@@ -81,7 +81,8 @@ namespace cn.zuoanqh.open.QingNote.IO
         while (l + 1 < fdata.Count && fdata[l + 1].Key.Trim().Length == 0)
         {
           l++;
-          if (fdata[l + 1].Value.Trim().Length > 0) val += "\n" + fdata[l + 1].Value;
+          //if (fdata[l].Value.Trim().Length > 0) 
+          val += "\r\n" + fdata[l].Value;
         }
         if (att == Localization.FileKeywords.CardBox_Title)
         { cbd.title = val; }
@@ -90,7 +91,7 @@ namespace cn.zuoanqh.open.QingNote.IO
         else if (att == Localization.FileKeywords.CardBox_Creater)
         { cbd.creator = val; }
         else if (att == Localization.FileKeywords.CardBox_DateCreated)
-        { cbd.datecreated = val; }
+        { cbd.dateCreated = val; }
         else if (att == Localization.FileKeywords.CardBox_Index)
         { cbd.indexing = val; }
         else if (att == Localization.FileKeywords.CardBox_CategoryNames)
@@ -176,7 +177,7 @@ namespace cn.zuoanqh.open.QingNote.IO
       List<KeyValuePair<string, string>> odata = new List<KeyValuePair<string, string>>();
       odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_Title, title));
       odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_Creater, creator));
-      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_DateCreated, datecreated));
+      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_DateCreated, dateCreated));
       odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_Index, indexing));
       string schapters = "";
       for (int i = 0; i < chapters.Count; i++) schapters += chapters[i] + sep;
@@ -190,8 +191,8 @@ namespace cn.zuoanqh.open.QingNote.IO
       odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.CardBox_Description, description));
 
       //first deal with file's date, if the file is newly created. Else leave it to default handling
-      if (datecreated.Trim() == "" && !File.Exists(Path.Combine(absolutePath, fname)))
-        datecreated = QNoteIO.formatNow();
+      if (dateCreated.Trim() == "" && !File.Exists(Path.Combine(absolutePath, fname)))
+        dateCreated = IOUtil.formatNow();
 
       //ensures there's a default for this language
       getDefaults(lang.Name);

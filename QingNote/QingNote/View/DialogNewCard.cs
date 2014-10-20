@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using cn.zuoanqh.open.QingNote.IO;
 
-namespace cn.zuoanqh.open.QingNote
+namespace cn.zuoanqh.open.QingNote.View
 {
   public partial class DialogNewCard : Form
   {

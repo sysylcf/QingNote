@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace cn.zuoanqh.open.QingNote.IO
 {
-  class QNoteIO
+  class IOUtil
   {
     public static IEnumerable<string> ResourceLang = resLang;
 
@@ -47,6 +47,7 @@ namespace cn.zuoanqh.open.QingNote.IO
        Select(s => s).ToList();
       return qnotefiles;
     }
+
     /// <summary>
     /// 
     /// </summary>
@@ -94,6 +95,7 @@ namespace cn.zuoanqh.open.QingNote.IO
       else if (vlangfiles.Count == 1) fname = vlangfiles[0];
       return fname;
     }
+
     public static HashSet<string> CheckFDataHaveAllDefaults(List<KeyValuePair<string, string>> fdata, Dictionary<string, string> defaults)
     {
       //construct a set of file attributes that we want to ensure they are there and cross them off so its linear time to number of lines

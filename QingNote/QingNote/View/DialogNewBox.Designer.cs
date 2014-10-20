@@ -1,4 +1,4 @@
-﻿namespace cn.zuoanqh.open.QingNote
+﻿namespace cn.zuoanqh.open.QingNote.View
 {
   partial class DialogNewBox
   {

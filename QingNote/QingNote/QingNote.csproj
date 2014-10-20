@@ -124,7 +124,7 @@
     <Compile Include="IO\CardFileData.cs" />
     <Compile Include="IO\DirectoriesFileData.cs" />
     <Compile Include="IO\FileReadingOverseer.cs" />
-    <Compile Include="IO\QNoteIO.cs" />
+    <Compile Include="IO\IOUtil.cs" />
     <Compile Include="IO\SettingsFileData.cs" />
     <Compile Include="Localization\FileKeywords.Designer.cs">
       <DependentUpon>FileKeywords.resx</DependentUpon>
@@ -190,8 +190,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IO\ZByLineFileIO.cs" />
     <Compile Include="IO\ZDictionaryFileIO.cs" />
+    <Compile Include="View\ViewUtil.cs" />
     <EmbeddedResource Include="View\DialogEditBox.resx">
       <DependentUpon>DialogEditBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="View\DialogManageBoxes.en.resx">
       <DependentUpon>DialogManageBoxes.cs</DependentUpon>
@@ -244,6 +246,7 @@
     <EmbeddedResource Include="IconScheme.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>IconScheme.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization\FileKeywords.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -253,6 +256,7 @@
     <EmbeddedResource Include="Localization\Messages.ja.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Messages.ja.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Localization\Messages.en.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -50,7 +50,7 @@ namespace cn.zuoanqh.open.QingNote
           string s = reader.ReadLine();
           int ind = s.IndexOf(separator);
           if (ind < 0)
-            data.Add(new KeyValuePair<string, string>("", reader.ReadLine()));
+            data.Add(new KeyValuePair<string, string>("", s));
           else
             data.Add(new KeyValuePair<string, string>(s.Substring(0, ind), s.Substring(ind + separator.Length)));
         }

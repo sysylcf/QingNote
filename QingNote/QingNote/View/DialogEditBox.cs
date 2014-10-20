@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace cn.zuoanqh.open.QingNote
+namespace cn.zuoanqh.open.QingNote.View
 {
   public partial class DialogEditBox : Form
   {

@@ -1,4 +1,4 @@
-﻿namespace cn.zuoanqh.open.QingNote
+﻿namespace cn.zuoanqh.open.QingNote.View
 {
   partial class DialogManageBoxes
   {
@@ -51,8 +51,8 @@
       // 
       // lstBoxes
       // 
-      this.lstBoxes.FormattingEnabled = true;
       resources.ApplyResources(this.lstBoxes, "lstBoxes");
+      this.lstBoxes.FormattingEnabled = true;
       this.lstBoxes.Name = "lstBoxes";
       this.lstBoxes.SelectedIndexChanged += new System.EventHandler(this.lstBoxes_SelectedIndexChanged);
       // 
@@ -78,8 +78,8 @@
       // 
       // lstIndexItems
       // 
-      this.lstIndexItems.FormattingEnabled = true;
       resources.ApplyResources(this.lstIndexItems, "lstIndexItems");
+      this.lstIndexItems.FormattingEnabled = true;
       this.lstIndexItems.Name = "lstIndexItems";
       // 
       // lblListCaption
@@ -92,6 +92,7 @@
       resources.ApplyResources(this.btnSaveBoxInfo, "btnSaveBoxInfo");
       this.btnSaveBoxInfo.Name = "btnSaveBoxInfo";
       this.btnSaveBoxInfo.UseVisualStyleBackColor = true;
+      this.btnSaveBoxInfo.Click += new System.EventHandler(this.btnSaveBoxInfo_Click);
       // 
       // btnViewBoxContents
       // 
@@ -104,12 +105,14 @@
       resources.ApplyResources(this.btnEditDateCreated, "btnEditDateCreated");
       this.btnEditDateCreated.Name = "btnEditDateCreated";
       this.btnEditDateCreated.UseVisualStyleBackColor = true;
+      this.btnEditDateCreated.Click += new System.EventHandler(this.btnEditDateCreated_Click);
       // 
       // btnEditCreator
       // 
       resources.ApplyResources(this.btnEditCreator, "btnEditCreator");
       this.btnEditCreator.Name = "btnEditCreator";
       this.btnEditCreator.UseVisualStyleBackColor = true;
+      this.btnEditCreator.Click += new System.EventHandler(this.btnEditCreator_Click);
       // 
       // btnChooseIndexing
       // 
@@ -127,12 +130,14 @@
       resources.ApplyResources(this.btnUnlistBox, "btnUnlistBox");
       this.btnUnlistBox.Name = "btnUnlistBox";
       this.btnUnlistBox.UseVisualStyleBackColor = true;
+      this.btnUnlistBox.Click += new System.EventHandler(this.btnUnlistBox_Click);
       // 
       // btnOpenBoxFolder
       // 
       resources.ApplyResources(this.btnOpenBoxFolder, "btnOpenBoxFolder");
       this.btnOpenBoxFolder.Name = "btnOpenBoxFolder";
       this.btnOpenBoxFolder.UseVisualStyleBackColor = true;
+      this.btnOpenBoxFolder.Click += new System.EventHandler(this.btnOpenBoxFolder_Click);
       // 
       // btnNewBox
       // 
@@ -155,8 +160,8 @@
       // 
       // DialogManageBoxes
       // 
-      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
       resources.ApplyResources(this, "$this");
+      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
       this.Controls.Add(this.txtBoxDescription);
       this.Controls.Add(this.btnNewBox);
       this.Controls.Add(this.btnOpenBoxFolder);

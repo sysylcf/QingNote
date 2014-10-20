@@ -24,14 +24,14 @@ namespace cn.zuoanqh.open.QingNote
         }
       }
     }
-    public static List<string> readFile(string fileName)
+    public static List<string> readFileVerbatim(string fileName)
     {
-      return readFile(Directory.GetCurrentDirectory(), fileName,false,false);
+      return readFile(Directory.GetCurrentDirectory(), fileName, false, false);
     }
 
     public static List<string> readFileNoWhitespace(string fileName)
     {
-      return readFile(Directory.GetCurrentDirectory(), fileName,true, true);
+      return readFile(Directory.GetCurrentDirectory(), fileName, true, true);
     }
 
     public static List<string> readFile(string absolutePath, string fileName, bool ignoreSpace, bool ignoreEmptyLine)
@@ -43,7 +43,10 @@ namespace cn.zuoanqh.open.QingNote
         while (true)
         {
           if (reader.Peek() == -1) break;
-          lines.Add(reader.ReadLine());
+          string line = reader.ReadLine();
+          if (ignoreSpace) line = line.Trim();
+          if (ignoreEmptyLine && line.Length == 0) continue;
+          lines.Add(line);
         }
       }
       return lines;

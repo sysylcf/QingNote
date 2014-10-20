@@ -11,7 +11,7 @@ using cn.zuoanqh.open.QingNote.IO;
 using System.IO;
 using Ookii.Dialogs;
 
-namespace cn.zuoanqh.open.QingNote
+namespace cn.zuoanqh.open.QingNote.View
 {
   public partial class DialogNewBox : Form
   {
@@ -31,7 +31,7 @@ namespace cn.zuoanqh.open.QingNote
       else
         boxData.indexing = Localization.FileKeywords.CardBox_Index_Chronological;
 
-      boxData.datecreated = QNoteIO.formatNow();
+      boxData.dateCreated = IOUtil.formatNow();
       boxData.creator = SettingsFileData.getSettingItem(Localization.FileKeywords.Settings_UsersName);
 
       boxData.writeFile(txtBoxPath.Text);

@@ -13,7 +13,7 @@ using cn.zuoanqh.open.zut;
 using cn.zuoanqh.open.ZDialog;
 using System.IO;
 
-namespace cn.zuoanqh.open.QingNote
+namespace cn.zuoanqh.open.QingNote.View
 {
   public partial class FrmMain : Form
   {
