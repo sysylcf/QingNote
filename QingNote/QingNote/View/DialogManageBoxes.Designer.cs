@@ -30,15 +30,14 @@
     {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogManageBoxes));
       this.lstBoxes = new System.Windows.Forms.ListBox();
-      this.lblBoxName = new System.Windows.Forms.Label();
+      this.lblBoxDirectory = new System.Windows.Forms.Label();
       this.lblDateCreated = new System.Windows.Forms.Label();
-      this.btnEditBoxName = new System.Windows.Forms.Button();
       this.lblCreator = new System.Windows.Forms.Label();
       this.lblBoxIndexing = new System.Windows.Forms.Label();
       this.lstIndexItems = new System.Windows.Forms.ListBox();
       this.lblListCaption = new System.Windows.Forms.Label();
       this.btnSaveBoxInfo = new System.Windows.Forms.Button();
-      this.buttonOpenBox = new System.Windows.Forms.Button();
+      this.btnViewBoxContents = new System.Windows.Forms.Button();
       this.btnEditDateCreated = new System.Windows.Forms.Button();
       this.btnEditCreator = new System.Windows.Forms.Button();
       this.btnChooseIndexing = new System.Windows.Forms.Button();
@@ -47,30 +46,25 @@
       this.btnOpenBoxFolder = new System.Windows.Forms.Button();
       this.btnNewBox = new System.Windows.Forms.Button();
       this.txtBoxDescription = new System.Windows.Forms.TextBox();
+      this.btnEditBoxName = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
       // lstBoxes
       // 
-      resources.ApplyResources(this.lstBoxes, "lstBoxes");
       this.lstBoxes.FormattingEnabled = true;
+      resources.ApplyResources(this.lstBoxes, "lstBoxes");
       this.lstBoxes.Name = "lstBoxes";
       this.lstBoxes.SelectedIndexChanged += new System.EventHandler(this.lstBoxes_SelectedIndexChanged);
       // 
-      // lblBoxName
+      // lblBoxDirectory
       // 
-      resources.ApplyResources(this.lblBoxName, "lblBoxName");
-      this.lblBoxName.Name = "lblBoxName";
+      resources.ApplyResources(this.lblBoxDirectory, "lblBoxDirectory");
+      this.lblBoxDirectory.Name = "lblBoxDirectory";
       // 
       // lblDateCreated
       // 
       resources.ApplyResources(this.lblDateCreated, "lblDateCreated");
       this.lblDateCreated.Name = "lblDateCreated";
-      // 
-      // btnEditBoxName
-      // 
-      resources.ApplyResources(this.btnEditBoxName, "btnEditBoxName");
-      this.btnEditBoxName.Name = "btnEditBoxName";
-      this.btnEditBoxName.UseVisualStyleBackColor = true;
       // 
       // lblCreator
       // 
@@ -84,8 +78,8 @@
       // 
       // lstIndexItems
       // 
-      resources.ApplyResources(this.lstIndexItems, "lstIndexItems");
       this.lstIndexItems.FormattingEnabled = true;
+      resources.ApplyResources(this.lstIndexItems, "lstIndexItems");
       this.lstIndexItems.Name = "lstIndexItems";
       // 
       // lblListCaption
@@ -99,11 +93,11 @@
       this.btnSaveBoxInfo.Name = "btnSaveBoxInfo";
       this.btnSaveBoxInfo.UseVisualStyleBackColor = true;
       // 
-      // buttonOpenBox
+      // btnViewBoxContents
       // 
-      resources.ApplyResources(this.buttonOpenBox, "buttonOpenBox");
-      this.buttonOpenBox.Name = "buttonOpenBox";
-      this.buttonOpenBox.UseVisualStyleBackColor = true;
+      resources.ApplyResources(this.btnViewBoxContents, "btnViewBoxContents");
+      this.btnViewBoxContents.Name = "btnViewBoxContents";
+      this.btnViewBoxContents.UseVisualStyleBackColor = true;
       // 
       // btnEditDateCreated
       // 
@@ -152,10 +146,17 @@
       resources.ApplyResources(this.txtBoxDescription, "txtBoxDescription");
       this.txtBoxDescription.Name = "txtBoxDescription";
       // 
+      // btnEditBoxName
+      // 
+      resources.ApplyResources(this.btnEditBoxName, "btnEditBoxName");
+      this.btnEditBoxName.Name = "btnEditBoxName";
+      this.btnEditBoxName.UseVisualStyleBackColor = true;
+      this.btnEditBoxName.Click += new System.EventHandler(this.btnEditBoxName_Click);
+      // 
       // DialogManageBoxes
       // 
-      resources.ApplyResources(this, "$this");
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+      resources.ApplyResources(this, "$this");
       this.Controls.Add(this.txtBoxDescription);
       this.Controls.Add(this.btnNewBox);
       this.Controls.Add(this.btnOpenBoxFolder);
@@ -164,14 +165,14 @@
       this.Controls.Add(this.btnChooseIndexing);
       this.Controls.Add(this.btnEditCreator);
       this.Controls.Add(this.btnEditDateCreated);
-      this.Controls.Add(this.buttonOpenBox);
+      this.Controls.Add(this.btnViewBoxContents);
       this.Controls.Add(this.btnSaveBoxInfo);
       this.Controls.Add(this.lstIndexItems);
       this.Controls.Add(this.lblBoxIndexing);
       this.Controls.Add(this.lblCreator);
       this.Controls.Add(this.btnEditBoxName);
       this.Controls.Add(this.lblDateCreated);
-      this.Controls.Add(this.lblBoxName);
+      this.Controls.Add(this.lblBoxDirectory);
       this.Controls.Add(this.lstBoxes);
       this.Controls.Add(this.lblListCaption);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -188,15 +189,14 @@
     #endregion
 
     private System.Windows.Forms.ListBox lstBoxes;
-    private System.Windows.Forms.Label lblBoxName;
+    private System.Windows.Forms.Label lblBoxDirectory;
     private System.Windows.Forms.Label lblDateCreated;
-    private System.Windows.Forms.Button btnEditBoxName;
     private System.Windows.Forms.Label lblCreator;
     private System.Windows.Forms.Label lblBoxIndexing;
     private System.Windows.Forms.ListBox lstIndexItems;
     private System.Windows.Forms.Label lblListCaption;
     private System.Windows.Forms.Button btnSaveBoxInfo;
-    private System.Windows.Forms.Button buttonOpenBox;
+    private System.Windows.Forms.Button btnViewBoxContents;
     private System.Windows.Forms.Button btnEditDateCreated;
     private System.Windows.Forms.Button btnEditCreator;
     private System.Windows.Forms.Button btnChooseIndexing;
@@ -205,5 +205,6 @@
     private System.Windows.Forms.Button btnOpenBoxFolder;
     private System.Windows.Forms.Button btnNewBox;
     private System.Windows.Forms.TextBox txtBoxDescription;
+    private System.Windows.Forms.Button btnEditBoxName;
   }
 }

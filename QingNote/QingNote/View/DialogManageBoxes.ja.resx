@@ -189,7 +189,7 @@
     <value>555, 402</value>
   </data>
   <data name="buttonOpenBox.Text" xml:space="preserve">
-    <value>中を見る</value>
+    <value>中身を見る</value>
   </data>
   <data name="btnEditDateCreated.Location" type="System.Drawing.Point, System.Drawing">
     <value>692, 47</value>

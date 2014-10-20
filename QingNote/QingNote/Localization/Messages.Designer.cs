@@ -63,6 +63,69 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        internal static string Dialog_EditBoxAuthor_Message {
+            get {
+                return ResourceManager.GetString("Dialog_EditBoxAuthor_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Dialog_EditBoxAuthor_Title {
+            get {
+                return ResourceManager.GetString("Dialog_EditBoxAuthor_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Dialog_EditBoxDate_Message {
+            get {
+                return ResourceManager.GetString("Dialog_EditBoxDate_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Dialog_EditBoxDate_Title {
+            get {
+                return ResourceManager.GetString("Dialog_EditBoxDate_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Dialog_EditBoxTitle_Message {
+            get {
+                return ResourceManager.GetString("Dialog_EditBoxTitle_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Dialog_EditBoxTitle_Title {
+            get {
+                return ResourceManager.GetString("Dialog_EditBoxTitle_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Dialog_Title_Prefix {
+            get {
+                return ResourceManager.GetString("Dialog_Title_Prefix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         internal static string FileIO_FieldMissing {
             get {
                 return ResourceManager.GetString("FileIO_FieldMissing", resourceCulture);

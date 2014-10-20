@@ -42,32 +42,38 @@ namespace cn.zuoanqh.open.QingNote
       new DialogNewBox().ShowDialog();
       reloadBoxes();
     }
-
+    private CardBoxFileData cBox;
     private void lstBoxes_SelectedIndexChanged(object sender, EventArgs e)
     {
       if (zuwf.ListBox_HaveItemSelected(lstBoxes))
       {
-        CardBoxFileData cBox = boxList[lstBoxes.SelectedIndex].Second;
+        cBox = boxList[lstBoxes.SelectedIndex].Second;
         updateLabels(cBox);
       }
       else
       {
+        cBox = null;
         resetLabels();
       }
     }
 
-    private void updateLabels(CardBoxFileData cBox)
+    private void btnEditBoxName_Click(object sender, EventArgs e)
     {
-      lblBoxName.Text = lblBoxNamedef + cBox.title;
-      lblDateCreated.Text = lblDateCreateddef + cBox.datecreated;
-      lblCreator.Text = lblCreatordef + cBox.creator;
-      lblBoxIndexing.Text = lblBoxIndexingdef + cBox.indexing;
-      txtBoxDescription.Text = cBox.description;
+      //ZDialog.TextInputDialog tin = new ZDialog.TextInputDialog();
+    }
+
+    private void updateLabels(CardBoxFileData boxData)
+    {
+      lblBoxDirectory.Text = lblBoxNamedef + boxData.title;
+      lblDateCreated.Text = lblDateCreateddef + boxData.datecreated;
+      lblCreator.Text = lblCreatordef + boxData.creator;
+      lblBoxIndexing.Text = lblBoxIndexingdef + boxData.indexing;
+      txtBoxDescription.Text = boxData.description;
     }
 
     private void resetLabels()
     {
-      lblBoxName.Text = lblBoxNamedef;
+      lblBoxDirectory.Text = lblBoxNamedef;
       lblDateCreated.Text = lblDateCreateddef;
       lblCreator.Text = lblCreatordef;
       lblBoxIndexing.Text = lblBoxIndexingdef;
@@ -76,7 +82,7 @@ namespace cn.zuoanqh.open.QingNote
 
     private void recordLabels()
     {
-      lblBoxNamedef = lblBoxName.Text;
+      lblBoxNamedef = lblBoxDirectory.Text;
       lblDateCreateddef = lblDateCreated.Text;
       lblCreatordef = lblCreator.Text;
       lblBoxIndexingdef = lblBoxIndexing.Text;
