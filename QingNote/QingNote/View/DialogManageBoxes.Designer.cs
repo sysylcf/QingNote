@@ -97,8 +97,10 @@
       // btnViewBoxContents
       // 
       resources.ApplyResources(this.btnViewBoxContents, "btnViewBoxContents");
+      this.btnViewBoxContents.DialogResult = System.Windows.Forms.DialogResult.OK;
       this.btnViewBoxContents.Name = "btnViewBoxContents";
       this.btnViewBoxContents.UseVisualStyleBackColor = true;
+      this.btnViewBoxContents.Click += new System.EventHandler(this.btnViewBoxContents_Click);
       // 
       // btnEditDateCreated
       // 

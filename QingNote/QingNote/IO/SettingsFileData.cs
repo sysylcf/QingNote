@@ -11,11 +11,11 @@ namespace cn.zuoanqh.open.QingNote.IO
 {
   public class SettingsFileData
   {
-    public static readonly string FILE_NAME = Localization.FileKeywords.FileName_Settings + "." + SystemResources.FilePostfix;
+    public static readonly string FILE_NAME = Localization.FileKeywords.FileName_Settings + "." + SystemResources.Postfix_File;
     public static readonly string DEFAULT_INDEXING = Localization.FileKeywords.CardBox_Index_Chronological;
 
     public delegate void onSettingChanged(string oldValue, string newValue);
-    private static Dictionary<string, onSettingChanged> listeners = null;
+    private static Dictionary<string, onSettingChanged> listeners;
 
     private static Dictionary<string, string> settings;
     private static List<KeyValuePair<string, string>> defsetting;
@@ -37,6 +37,7 @@ namespace cn.zuoanqh.open.QingNote.IO
       List<KeyValuePair<string, string>> fsettings = ZDictionaryFileIO.readFile(Localization.Settings.Symbol_NameContent_Seperator, FILE_NAME);
       foreach (KeyValuePair<string, string> l in fsettings)
         settings.Add(l.Key, l.Value);
+
       bool fileChanged = false;
       foreach (KeyValuePair<string, string> l in defsetting)
       {
@@ -46,11 +47,11 @@ namespace cn.zuoanqh.open.QingNote.IO
           fileChanged = true;
         }
       }
-
       if (!CardBoxFileData.isValidIndex(settings[Localization.FileKeywords.Settings_DefaultCardBoxIndex]))
         settings[Localization.FileKeywords.Settings_DefaultCardBoxIndex] = DEFAULT_INDEXING;
-
       if (fileChanged) saveSettings();
+
+      listeners = new Dictionary<string,onSettingChanged>();
     }
     public static string getSettingItem(string name)
     {
@@ -60,7 +61,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     {
       string oldval = settings[name];
       settings[name] = newValue;
-      listeners[name](oldval, newValue);
+      if (listeners.ContainsKey(name)) listeners[name](oldval, newValue);
     }
     public static void saveSettings()
     {
@@ -71,7 +72,10 @@ namespace cn.zuoanqh.open.QingNote.IO
     }
     public static void addSettingChangedListener(onSettingChanged listener, string itemName)
     {
-      listeners[itemName] += listener;
+      if (!listeners.ContainsKey(itemName))
+        listeners.Add(itemName, listener);
+      else
+        listeners[itemName] += listener;
     }
   }
 }

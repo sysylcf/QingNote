@@ -63,9 +63,18 @@ namespace cn.zuoanqh.open.QingNote {
         /// <summary>
         ///   Looks up a localized string similar to qnote.txt.
         /// </summary>
-        internal static string FilePostfix {
+        internal static string Postfix_File {
             get {
-                return ResourceManager.GetString("FilePostfix", resourceCulture);
+                return ResourceManager.GetString("Postfix_File", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to qnote.
+        /// </summary>
+        internal static string PostFix_Folder {
+            get {
+                return ResourceManager.GetString("PostFix_Folder", resourceCulture);
             }
         }
         

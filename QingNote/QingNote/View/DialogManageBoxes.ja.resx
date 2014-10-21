@@ -158,6 +158,9 @@
   <data name="btnSaveBoxInfo.Text" xml:space="preserve">
     <value>保存</value>
   </data>
+  <data name="btnViewBoxContents.Text" xml:space="preserve">
+    <value>中身を見る</value>
+  </data>
   <data name="btnEditDateCreated.Location" type="System.Drawing.Point, System.Drawing">
     <value>692, 47</value>
   </data>

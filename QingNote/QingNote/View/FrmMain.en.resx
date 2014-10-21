@@ -118,17 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lbl_D_CardBoxName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 39</value>
+  <data name="lblBoxTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>486, 39</value>
   </data>
-  <data name="lbl_D_CardBoxName.Text" xml:space="preserve">
+  <data name="lblBoxTitle.Text" xml:space="preserve">
     <value>Current Box:</value>
   </data>
   <data name="btnSwitchCardBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>476, 9</value>
+    <value>504, 9</value>
   </data>
   <data name="btnSwitchCardBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 39</value>
+    <value>135, 39</value>
   </data>
   <data name="btnSwitchCardBox.Text" xml:space="preserve">
     <value>Open/Create</value>
@@ -219,20 +219,14 @@
   <data name="lblCardTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="txtCardContent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 265</value>
-  </data>
   <data name="btnOpenAttachmentFolder.Text" xml:space="preserve">
     <value>Folder...</value>
   </data>
-  <data name="lblKeyWords.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 355</value>
+  <data name="lblKeywords.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 88</value>
   </data>
-  <data name="lblKeyWords.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 68</value>
-  </data>
-  <data name="lblKeyWords.Text" xml:space="preserve">
-    <value>KeyWords: </value>
+  <data name="lblKeywords.Text" xml:space="preserve">
+    <value>Keywords: </value>
   </data>
   <data name="btnDeleteCard.Text" xml:space="preserve">
     <value>DELETE</value>

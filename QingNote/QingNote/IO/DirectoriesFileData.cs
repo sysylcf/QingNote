@@ -9,7 +9,7 @@ namespace cn.zuoanqh.open.QingNote.IO
 {
   public class DirectoriesFileData
   {
-    public static readonly string FILE_NAME = Localization.FileKeywords.FileName_Directory + "." +SystemResources.FilePostfix;
+    public static readonly string FILE_NAME = Localization.FileKeywords.FileName_Directory + "." +SystemResources.Postfix_File;
 
     public static List<string> boxList;
 

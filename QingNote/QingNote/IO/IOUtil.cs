@@ -17,8 +17,8 @@ namespace cn.zuoanqh.open.QingNote.IO
 
     public static string getFileLang(string fileName)
     {
-      if (!fileName.EndsWith(SystemResources.FilePostfix)) return null;
-      string s = zusp.Left(fileName, fileName.Length - (SystemResources.FilePostfix.Length+1));
+      if (!fileName.EndsWith(SystemResources.Postfix_File)) return null;
+      string s = zusp.Left(fileName, fileName.Length - (SystemResources.Postfix_File.Length+1));
       if (s.LastIndexOf(".") < 0) return null;
       s = zusp.ChopTail(s, ".").Second;
       return s;
@@ -43,7 +43,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     public static List<string> GetQNoteFiles(string absolutePath)
     {
       List<string> qnotefiles = Directory.GetFiles(absolutePath).
-       Where(s => s.EndsWith(SystemResources.FilePostfix)).
+       Where(s => s.EndsWith(SystemResources.Postfix_File)).
        Select(s => s).ToList();
       return qnotefiles;
     }

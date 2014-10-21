@@ -117,16 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblBoxTitle.Text" xml:space="preserve">
+    <value>卡盒：</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lbl_D_CardBoxName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="lbl_D_CardBoxName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>516, 39</value>
-  </data>
-  <data name="lbl_D_CardBoxName.Text" xml:space="preserve">
-    <value>当前卡盒:</value>
-  </data>
   <data name="btnSwitchCardBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>521, 13</value>
   </data>
@@ -148,6 +142,15 @@
   <data name="tvwCards.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 319</value>
   </data>
+  <data name="tabIndex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 36</value>
+  </data>
+  <data name="tabIndex.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 372</value>
+  </data>
+  <data name="tabIndex.Text" xml:space="preserve">
+    <value>索引</value>
+  </data>
   <data name="btnNewCard.Location" type="System.Drawing.Point, System.Drawing">
     <value>91, 331</value>
   </data>
@@ -160,14 +163,14 @@
   <data name="btnMamageBox.Text" xml:space="preserve">
     <value>管理</value>
   </data>
-  <data name="tabIndex.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabSearch.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 36</value>
   </data>
-  <data name="tabIndex.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabSearch.Size" type="System.Drawing.Size, System.Drawing">
     <value>201, 372</value>
   </data>
-  <data name="tabIndex.Text" xml:space="preserve">
-    <value>索引</value>
+  <data name="tabSearch.Text" xml:space="preserve">
+    <value>搜索</value>
   </data>
   <data name="rbtSearchKeywordOnly.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 314</value>
@@ -200,18 +203,6 @@
   <data name="lstSearchResults.Size" type="System.Drawing.Size, System.Drawing">
     <value>195, 247</value>
   </data>
-  <data name="tabSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 36</value>
-  </data>
-  <data name="tabSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 372</value>
-  </data>
-  <data name="tabSearch.Text" xml:space="preserve">
-    <value>搜索</value>
-  </data>
-  <data name="txtCardContent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 264</value>
-  </data>
   <data name="btnOpenAttachmentFolder.Location" type="System.Drawing.Point, System.Drawing">
     <value>644, 426</value>
   </data>
@@ -221,13 +212,10 @@
   <data name="btnOpenAttachmentFolder.Text" xml:space="preserve">
     <value>打开文件夹</value>
   </data>
-  <data name="lblKeyWords.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 360</value>
+  <data name="lblKeywords.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 88</value>
   </data>
-  <data name="lblKeyWords.Size" type="System.Drawing.Size, System.Drawing">
-    <value>406, 63</value>
-  </data>
-  <data name="lblKeyWords.Text" xml:space="preserve">
+  <data name="lblKeywords.Text" xml:space="preserve">
     <value>关键字：</value>
   </data>
   <data name="btnDeleteCard.Text" xml:space="preserve">

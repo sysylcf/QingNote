@@ -13,34 +13,54 @@ namespace cn.zuoanqh.open.QingNote.IO
   {
     public List<Pair<string, List<string>>> tree;
     public Dictionary<string, CardFileData> loadedCards;//key=absolutepath
-    public CardBoxFileData boxData;
-    public readonly string BoxFolderDirectory;
-    public readonly string mainDirectory;
+    public readonly CardBoxFileData boxData;
+    /// <summary>
+    /// Wheather the table of contents of this box is avilable
+    /// </summary>
+    public bool directoriesLoaded { get; private set; }
+    /// <summary>
+    /// The top-most level directory of a box.
+    /// </summary>
+    public readonly string boxDirectory;
 
+    private readonly string contentDirectory;
     /// <summary>
     /// Creates an empty controller.
     /// </summary>
-    public CardBoxTree()
+    private CardBoxTree()
     {
       tree = new List<Pair<string, List<string>>>();
       loadedCards = new Dictionary<string, CardFileData>();
+      directoriesLoaded = false;
     }
 
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="BoxDirectory">This should be the directory that contains the box file.</param>
-    public CardBoxTree(string BoxDirectory)
+    /// <param name="BoxDirectory">This should be the directory that contains the box info file and boxname.qnote folder.</param>
+    public CardBoxTree(string boxDirectory)
       : this()
     {
-      this.mainDirectory = BoxDirectory;
+      this.boxDirectory = boxDirectory;
+      this.boxData = CardBoxFileData.readFile(new FileReadingAdapter(), boxDirectory);
+      contentDirectory = Path.Combine(boxDirectory, Localization.FileKeywords.Filename_Directory_Cardbox + "." + SystemResources.PostFix_Folder);
     }
+
+
     /// <summary>
     /// Load card folder names into tree. Use when there's already files in it.
     /// </summary>
-    public void loadFromDirectory()
+    public void loadCardDirectories()
     {
-      string[] subFull = Directory.GetDirectories(this.BoxFolderDirectory).OrderBy(s => s).ToArray();//ensure things are in whatever orders
+      if (directoriesLoaded) return;
+
+      if (!Directory.Exists(contentDirectory))
+      {
+        Directory.CreateDirectory(contentDirectory);
+        return;//No work to do -- It's a new box
+      }
+
+      string[] subFull = Directory.GetDirectories(this.contentDirectory).OrderBy(s => s).ToArray();//ensure things are in whatever orders
       string[] subNames = subFull.Select(s => IOUtil.getPathLast(s)).ToArray();
       for (int i = 0; i < subNames.Length; i++)
       {
@@ -48,13 +68,13 @@ namespace cn.zuoanqh.open.QingNote.IO
         string sf = subFull[i];
         tree.Add(new Pair<string, List<string>>(sn, Directory.GetDirectories(sf).Select(s => IOUtil.getPathLast(s)).ToList()));
       }
+
+      directoriesLoaded = true;
     }
-    
-    public void mkBoxFile(string title, string indexing, string dateCreated, string creater){}
 
     public void loadCard(string parent, string name)
     {
-      string path = Path.Combine(BoxFolderDirectory, parent, name);
+      string path = Path.Combine(contentDirectory, parent, name);
       if (!loadedCards.ContainsKey(path))
       {
         CardFileData card = CardFileData.readFile(new FileReadingAdapter(), path);
@@ -62,5 +82,11 @@ namespace cn.zuoanqh.open.QingNote.IO
       }
     }
 
+    public void loadAllCards()
+    {
+      foreach (var pair in tree)
+        foreach (string s in pair.Second)
+          loadCard(pair.First, s);
+    }
   }
 }

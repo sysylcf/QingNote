@@ -29,7 +29,7 @@
     private void InitializeComponent()
     {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
-      this.lbl_D_CardBoxName = new System.Windows.Forms.Label();
+      this.lblBoxTitle = new System.Windows.Forms.Label();
       this.btnSwitchCardBox = new System.Windows.Forms.Button();
       this.btnCopyPath = new System.Windows.Forms.Button();
       this.tvwCards = new System.Windows.Forms.TreeView();
@@ -46,7 +46,7 @@
       this.txtCardContent = new System.Windows.Forms.TextBox();
       this.lstAttachments = new System.Windows.Forms.ListView();
       this.btnOpenAttachmentFolder = new System.Windows.Forms.Button();
-      this.lblKeyWords = new System.Windows.Forms.Label();
+      this.lblKeywords = new System.Windows.Forms.Label();
       this.btnDeleteCard = new System.Windows.Forms.Button();
       this.btnEditMeta = new System.Windows.Forms.Button();
       this.btnSaveCard = new System.Windows.Forms.Button();
@@ -56,10 +56,10 @@
       this.tabSearch.SuspendLayout();
       this.SuspendLayout();
       // 
-      // lbl_D_CardBoxName
+      // lblBoxTitle
       // 
-      resources.ApplyResources(this.lbl_D_CardBoxName, "lbl_D_CardBoxName");
-      this.lbl_D_CardBoxName.Name = "lbl_D_CardBoxName";
+      resources.ApplyResources(this.lblBoxTitle, "lblBoxTitle");
+      this.lblBoxTitle.Name = "lblBoxTitle";
       // 
       // btnSwitchCardBox
       // 
@@ -89,10 +89,10 @@
       // 
       // tabIndex
       // 
+      resources.ApplyResources(this.tabIndex, "tabIndex");
       this.tabIndex.Controls.Add(this.btnNewCard);
       this.tabIndex.Controls.Add(this.btnMamageBox);
       this.tabIndex.Controls.Add(this.tvwCards);
-      resources.ApplyResources(this.tabIndex, "tabIndex");
       this.tabIndex.Name = "tabIndex";
       this.tabIndex.UseVisualStyleBackColor = true;
       // 
@@ -111,11 +111,11 @@
       // 
       // tabSearch
       // 
+      resources.ApplyResources(this.tabSearch, "tabSearch");
       this.tabSearch.Controls.Add(this.rbtSearchKeywordOnly);
       this.tabSearch.Controls.Add(this.rbtSearchFullText);
       this.tabSearch.Controls.Add(this.txtSearchInput);
       this.tabSearch.Controls.Add(this.lstSearchResults);
-      resources.ApplyResources(this.tabSearch, "tabSearch");
       this.tabSearch.Name = "tabSearch";
       this.tabSearch.UseVisualStyleBackColor = true;
       // 
@@ -166,10 +166,10 @@
       this.btnOpenAttachmentFolder.Name = "btnOpenAttachmentFolder";
       this.btnOpenAttachmentFolder.UseVisualStyleBackColor = true;
       // 
-      // lblKeyWords
+      // lblKeywords
       // 
-      resources.ApplyResources(this.lblKeyWords, "lblKeyWords");
-      this.lblKeyWords.Name = "lblKeyWords";
+      resources.ApplyResources(this.lblKeywords, "lblKeywords");
+      this.lblKeywords.Name = "lblKeywords";
       // 
       // btnDeleteCard
       // 
@@ -198,13 +198,13 @@
       // 
       // FrmMain
       // 
-      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
       resources.ApplyResources(this, "$this");
+      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
       this.Controls.Add(this.lblMessage);
       this.Controls.Add(this.btnSaveCard);
       this.Controls.Add(this.btnEditMeta);
       this.Controls.Add(this.btnDeleteCard);
-      this.Controls.Add(this.lblKeyWords);
+      this.Controls.Add(this.lblKeywords);
       this.Controls.Add(this.btnOpenAttachmentFolder);
       this.Controls.Add(this.lstAttachments);
       this.Controls.Add(this.txtCardContent);
@@ -212,7 +212,7 @@
       this.Controls.Add(this.tctIndexSearch);
       this.Controls.Add(this.btnCopyPath);
       this.Controls.Add(this.btnSwitchCardBox);
-      this.Controls.Add(this.lbl_D_CardBoxName);
+      this.Controls.Add(this.lblBoxTitle);
       this.Name = "FrmMain";
       this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
       this.Load += new System.EventHandler(this.FrmMain_Load);
@@ -227,7 +227,7 @@
 
     #endregion
 
-    private System.Windows.Forms.Label lbl_D_CardBoxName;
+    private System.Windows.Forms.Label lblBoxTitle;
     private System.Windows.Forms.Button btnSwitchCardBox;
     private System.Windows.Forms.Button btnCopyPath;
     private System.Windows.Forms.TreeView tvwCards;
@@ -243,7 +243,7 @@
     private System.Windows.Forms.TextBox txtCardContent;
     private System.Windows.Forms.ListView lstAttachments;
     private System.Windows.Forms.Button btnOpenAttachmentFolder;
-    private System.Windows.Forms.Label lblKeyWords;
+    private System.Windows.Forms.Label lblKeywords;
     private System.Windows.Forms.Button btnDeleteCard;
     private System.Windows.Forms.Button btnEditMeta;
     private System.Windows.Forms.Button btnSaveCard;
