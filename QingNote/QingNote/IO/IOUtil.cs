@@ -2,9 +2,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace cn.zuoanqh.open.QingNote.IO
@@ -18,11 +20,31 @@ namespace cn.zuoanqh.open.QingNote.IO
     public static string getFileLang(string fileName)
     {
       if (!fileName.EndsWith(SystemResources.Postfix_File)) return null;
-      string s = zusp.Left(fileName, fileName.Length - (SystemResources.Postfix_File.Length+1));
+      string s = zusp.Left(fileName, fileName.Length - (SystemResources.Postfix_File.Length + 1));
       if (s.LastIndexOf(".") < 0) return null;
       s = zusp.ChopTail(s, ".").Second;
       return s;
     }
+
+    public static string getContentFolderName(string lang)
+    {
+      CultureInfo stack = Thread.CurrentThread.CurrentCulture;
+      Thread.CurrentThread.CurrentCulture = new CultureInfo(lang);
+      string name = Localization.FileKeywords.Filename_Directory_Cardbox + "." + SystemResources.PostFix_Folder;
+      Thread.CurrentThread.CurrentCulture = stack;
+
+      return name;
+    }
+
+    public static string getAttachmentFolderName(string lang)
+    {
+      CultureInfo stack = Thread.CurrentThread.CurrentCulture;
+      Thread.CurrentThread.CurrentCulture = new CultureInfo(lang);
+      string name = Localization.FileKeywords.Filename_Directory_Attachment + "." + SystemResources.PostFix_Folder;
+      Thread.CurrentThread.CurrentCulture = stack;
+      return name;
+    }
+
     public static string getPathLast(string path)
     {
       if (path == null) return null;
@@ -37,7 +59,7 @@ namespace cn.zuoanqh.open.QingNote.IO
 
     public static Boolean isSupportedLanguage(string fileLang)
     {
-      return resLang.langs.Exists((s)=>s.Equals(fileLang)||fileLang.StartsWith(s));
+      return resLang.langs.Exists((s) => s.Equals(fileLang) || fileLang.StartsWith(s));
     }
 
     public static List<string> GetQNoteFiles(string absolutePath)
@@ -51,7 +73,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="overserr"></param>
+    /// <param name="overseer"></param>
     /// <param name="absolutePath"></param>
     /// <returns>a list of string of files that ends with proper postfix and supported language</returns>
     public static string Delegated_GetApplicableFileWithFeedback(FileReadingOverseer overseer, string absolutePath)

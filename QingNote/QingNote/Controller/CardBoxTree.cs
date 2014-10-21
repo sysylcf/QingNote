@@ -43,7 +43,8 @@ namespace cn.zuoanqh.open.QingNote.IO
     {
       this.boxDirectory = boxDirectory;
       this.boxData = CardBoxFileData.readFile(new FileReadingAdapter(), boxDirectory);
-      contentDirectory = Path.Combine(boxDirectory, Localization.FileKeywords.Filename_Directory_Cardbox + "." + SystemResources.PostFix_Folder);
+
+      contentDirectory = Path.Combine(boxDirectory, IOUtil.getContentFolderName(boxData.lang));
     }
 
 

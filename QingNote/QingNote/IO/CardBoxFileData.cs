@@ -105,11 +105,9 @@ namespace cn.zuoanqh.open.QingNote.IO
         Instruction i = overseer.onFileInvalid(Localization.Messages.FileIO_FieldValueNotValid, flindex);
         Thread.CurrentThread.CurrentCulture = new CultureInfo(flang);
       }
-
       Thread.CurrentThread.CurrentCulture = stack;
       return cbd;
     }
-
 
     private static Dictionary<string, string> getDefaults(string lang)
     {

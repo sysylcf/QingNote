@@ -59,6 +59,7 @@ namespace cn.zuoanqh.open.QingNote.View
       if (result == null) return;
       cBox.title = result;
       cBox.writeFile(cTree.boxDirectory);
+      updateLabels();
       reloadBoxes();
     }
 
@@ -70,6 +71,7 @@ namespace cn.zuoanqh.open.QingNote.View
       if (result == null) return;
       cBox.dateCreated = result;
       cBox.writeFile(cTree.boxDirectory);
+      updateLabels();
     }
 
     private void btnEditCreator_Click(object sender, EventArgs e)
@@ -80,6 +82,7 @@ namespace cn.zuoanqh.open.QingNote.View
       if (result == null) return;
       cBox.creator = result;
       cBox.writeFile(cTree.boxDirectory);
+      updateLabels();
     }
 
     private void updateLabels()
