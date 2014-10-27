@@ -87,6 +87,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>IconScheme.resx</DependentUpon>
     </Compile>
+    <Compile Include="IO\Indexing.cs" />
     <Compile Include="View\DialogEditBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -350,9 +351,16 @@
     <Content Include="Graphics\glyphicons_213_up_arrow.png" />
     <Content Include="Graphics\glyphicons_256_delete.png" />
     <Content Include="Graphics\view-details-64.png" />
+    <None Include="Graphics\glyphicons_432_minus_adapted.png" />
+    <None Include="Graphics\glyphicons_223_chevron-right-up.png" />
+    <None Include="Graphics\glyphicons_223_chevron-right-down.png" />
+    <None Include="Graphics\glyphicons_432_plus_adapted.png" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

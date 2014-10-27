@@ -73,6 +73,7 @@
       resources.ApplyResources(this.btnCopyPath, "btnCopyPath");
       this.btnCopyPath.Name = "btnCopyPath";
       this.btnCopyPath.UseVisualStyleBackColor = true;
+      this.btnCopyPath.Click += new System.EventHandler(this.btnCopyPath_Click);
       // 
       // tvwCards
       // 

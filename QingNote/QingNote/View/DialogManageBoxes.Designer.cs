@@ -35,7 +35,6 @@
       this.lblCreator = new System.Windows.Forms.Label();
       this.lblBoxIndexing = new System.Windows.Forms.Label();
       this.lstIndexItems = new System.Windows.Forms.ListBox();
-      this.lblListCaption = new System.Windows.Forms.Label();
       this.btnSaveBoxInfo = new System.Windows.Forms.Button();
       this.btnViewBoxContents = new System.Windows.Forms.Button();
       this.btnEditDateCreated = new System.Windows.Forms.Button();
@@ -47,6 +46,12 @@
       this.btnNewBox = new System.Windows.Forms.Button();
       this.txtBoxDescription = new System.Windows.Forms.TextBox();
       this.btnEditBoxName = new System.Windows.Forms.Button();
+      this.btnAddChapter = new System.Windows.Forms.Button();
+      this.btnDeleteChapter = new System.Windows.Forms.Button();
+      this.btnMoveChapterUp = new System.Windows.Forms.Button();
+      this.btnMoveChapterDown = new System.Windows.Forms.Button();
+      this.btnAddCategory = new System.Windows.Forms.Button();
+      this.btnRemoveCategory = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
       // lstBoxes
@@ -81,11 +86,6 @@
       resources.ApplyResources(this.lstIndexItems, "lstIndexItems");
       this.lstIndexItems.FormattingEnabled = true;
       this.lstIndexItems.Name = "lstIndexItems";
-      // 
-      // lblListCaption
-      // 
-      resources.ApplyResources(this.lblListCaption, "lblListCaption");
-      this.lblListCaption.Name = "lblListCaption";
       // 
       // btnSaveBoxInfo
       // 
@@ -160,10 +160,56 @@
       this.btnEditBoxName.UseVisualStyleBackColor = true;
       this.btnEditBoxName.Click += new System.EventHandler(this.btnEditBoxName_Click);
       // 
+      // btnAddChapter
+      // 
+      resources.ApplyResources(this.btnAddChapter, "btnAddChapter");
+      this.btnAddChapter.Image = global::cn.zuoanqh.open.QingNote.IconScheme.Plus;
+      this.btnAddChapter.Name = "btnAddChapter";
+      this.btnAddChapter.UseVisualStyleBackColor = true;
+      // 
+      // btnDeleteChapter
+      // 
+      resources.ApplyResources(this.btnDeleteChapter, "btnDeleteChapter");
+      this.btnDeleteChapter.Image = global::cn.zuoanqh.open.QingNote.IconScheme.Minus;
+      this.btnDeleteChapter.Name = "btnDeleteChapter";
+      this.btnDeleteChapter.UseVisualStyleBackColor = true;
+      // 
+      // btnMoveChapterUp
+      // 
+      resources.ApplyResources(this.btnMoveChapterUp, "btnMoveChapterUp");
+      this.btnMoveChapterUp.Image = global::cn.zuoanqh.open.QingNote.IconScheme.Item_Up;
+      this.btnMoveChapterUp.Name = "btnMoveChapterUp";
+      this.btnMoveChapterUp.UseVisualStyleBackColor = true;
+      // 
+      // btnMoveChapterDown
+      // 
+      resources.ApplyResources(this.btnMoveChapterDown, "btnMoveChapterDown");
+      this.btnMoveChapterDown.Image = global::cn.zuoanqh.open.QingNote.IconScheme.Item_Down;
+      this.btnMoveChapterDown.Name = "btnMoveChapterDown";
+      this.btnMoveChapterDown.UseVisualStyleBackColor = true;
+      // 
+      // btnAddCategory
+      // 
+      resources.ApplyResources(this.btnAddCategory, "btnAddCategory");
+      this.btnAddCategory.Image = global::cn.zuoanqh.open.QingNote.IconScheme.Plus;
+      this.btnAddCategory.Name = "btnAddCategory";
+      this.btnAddCategory.UseVisualStyleBackColor = true;
+      // 
+      // btnRemoveCategory
+      // 
+      resources.ApplyResources(this.btnRemoveCategory, "btnRemoveCategory");
+      this.btnRemoveCategory.Image = global::cn.zuoanqh.open.QingNote.IconScheme.Minus;
+      this.btnRemoveCategory.Name = "btnRemoveCategory";
+      this.btnRemoveCategory.UseVisualStyleBackColor = true;
+      // 
       // DialogManageBoxes
       // 
       resources.ApplyResources(this, "$this");
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+      this.Controls.Add(this.btnMoveChapterDown);
+      this.Controls.Add(this.btnMoveChapterUp);
+      this.Controls.Add(this.btnDeleteChapter);
+      this.Controls.Add(this.btnAddChapter);
       this.Controls.Add(this.txtBoxDescription);
       this.Controls.Add(this.btnNewBox);
       this.Controls.Add(this.btnOpenBoxFolder);
@@ -181,7 +227,8 @@
       this.Controls.Add(this.lblDateCreated);
       this.Controls.Add(this.lblBoxDirectory);
       this.Controls.Add(this.lstBoxes);
-      this.Controls.Add(this.lblListCaption);
+      this.Controls.Add(this.btnAddCategory);
+      this.Controls.Add(this.btnRemoveCategory);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
       this.MaximizeBox = false;
       this.MinimizeBox = false;
@@ -201,7 +248,6 @@
     private System.Windows.Forms.Label lblCreator;
     private System.Windows.Forms.Label lblBoxIndexing;
     private System.Windows.Forms.ListBox lstIndexItems;
-    private System.Windows.Forms.Label lblListCaption;
     private System.Windows.Forms.Button btnSaveBoxInfo;
     private System.Windows.Forms.Button btnViewBoxContents;
     private System.Windows.Forms.Button btnEditDateCreated;
@@ -213,5 +259,11 @@
     private System.Windows.Forms.Button btnNewBox;
     private System.Windows.Forms.TextBox txtBoxDescription;
     private System.Windows.Forms.Button btnEditBoxName;
+    private System.Windows.Forms.Button btnAddChapter;
+    private System.Windows.Forms.Button btnDeleteChapter;
+    private System.Windows.Forms.Button btnMoveChapterUp;
+    private System.Windows.Forms.Button btnMoveChapterDown;
+    private System.Windows.Forms.Button btnAddCategory;
+    private System.Windows.Forms.Button btnRemoveCategory;
   }
 }

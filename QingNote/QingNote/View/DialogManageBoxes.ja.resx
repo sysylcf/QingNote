@@ -149,9 +149,6 @@
   <data name="lblBoxIndexing.Text" xml:space="preserve">
     <value>目次：</value>
   </data>
-  <data name="lblListCaption.Text" xml:space="preserve">
-    <value>目次：</value>
-  </data>
   <data name="btnSaveBoxInfo.Location" type="System.Drawing.Point, System.Drawing">
     <value>452, 402</value>
   </data>
@@ -200,8 +197,14 @@
   <data name="btnUnlistBox.Text" xml:space="preserve">
     <value>除名</value>
   </data>
+  <data name="btnOpenBoxFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>100, 359</value>
+  </data>
+  <data name="btnOpenBoxFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 38</value>
+  </data>
   <data name="btnOpenBoxFolder.Text" xml:space="preserve">
-    <value>フォルダを開く</value>
+    <value>フォルダ</value>
   </data>
   <data name="btnNewBox.Text" xml:space="preserve">
     <value>新ボックス</value>
@@ -213,7 +216,7 @@
     <value>8, 358</value>
   </data>
   <data name="btnEditBoxName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 38</value>
+    <value>86, 38</value>
   </data>
   <data name="btnEditBoxName.Text" xml:space="preserve">
     <value>改名</value>

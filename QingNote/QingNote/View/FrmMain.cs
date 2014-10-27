@@ -24,7 +24,7 @@ namespace cn.zuoanqh.open.QingNote.View
     private string cardPath;
     private CardFileData cCard;
 
-    private string lblBoxTitleDef,lblKeywordsDef;
+    private string lblBoxTitleDef, lblKeywordsDef;
 
     public FrmMain()
     {
@@ -46,6 +46,7 @@ namespace cn.zuoanqh.open.QingNote.View
 
     private void mountCardTree(CardBoxTree tree)
     {
+      if (tree==null) return;
       cTree = tree;
       cTree.loadCardDirectories();
       lblBoxTitle.Text = lblBoxTitleDef + cBox.title;
@@ -91,6 +92,11 @@ namespace cn.zuoanqh.open.QingNote.View
       var dlgMBoxes = new DialogManageBoxes();
       dlgMBoxes.ShowDialog();
       mountCardTree(dlgMBoxes.cTree);
+    }
+
+    private void btnCopyPath_Click(object sender, EventArgs e)
+    {
+      zu.openDirectory(cBoxPath);
     }
 
   }

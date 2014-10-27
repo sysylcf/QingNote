@@ -25,6 +25,7 @@ namespace cn.zuoanqh.open.QingNote.View
       boxList = new List<CardBoxTree>();
       initLabelDefs();
       reloadBoxes();
+      clearLabels();
     }
 
     public void reloadBoxes()
@@ -94,8 +95,13 @@ namespace cn.zuoanqh.open.QingNote.View
         lblCreator.Text = lblCreatordef + cBox.creator;
         lblBoxIndexing.Text = lblBoxIndexingdef + cBox.indexing;
         txtBoxDescription.Text = cBox.description;
+        //if ()
       }
-      else clearLabels();
+      else
+      {
+        clearLabels();
+
+      }
     }
 
     private void clearLabels()
@@ -105,6 +111,16 @@ namespace cn.zuoanqh.open.QingNote.View
       lblCreator.Text = lblCreatordef;
       lblBoxIndexing.Text = lblBoxIndexingdef;
       txtBoxDescription.Text = "";
+      btnAddCategory.Visible = false;
+      btnRemoveCategory.Visible = false;
+      btnAddChapter.Visible = true;
+      btnDeleteChapter.Visible = true;
+      btnMoveChapterUp.Visible = true;
+      btnMoveChapterDown.Visible = true;
+      btnAddChapter.Enabled = false;
+      btnDeleteChapter.Enabled = false;
+      btnMoveChapterUp.Enabled = false;
+      btnMoveChapterDown.Enabled = false;
     }
 
     private void initLabelDefs()

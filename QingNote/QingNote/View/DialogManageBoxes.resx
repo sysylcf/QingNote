@@ -120,35 +120,59 @@
   <data name="&gt;&gt;btnEditDateCreated.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnNewBox.Name" xml:space="preserve">
-    <value>btnNewBox</value>
+  <data name="&gt;&gt;btnMoveChapterUp.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnChooseIndexing.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lblDateCreated.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
   <data name="&gt;&gt;btnEditDateCreated.Name" xml:space="preserve">
     <value>btnEditDateCreated</value>
   </data>
+  <data name="&gt;&gt;btnAddChapter.Name" xml:space="preserve">
+    <value>btnAddChapter</value>
+  </data>
+  <data name="&gt;&gt;btnAddChapter.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="&gt;&gt;btnEditBoxName.Name" xml:space="preserve">
     <value>btnEditBoxName</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAddCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 38</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnMoveChapterUp.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnNewBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblBoxDirectory.Size" type="System.Drawing.Size, System.Drawing">
-    <value>297, 40</value>
+    <value>506, 40</value>
   </data>
   <data name="&gt;&gt;lstIndexItems.Name" xml:space="preserve">
     <value>lstIndexItems</value>
   </data>
   <data name="&gt;&gt;btnUnlistBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnUnlistBox.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
+  </data>
+  <data name="&gt;&gt;btnMoveChapterUp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMoveChapterUp.Name" xml:space="preserve">
+    <value>btnMoveChapterUp</value>
+  </data>
+  <data name="btnDeleteChapter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 38</value>
   </data>
   <data name="lblBoxIndexing.Text" xml:space="preserve">
     <value>
@@ -157,17 +181,26 @@
   <data name="lstIndexItems.Location" type="System.Drawing.Point, System.Drawing">
     <value>248, 56</value>
   </data>
+  <data name="btnMoveChapterUp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 402</value>
+  </data>
   <data name="&gt;&gt;btnUnlistBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnChooseIndexing.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="btnMoveChapterUp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 38</value>
+  </data>
+  <data name="&gt;&gt;btnMoveChapterDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;lblDescriptionCaption.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnOpenBoxFolder.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;btnSaveBoxInfo.Name" xml:space="preserve">
     <value>btnSaveBoxInfo</value>
@@ -181,11 +214,11 @@
   <data name="lblCreator.Location" type="System.Drawing.Point, System.Drawing">
     <value>457, 85</value>
   </data>
-  <data name="&gt;&gt;lblDescriptionCaption.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;btnMoveChapterUp.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;lblListCaption.Name" xml:space="preserve">
-    <value>lblListCaption</value>
+  <data name="&gt;&gt;lblDescriptionCaption.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>（默认语言）</value>
@@ -197,7 +230,7 @@
     <value>665, 85</value>
   </data>
   <data name="&gt;&gt;btnSaveBoxInfo.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="btnChooseIndexing.Location" type="System.Drawing.Point, System.Drawing">
     <value>665, 123</value>
@@ -214,8 +247,14 @@
   <data name="txtBoxDescription.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="lblListCaption.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 32</value>
+  <data name="&gt;&gt;btnRemoveCategory.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lstIndexItems.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnRemoveCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>350, 402</value>
   </data>
   <data name="lblDescriptionCaption.Location" type="System.Drawing.Point, System.Drawing">
     <value>451, 171</value>
@@ -223,14 +262,17 @@
   <data name="&gt;&gt;lblBoxIndexing.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;btnMoveChapterDown.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;btnNewBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="btnEditBoxName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;btnEditBoxName.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="btnAddChapter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 38</value>
   </data>
   <data name="&gt;&gt;btnEditCreator.Name" xml:space="preserve">
     <value>btnEditCreator</value>
@@ -244,17 +286,20 @@
   <data name="&gt;&gt;btnChooseIndexing.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;btnViewBoxContents.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="btnEditBoxName.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 359</value>
-  </data>
-  <data name="&gt;&gt;lstBoxes.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;btnNewBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="btnOpenBoxFolder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 402</value>
+    <value>103, 359</value>
+  </data>
+  <data name="btnRemoveCategory.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 38</value>
   </data>
   <data name="lstIndexItems.ItemHeight" type="System.Int32, mscorlib">
     <value>20</value>
@@ -272,9 +317,6 @@
   <data name="lstBoxes.Size" type="System.Drawing.Size, System.Drawing">
     <value>225, 344</value>
   </data>
-  <data name="&gt;&gt;btnUnlistBox.Name" xml:space="preserve">
-    <value>btnUnlistBox</value>
-  </data>
   <data name="&gt;&gt;lblBoxIndexing.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -290,11 +332,23 @@
   <data name="lstBoxes.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 10</value>
   </data>
+  <data name="&gt;&gt;btnRemoveCategory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>DialogManageBoxes</value>
   </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>763, 450</value>
+  </data>
+  <data name="btnAddCategory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 402</value>
+  </data>
   <data name="btnChooseIndexing.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
+  </data>
+  <data name="&gt;&gt;btnEditBoxName.ZOrder" xml:space="preserve">
+    <value>17</value>
   </data>
   <data name="btnSaveBoxInfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
@@ -306,7 +360,7 @@
     <value>134, 38</value>
   </data>
   <data name="&gt;&gt;btnViewBoxContents.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
   </data>
   <data name="lblCreator.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -318,16 +372,16 @@
     <value>6</value>
   </data>
   <data name="btnOpenBoxFolder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 38</value>
+    <value>130, 38</value>
   </data>
-  <data name="&gt;&gt;lblListCaption.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="btnAddChapter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 402</value>
   </data>
   <data name="&gt;&gt;lblBoxDirectory.Name" xml:space="preserve">
     <value>lblBoxDirectory</value>
   </data>
   <data name="&gt;&gt;lblBoxIndexing.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;btnEditBoxName.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -335,11 +389,23 @@
   <data name="btnSaveBoxInfo.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
+  <data name="btnDeleteChapter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>299, 402</value>
+  </data>
+  <data name="btnDeleteChapter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;btnAddChapter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;lblDateCreated.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="btnMoveChapterDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 38</value>
+  </data>
   <data name="&gt;&gt;btnEditCreator.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="lblBoxIndexing.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -350,8 +416,8 @@
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="&gt;&gt;btnViewBoxContents.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;txtBoxDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="btnNewBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 402</value>
@@ -362,8 +428,8 @@
   <data name="&gt;&gt;btnSaveBoxInfo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnViewBoxContents.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 38</value>
+  <data name="&gt;&gt;btnUnlistBox.Name" xml:space="preserve">
+    <value>btnUnlistBox</value>
   </data>
   <data name="lblBoxIndexing.Location" type="System.Drawing.Point, System.Drawing">
     <value>457, 123</value>
@@ -375,7 +441,7 @@
     <value>btnOpenBoxFolder</value>
   </data>
   <data name="&gt;&gt;txtBoxDescription.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="lblDescriptionCaption.Text" xml:space="preserve">
     <value>
@@ -383,6 +449,9 @@
   </data>
   <data name="&gt;&gt;lblDescriptionCaption.Name" xml:space="preserve">
     <value>lblDescriptionCaption</value>
+  </data>
+  <data name="btnMoveChapterDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 402</value>
   </data>
   <data name="btnViewBoxContents.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -396,20 +465,29 @@
   <data name="lblDateCreated.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;lstIndexItems.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;btnUnlistBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblBoxDirectory.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 10</value>
+    <value>248, 10</value>
   </data>
   <data name="&gt;&gt;lstIndexItems.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;btnMoveChapterDown.Name" xml:space="preserve">
+    <value>btnMoveChapterDown</value>
+  </data>
+  <data name="btnMoveChapterUp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteChapter.Name" xml:space="preserve">
+    <value>btnDeleteChapter</value>
+  </data>
   <data name="&gt;&gt;lblBoxDirectory.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>19</value>
+  </data>
+  <data name="btnAddCategory.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lblDescriptionCaption.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -417,8 +495,17 @@
   <data name="btnUnlistBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>148, 402</value>
   </data>
+  <data name="&gt;&gt;btnAddCategory.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;lblCreator.Name" xml:space="preserve">
     <value>lblCreator</value>
+  </data>
+  <data name="&gt;&gt;btnAddChapter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnViewBoxContents.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 38</value>
   </data>
   <data name="&gt;&gt;txtBoxDescription.Parent" xml:space="preserve">
     <value>$this</value>
@@ -435,15 +522,11 @@
   <data name="lblBoxIndexing.Size" type="System.Drawing.Size, System.Drawing">
     <value>202, 32</value>
   </data>
-  <data name="lblListCaption.Text" xml:space="preserve">
-    <value>
-</value>
-  </data>
   <data name="btnEditBoxName.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 38</value>
   </data>
-  <data name="&gt;&gt;txtBoxDescription.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblCreator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 32</value>
   </data>
   <data name="&gt;&gt;btnNewBox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -458,7 +541,10 @@
     <value>12</value>
   </data>
   <data name="&gt;&gt;lblCreator.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>16</value>
+  </data>
+  <data name="btnAddCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
   <data name="btnNewBox.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -472,53 +558,83 @@
   <data name="lblDescriptionCaption.Size" type="System.Drawing.Size, System.Drawing">
     <value>188, 32</value>
   </data>
-  <data name="&gt;&gt;lblListCaption.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnEditCreator.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnAddCategory.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteChapter.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lstBoxes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnMoveChapterDown.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;btnEditDateCreated.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="btnRemoveCategory.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
   <data name="lblBoxIndexing.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;lblDateCreated.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="btnAddChapter.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;lblListCaption.ZOrder" xml:space="preserve">
-    <value>17</value>
+  <data name="btnRemoveCategory.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;btnEditBoxName.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;lblCreator.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lstBoxes.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>20</value>
   </data>
   <data name="&gt;&gt;txtBoxDescription.Name" xml:space="preserve">
     <value>txtBoxDescription</value>
   </data>
-  <data name="lstBoxes.ItemHeight" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="&gt;&gt;btnNewBox.Name" xml:space="preserve">
+    <value>btnNewBox</value>
+  </data>
+  <data name="btnMoveChapterDown.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;btnChooseIndexing.Name" xml:space="preserve">
+    <value>btnChooseIndexing</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteChapter.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="lblBoxDirectory.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="btnDeleteChapter.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;btnRemoveCategory.ZOrder" xml:space="preserve">
+    <value>22</value>
   </data>
   <data name="&gt;&gt;lstBoxes.Name" xml:space="preserve">
     <value>lstBoxes</value>
   </data>
   <data name="&gt;&gt;lstIndexItems.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
   <data name="lblDateCreated.Location" type="System.Drawing.Point, System.Drawing">
     <value>457, 47</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>763, 450</value>
+  <data name="btnAddChapter.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
   </data>
-  <data name="lblCreator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 32</value>
+  <data name="&gt;&gt;btnRemoveCategory.Name" xml:space="preserve">
+    <value>btnRemoveCategory</value>
+  </data>
+  <data name="&gt;&gt;btnAddCategory.ZOrder" xml:space="preserve">
+    <value>21</value>
   </data>
   <data name="lstBoxes.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -526,24 +642,24 @@
   <data name="&gt;&gt;lblDateCreated.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblListCaption.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 13</value>
-  </data>
   <data name="&gt;&gt;btnOpenBoxFolder.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lblListCaption.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;btnMoveChapterDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblDateCreated.Text" xml:space="preserve">
     <value>
 </value>
   </data>
-  <data name="lblListCaption.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="txtBoxDescription.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;btnEditDateCreated.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="lstBoxes.ItemHeight" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;btnAddCategory.Name" xml:space="preserve">
+    <value>btnAddCategory</value>
   </data>
   <data name="btnEditDateCreated.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -551,14 +667,14 @@
   <data name="btnSaveBoxInfo.Location" type="System.Drawing.Point, System.Drawing">
     <value>451, 402</value>
   </data>
-  <data name="&gt;&gt;btnEditBoxName.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;btnEditCreator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteChapter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblBoxIndexing.Name" xml:space="preserve">
     <value>lblBoxIndexing</value>
-  </data>
-  <data name="txtBoxDescription.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="lblDateCreated.Size" type="System.Drawing.Size, System.Drawing">
     <value>202, 32</value>
@@ -572,8 +688,8 @@
   <data name="&gt;&gt;lstBoxes.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnChooseIndexing.Name" xml:space="preserve">
-    <value>btnChooseIndexing</value>
+  <data name="&gt;&gt;btnEditDateCreated.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
