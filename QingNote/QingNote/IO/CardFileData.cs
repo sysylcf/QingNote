@@ -30,8 +30,8 @@ namespace cn.zuoanqh.open.QingNote.IO
       if (cfname == null) return null;
       string flang = IOUtil.getFileLang(cfname);
 
-      CultureInfo stack = Thread.CurrentThread.CurrentCulture;
-      Thread.CurrentThread.CurrentCulture = new CultureInfo(flang);
+      CultureInfo stack = Thread.CurrentThread.CurrentUICulture;
+      Thread.CurrentThread.CurrentUICulture = new CultureInfo(flang);
 
       List<KeyValuePair<string, string>> fdata = ZDictionaryFileIO.readFile(Localization.Settings.Symbol_NameContent_Seperator, absolutePath, cfname);
 
@@ -39,9 +39,9 @@ namespace cn.zuoanqh.open.QingNote.IO
 
       if (missingfields.Count > 0)
       {
-        Thread.CurrentThread.CurrentCulture = stack;
+        Thread.CurrentThread.CurrentUICulture = stack;
         Instruction i = overseer.onFileInvalid(Localization.Messages.FileIO_FieldMissing, missingfields.ToArray());
-        Thread.CurrentThread.CurrentCulture = new CultureInfo(flang);
+        Thread.CurrentThread.CurrentUICulture = new CultureInfo(flang);
         return null;
         // TODO: Process the instruction
       }
@@ -72,32 +72,32 @@ namespace cn.zuoanqh.open.QingNote.IO
         }
       }
 
-      Thread.CurrentThread.CurrentCulture = stack;
+      Thread.CurrentThread.CurrentUICulture = stack;
       return cfd;
     }
     private static Dictionary<string, string> getDefaults(string lang)
     {
-      CultureInfo stack = Thread.CurrentThread.CurrentCulture;
-      Thread.CurrentThread.CurrentCulture = new CultureInfo(lang);
-
-      if (!langDefaults.ContainsKey(lang))
-      {
-        Dictionary<string, string> fldefault = new Dictionary<string, string>();
-        langDefaults.Add(lang, fldefault);
-        fldefault.Add(Localization.FileKeywords.Card_Name, Localization.Settings.Defaults_CardName);
-        fldefault.Add(Localization.FileKeywords.Card_Text, "");
-        fldefault.Add(Localization.FileKeywords.Card_Creater, Localization.Settings.Defaults_UsersName);
-        fldefault.Add(Localization.FileKeywords.Card_DateCreated, Localization.Settings.Defaults_UnknownDate);
-        fldefault.Add(Localization.FileKeywords.Card_Category, Localization.Settings.Defaults_CardCategory);
-        fldefault.Add(Localization.FileKeywords.Card_ChapterName, Localization.Settings.Defaults_ChapterName);
-        fldefault.Add(Localization.FileKeywords.Card_Keywords, "");
-      }
-      Thread.CurrentThread.CurrentCulture = stack;
+      IOUtil.inLocalizedEnviroment(lang, () =>
+        {
+          if (!langDefaults.ContainsKey(lang))
+          {
+            Dictionary<string, string> fldefault = new Dictionary<string, string>();
+            langDefaults.Add(lang, fldefault);
+            fldefault.Add(Localization.FileKeywords.Card_Name, Localization.Settings.Defaults_CardName);
+            fldefault.Add(Localization.FileKeywords.Card_Text, "");
+            fldefault.Add(Localization.FileKeywords.Card_Creater, Localization.Settings.Defaults_UsersName);
+            fldefault.Add(Localization.FileKeywords.Card_DateCreated, Localization.Settings.Defaults_UnknownDate);
+            fldefault.Add(Localization.FileKeywords.Card_Category, Localization.Settings.Defaults_CardCategory);
+            fldefault.Add(Localization.FileKeywords.Card_ChapterName, Localization.Settings.Defaults_ChapterName);
+            fldefault.Add(Localization.FileKeywords.Card_Keywords, "");
+          }
+        });
       return langDefaults[lang];
     }
 
     public CardFileData()
     { }
+
     public CardFileData(string name, string creater, string dateCreated, string text)
     {
       this.name = name;
@@ -114,39 +114,39 @@ namespace cn.zuoanqh.open.QingNote.IO
 
     public void writeFile(string absolutePath, CultureInfo lang)
     {
-      CultureInfo stack = Thread.CurrentThread.CurrentCulture;
-      Thread.CurrentThread.CurrentCulture = lang;
-      string sep = Localization.Settings.Symbol_NameContent_Seperator;
-      string fname = Localization.FileKeywords.FileName_CardBoxInfo + "." + lang.Name + "." + SystemResources.Postfix_File;
+      IOUtil.inLocalizedEnviroment(lang, () =>
+        {
+          string sep = Localization.Settings.Symbol_NameContent_Seperator;
+          string fname = Localization.FileKeywords.FileName_CardBoxInfo + "." + lang.Name + "." + SystemResources.Postfix_File;
 
-      List<KeyValuePair<string, string>> odata = new List<KeyValuePair<string, string>>();
-      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Name, name));
-      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Creater, creater));
-      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_DateCreated, dateCreated));
-      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_ChapterName, chapterName));
-      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Category, category));
-      string skeywords = "";
-      foreach (string s in keywords) skeywords += s + sep;
-      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Keywords, skeywords));
-      odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Text, text));
+          List<KeyValuePair<string, string>> odata = new List<KeyValuePair<string, string>>();
+          odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Name, name));
+          odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Creater, creater));
+          odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_DateCreated, dateCreated));
+          odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_ChapterName, chapterName));
+          odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Category, category));
+          string skeywords = "";
+          foreach (string s in keywords) skeywords += s + sep;
+          odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Keywords, skeywords));
+          odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Text, text));
 
-      //first deal with file's date, if the file is newly created. Else leave it to default handling
-      if (dateCreated.Trim() == "" && !File.Exists(Path.Combine(absolutePath, fname)))
-        dateCreated = IOUtil.formatNow();
+          //first deal with file's date, if the file is newly created. Else leave it to default handling
+          if (dateCreated.Trim() == "" && !File.Exists(Path.Combine(absolutePath, fname)))
+            dateCreated = IOUtil.formatNow();
 
-      //ensures there's a default for this language
-      getDefaults(lang.Name);
+          //ensures there's a default for this language
+          getDefaults(lang.Name);
 
-      for (int i = 0; i < odata.Count; i++)
-      {//add defaults to empy attributes
-        KeyValuePair<string, string> p = odata[i];
-        if (langDefaults[lang.Name].ContainsKey(p.Key) && p.Value == "")
-          odata[i] = new KeyValuePair<string, string>(p.Key, langDefaults[lang.Name][p.Key]);
-      }
+          for (int i = 0; i < odata.Count; i++)
+          {//add defaults to empy attributes
+            KeyValuePair<string, string> p = odata[i];
+            if (langDefaults[lang.Name].ContainsKey(p.Key) && p.Value == "")
+              odata[i] = new KeyValuePair<string, string>(p.Key, langDefaults[lang.Name][p.Key]);
+          }
 
-      ZDictionaryFileIO.writeFile(odata, sep, absolutePath, fname);
+          ZDictionaryFileIO.writeFile(odata, sep, absolutePath, fname);
 
-      Thread.CurrentThread.CurrentCulture = stack;
+        });
 
     }
     public string getKeywords()

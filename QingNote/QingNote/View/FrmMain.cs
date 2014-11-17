@@ -46,7 +46,7 @@ namespace cn.zuoanqh.open.QingNote.View
 
     private void mountCardTree(CardBoxTree tree)
     {
-      if (tree==null) return;
+      if (tree == null) return;
       cTree = tree;
       cTree.loadCardDirectories();
       lblBoxTitle.Text = lblBoxTitleDef + cBox.title;
@@ -69,7 +69,12 @@ namespace cn.zuoanqh.open.QingNote.View
 
     private void FrmMain_Load(object sender, EventArgs e)
     {
+      string s = "";
+      IOUtil.inLocalizedEnviroment("ja-JP", () => s += Localization.Messages.Dialog_EditBoxAuthor_Title + "\n\r");
+      IOUtil.inLocalizedEnviroment("en-CA", () => s += Localization.Messages.Dialog_EditBoxAuthor_Title + "\n\r");
+      IOUtil.inLocalizedEnviroment("zh-HANS", () => s += Localization.Messages.Dialog_EditBoxAuthor_Title + "\n\r");
 
+      txtCardContent.Text = s;
     }
 
     private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)

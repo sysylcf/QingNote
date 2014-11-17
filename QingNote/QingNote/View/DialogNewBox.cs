@@ -25,11 +25,13 @@ namespace cn.zuoanqh.open.QingNote.View
       CardBoxFileData boxData = new CardBoxFileData();
       boxData.title = txtBoxName.Text;
       if (rbtByCategory.Checked)
-        boxData.indexing = Localization.FileKeywords.CardBox_Index_Category;
+        boxData.indexing = BoxIndexing.CATEGORY;
       else if (rbtByChapter.Checked)
-        boxData.indexing = Localization.FileKeywords.CardBox_Index_Chapters;
+        boxData.indexing = BoxIndexing.CHAPTERS;
+      else if (rbtByTime.Checked)
+        boxData.indexing = BoxIndexing.CHRONOLOGICAL;
       else
-        boxData.indexing = Localization.FileKeywords.CardBox_Index_Chronological;
+        boxData.indexing = BoxIndexing.INVALID;
 
       boxData.dateCreated = IOUtil.formatNow();
       boxData.creator = SettingsFileData.getSettingItem(Localization.FileKeywords.Settings_UsersName);

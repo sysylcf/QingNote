@@ -51,7 +51,7 @@
       this.btnMoveChapterUp = new System.Windows.Forms.Button();
       this.btnMoveChapterDown = new System.Windows.Forms.Button();
       this.btnAddCategory = new System.Windows.Forms.Button();
-      this.btnRemoveCategory = new System.Windows.Forms.Button();
+      this.btnDeleteCategory = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
       // lstBoxes
@@ -100,7 +100,6 @@
       this.btnViewBoxContents.DialogResult = System.Windows.Forms.DialogResult.OK;
       this.btnViewBoxContents.Name = "btnViewBoxContents";
       this.btnViewBoxContents.UseVisualStyleBackColor = true;
-      this.btnViewBoxContents.Click += new System.EventHandler(this.btnViewBoxContents_Click);
       // 
       // btnEditDateCreated
       // 
@@ -197,10 +196,10 @@
       // 
       // btnRemoveCategory
       // 
-      resources.ApplyResources(this.btnRemoveCategory, "btnRemoveCategory");
-      this.btnRemoveCategory.Image = global::cn.zuoanqh.open.QingNote.IconScheme.Minus;
-      this.btnRemoveCategory.Name = "btnRemoveCategory";
-      this.btnRemoveCategory.UseVisualStyleBackColor = true;
+      resources.ApplyResources(this.btnDeleteCategory, "btnRemoveCategory");
+      this.btnDeleteCategory.Image = global::cn.zuoanqh.open.QingNote.IconScheme.Minus;
+      this.btnDeleteCategory.Name = "btnRemoveCategory";
+      this.btnDeleteCategory.UseVisualStyleBackColor = true;
       // 
       // DialogManageBoxes
       // 
@@ -228,7 +227,7 @@
       this.Controls.Add(this.lblBoxDirectory);
       this.Controls.Add(this.lstBoxes);
       this.Controls.Add(this.btnAddCategory);
-      this.Controls.Add(this.btnRemoveCategory);
+      this.Controls.Add(this.btnDeleteCategory);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
       this.MaximizeBox = false;
       this.MinimizeBox = false;
@@ -264,6 +263,6 @@
     private System.Windows.Forms.Button btnMoveChapterUp;
     private System.Windows.Forms.Button btnMoveChapterDown;
     private System.Windows.Forms.Button btnAddCategory;
-    private System.Windows.Forms.Button btnRemoveCategory;
+    private System.Windows.Forms.Button btnDeleteCategory;
   }
 }

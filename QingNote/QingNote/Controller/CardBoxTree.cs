@@ -89,5 +89,29 @@ namespace cn.zuoanqh.open.QingNote.IO
         foreach (string s in pair.Second)
           loadCard(pair.First, s);
     }
+
+    public void addDirectory()
+    {
+
+    }
+    public void removeDirectory()
+    {
+
+    }
+    public void moveCards(string fromDirectory, string toDirectory)
+    {
+      foreach (string f in Directory.GetFiles(fromDirectory))
+        File.Move(f, toDirectory + IOUtil.getFileNameWithExtension(f));
+    }
+    public void moveCardsToDefault(string fromDirectory)
+    {
+      moveCards(fromDirectory,boxData.getLocalizedDefaultFolder());
+    }
+
+    public void switchWithNextChapter(int a)
+    {
+
+    }
+
   }
 }

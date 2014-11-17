@@ -13,6 +13,7 @@ namespace cn.zuoanqh.open.QingNote
     {
       writeFile(lines, Directory.GetCurrentDirectory(), fileName);
     }
+
     public static void writeFile(List<string> lines, string absolutePath, string fileName)
     {
       string fpath = Path.Combine(absolutePath, fileName);

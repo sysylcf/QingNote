@@ -22,26 +22,27 @@ namespace cn.zuoanqh.open.QingNote.IO
       if (!fileName.EndsWith(SystemResources.Postfix_File)) return null;
       string s = zusp.Left(fileName, fileName.Length - (SystemResources.Postfix_File.Length + 1));
       if (s.LastIndexOf(".") < 0) return null;
-      s = zusp.ChopTail(s, ".").Second;
+      s = zusp.CutLast(s, ".").Second;
       return s;
     }
 
     public static string getContentFolderName(string lang)
     {
-      CultureInfo stack = Thread.CurrentThread.CurrentCulture;
-      Thread.CurrentThread.CurrentCulture = new CultureInfo(lang);
-      string name = Localization.FileKeywords.Filename_Directory_Cardbox + "." + SystemResources.PostFix_Folder;
-      Thread.CurrentThread.CurrentCulture = stack;
-
+      string name = "";
+      inLocalizedEnviroment(lang, () =>
+        {
+          name = Localization.FileKeywords.Filename_Directory_Cardbox + "." + SystemResources.PostFix_Folder;
+        });
       return name;
     }
 
     public static string getAttachmentFolderName(string lang)
     {
-      CultureInfo stack = Thread.CurrentThread.CurrentCulture;
-      Thread.CurrentThread.CurrentCulture = new CultureInfo(lang);
-      string name = Localization.FileKeywords.Filename_Directory_Attachment + "." + SystemResources.PostFix_Folder;
-      Thread.CurrentThread.CurrentCulture = stack;
+      string name = "";
+      inLocalizedEnviroment(lang, () =>
+        {
+          name = Localization.FileKeywords.Filename_Directory_Attachment + "." + SystemResources.PostFix_Folder;
+        });
       return name;
     }
 
@@ -117,7 +118,12 @@ namespace cn.zuoanqh.open.QingNote.IO
       else if (vlangfiles.Count == 1) fname = vlangfiles[0];
       return fname;
     }
-
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="fdata"></param>
+    /// <param name="defaults"></param>
+    /// <returns>Attributes that are not included.</returns>
     public static HashSet<string> CheckFDataHaveAllDefaults(List<KeyValuePair<string, string>> fdata, Dictionary<string, string> defaults)
     {
       //construct a set of file attributes that we want to ensure they are there and cross them off so its linear time to number of lines
@@ -128,6 +134,11 @@ namespace cn.zuoanqh.open.QingNote.IO
         if (items.Contains(line.Key)) items.Remove(line.Key);
 
       return items;
+    }
+
+    public static string getFileNameWithExtension(string s)
+    {
+      return s.Substring(s.LastIndexOf("\\"));
     }
 
     private class Lang : IEnumerable<string>
@@ -145,6 +156,24 @@ namespace cn.zuoanqh.open.QingNote.IO
       {
         return GetEnumerator();
       }
+    }
+
+    public static void inLocalizedEnviroment(CultureInfo lang, Action action)
+    {
+      CultureInfo stack = Thread.CurrentThread.CurrentUICulture;
+      Thread.CurrentThread.CurrentUICulture = lang;
+      try
+      {
+        action.Invoke();
+      }
+      finally
+      {
+        Thread.CurrentThread.CurrentUICulture = stack;
+      }
+    }
+    public static void inLocalizedEnviroment(string lang, Action action)
+    {
+      inLocalizedEnviroment(new CultureInfo(lang), action);
     }
   }
 }

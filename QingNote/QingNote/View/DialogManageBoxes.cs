@@ -16,40 +16,46 @@ namespace cn.zuoanqh.open.QingNote.View
   {
     private List<CardBoxTree> boxList;
     private string lblDateCreateddef, lblCreatordef, lblBoxIndexingdef;
-    public CardBoxTree cTree;
+    private CardBoxTree _cTree;
+    public CardBoxTree cTree { get { return _cTree; } set { _cTree = value; boxChanged(); } }
+    private ExclusiveControlGroups<BoxIndexing> indexButtonGroups;
     private CardBoxFileData cBox { get { return cTree.boxData; } }
 
     public DialogManageBoxes()
     {
       InitializeComponent();
       boxList = new List<CardBoxTree>();
-      initLabelDefs();
-      reloadBoxes();
-      clearLabels();
-    }
+      indexButtonGroups = new ExclusiveControlGroups<BoxIndexing>();
 
-    public void reloadBoxes()
-    {
-      lstBoxes.Items.Clear();
-      boxList.Clear();
-      foreach (string s in DirectoriesFileData.boxList)
-      {
-        var tree = new CardBoxTree(s);
-        boxList.Add(tree);
-        lstBoxes.Items.Add(tree.boxData.title);
-      }
+      ISet<Control> t = new HashSet<Control>();
+      t.Add(btnAddCategory);
+      t.Add(btnDeleteCategory);
+      indexButtonGroups.addGroup(BoxIndexing.CATEGORY, t);
+
+      t = new HashSet<Control>();
+      t.Add(btnAddChapter);
+      t.Add(btnDeleteChapter);
+      t.Add(btnMoveChapterDown);
+      t.Add(btnMoveChapterUp);
+      indexButtonGroups.addGroup(BoxIndexing.CHAPTERS, t);
+
+      indexButtonGroups.addGroup(BoxIndexing.CHRONOLOGICAL, new HashSet<Control>());
+
+      initLabelDefs();
+      syncBoxList(false);
     }
 
     private void btnNewBox_Click(object sender, EventArgs e)
     {
       new DialogNewBox().ShowDialog();
-      reloadBoxes();
+      syncBoxList(false);
+      zuwf.ListBox_SelectLast(lstBoxes);
     }
 
     private void lstBoxes_SelectedIndexChanged(object sender, EventArgs e)
     {
-      cTree = (zuwf.ListBox_HaveItemSelected(lstBoxes)) ? boxList[lstBoxes.SelectedIndex] : null;
-      updateLabels();
+      cTree = zuwf.ListBox_HaveItemSelected(lstBoxes) ? boxList[lstBoxes.SelectedIndex] : null;
+
     }
 
     private void btnEditBoxName_Click(object sender, EventArgs e)
@@ -59,9 +65,8 @@ namespace cn.zuoanqh.open.QingNote.View
       string result = tin.ShowDialogAndFetchInput(this);
       if (result == null) return;
       cBox.title = result;
-      cBox.writeFile(cTree.boxDirectory);
-      updateLabels();
-      reloadBoxes();
+      syncLabelsWithSelection();
+      zuwf.ListBox_UpdateSelectedItem(lstBoxes, result);
     }
 
     private void btnEditDateCreated_Click(object sender, EventArgs e)
@@ -71,8 +76,7 @@ namespace cn.zuoanqh.open.QingNote.View
       string result = tin.ShowDialogAndFetchInput(this);
       if (result == null) return;
       cBox.dateCreated = result;
-      cBox.writeFile(cTree.boxDirectory);
-      updateLabels();
+      boxInfoUpdated();
     }
 
     private void btnEditCreator_Click(object sender, EventArgs e)
@@ -82,59 +86,13 @@ namespace cn.zuoanqh.open.QingNote.View
       string result = tin.ShowDialogAndFetchInput(this);
       if (result == null) return;
       cBox.creator = result;
-      cBox.writeFile(cTree.boxDirectory);
-      updateLabels();
-    }
-
-    private void updateLabels()
-    {
-      if (cTree != null)
-      {
-        lblBoxDirectory.Text = cTree.boxDirectory;
-        lblDateCreated.Text = lblDateCreateddef + cBox.dateCreated;
-        lblCreator.Text = lblCreatordef + cBox.creator;
-        lblBoxIndexing.Text = lblBoxIndexingdef + cBox.indexing;
-        txtBoxDescription.Text = cBox.description;
-        //if ()
-      }
-      else
-      {
-        clearLabels();
-
-      }
-    }
-
-    private void clearLabels()
-    {
-      lblBoxDirectory.Text = "";
-      lblDateCreated.Text = lblDateCreateddef;
-      lblCreator.Text = lblCreatordef;
-      lblBoxIndexing.Text = lblBoxIndexingdef;
-      txtBoxDescription.Text = "";
-      btnAddCategory.Visible = false;
-      btnRemoveCategory.Visible = false;
-      btnAddChapter.Visible = true;
-      btnDeleteChapter.Visible = true;
-      btnMoveChapterUp.Visible = true;
-      btnMoveChapterDown.Visible = true;
-      btnAddChapter.Enabled = false;
-      btnDeleteChapter.Enabled = false;
-      btnMoveChapterUp.Enabled = false;
-      btnMoveChapterDown.Enabled = false;
-    }
-
-    private void initLabelDefs()
-    {
-      lblDateCreateddef = lblDateCreated.Text;
-      lblCreatordef = lblCreator.Text;
-      lblBoxIndexingdef = lblBoxIndexing.Text;
+      boxInfoUpdated();
     }
 
     private void btnUnlistBox_Click(object sender, EventArgs e)
     {
       DirectoriesFileData.removeCardBox(boxList[lstBoxes.SelectedIndex].boxDirectory);
-      reloadBoxes();
-      clearLabels();
+      syncBoxList(false);
     }
 
     private void btnOpenBoxFolder_Click(object sender, EventArgs e)
@@ -147,14 +105,68 @@ namespace cn.zuoanqh.open.QingNote.View
       if (cTree != null)
       {
         cBox.description = txtBoxDescription.Text;
-        cBox.writeFile(cTree.boxDirectory);
-        reloadBoxes();
+        boxInfoUpdated();
       }
     }
 
-    private void btnViewBoxContents_Click(object sender, EventArgs e)
+    private void syncLabelsWithSelection()
     {
+      if (cTree != null)
+      {
+        lblBoxDirectory.Text = cTree.boxDirectory;
+        lblDateCreated.Text = lblDateCreateddef + cBox.dateCreated;
+        lblCreator.Text = lblCreatordef + cBox.creator;
+        lblBoxIndexing.Text = lblBoxIndexingdef + BoxIndexingHandler.getIndexingText(cBox.indexing);
+        txtBoxDescription.Text = cBox.description;
+      }
+      else
+      {
+        lblBoxDirectory.Text = "";
+        lblDateCreated.Text = lblDateCreateddef;
+        lblCreator.Text = lblCreatordef;
+        lblBoxIndexing.Text = lblBoxIndexingdef;
+        txtBoxDescription.Text = "";
+      }
+    }
+    private void initLabelDefs()
+    {
+      lblDateCreateddef = lblDateCreated.Text;
+      lblCreatordef = lblCreator.Text;
+      lblBoxIndexingdef = lblBoxIndexing.Text;
+    }
 
+    private void syncBoxList(bool reselect)
+    {
+      lstBoxes.Items.Clear();
+      boxList.Clear();
+      int t = lstBoxes.SelectedIndex;
+      foreach (string s in DirectoriesFileData.boxList)
+      {
+        var tree = new CardBoxTree(s);
+        boxList.Add(tree);
+        lstBoxes.Items.Add(tree.boxData.title);
+      }
+      cTree = (reselect) ? boxList[t] : null;
+    }
+
+    private void boxInfoUpdated()
+    {
+      cBox.writeFile(cTree.boxDirectory);
+      syncLabelsWithSelection();
+    }
+
+    private void boxChanged()
+    {
+      syncLabelsWithSelection();
+      if (cTree == null)
+      {
+        indexButtonGroups.switchOffAll();
+        lstIndexItems.Items.Clear();
+      }
+      else
+      {
+        indexButtonGroups.switchTo(cBox.indexing);
+      }
     }
   }
 }
