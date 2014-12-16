@@ -165,7 +165,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 268</value>
+    <value>-3, 231</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 32</value>
@@ -177,7 +177,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 345</value>
+    <value>10, 312</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 32</value>
@@ -189,7 +189,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 308</value>
+    <value>-2, 271</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 32</value>
@@ -211,6 +211,9 @@
   </data>
   <data name="btnChangeCreater.Text" xml:space="preserve">
     <value>編集</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-2, 350</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 32</value>

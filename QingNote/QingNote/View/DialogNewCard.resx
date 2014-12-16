@@ -193,7 +193,7 @@
     <value>$this</value>
   </data>
   <data name="lblDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 308</value>
+    <value>106, 271</value>
   </data>
   <data name="&gt;&gt;btnRemoveKeyword.Name" xml:space="preserve">
     <value>btnRemoveKeyword</value>
@@ -208,16 +208,19 @@
     <value>97, 32</value>
   </data>
   <data name="btnChangeDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 307</value>
+    <value>336, 271</value>
+  </data>
+  <data name="&gt;&gt;lstKeywords.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="btnDoneLower.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 543</value>
+    <value>336, 510</value>
   </data>
   <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>444, 582</value>
+    <value>444, 549</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>8</value>
@@ -256,7 +259,7 @@
     <value>label1</value>
   </data>
   <data name="txtText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 411</value>
+    <value>15, 378</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -287,9 +290,6 @@
   </data>
   <data name="btnRemoveKeyword.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
-  </data>
-  <data name="&gt;&gt;txtName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnRemoveKeyword.Parent" xml:space="preserve">
     <value>$this</value>
@@ -334,7 +334,7 @@
     <value>107, 46</value>
   </data>
   <data name="btnAddKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 268</value>
+    <value>106, 230</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -399,6 +399,9 @@
   <data name="&gt;&gt;btnDoneUpper.Name" xml:space="preserve">
     <value>btnDoneUpper</value>
   </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 32</value>
   </data>
@@ -415,7 +418,7 @@
     <value>6</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 271</value>
+    <value>11, 227</value>
   </data>
   <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -459,14 +462,17 @@
   <data name="&gt;&gt;btnChangeCreater.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
   <data name="lstKeywords.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 144</value>
+    <value>267, 104</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;lstKeywords.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;txtName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -479,9 +485,6 @@
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
-  </data>
-  <data name="&gt;&gt;btnChangeCreater.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;txtChapter.ZOrder" xml:space="preserve">
     <value>15</value>
@@ -507,9 +510,6 @@
   <data name="&gt;&gt;lstKeywords.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
   <data name="&gt;&gt;btnChangeDate.Name" xml:space="preserve">
     <value>btnChangeDate</value>
   </data>
@@ -526,7 +526,7 @@
     <value>label3</value>
   </data>
   <data name="lblCreater.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 345</value>
+    <value>107, 312</value>
   </data>
   <data name="&gt;&gt;btnAddKeyword.Parent" xml:space="preserve">
     <value>$this</value>
@@ -544,28 +544,28 @@
     <value>97, 32</value>
   </data>
   <data name="btnChangeCreater.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 345</value>
+    <value>336, 312</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 32</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 377</value>
+    <value>11, 344</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 345</value>
+    <value>11, 312</value>
   </data>
   <data name="lblCreater.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
   <data name="btnRemoveKeyword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 144</value>
+    <value>55, 104</value>
   </data>
   <data name="&gt;&gt;btnChangeCreater.Name" xml:space="preserve">
     <value>btnChangeCreater</value>
   </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>21</value>
+  <data name="btnChangeDate.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="&gt;&gt;txtText.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -583,7 +583,7 @@
     <value>286, 28</value>
   </data>
   <data name="txtNewKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 268</value>
+    <value>146, 230</value>
   </data>
   <data name="&gt;&gt;txtName.ZOrder" xml:space="preserve">
     <value>18</value>
@@ -598,7 +598,7 @@
     <value>107, 10</value>
   </data>
   <data name="lblCreater.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 32</value>
+    <value>223, 32</value>
   </data>
   <data name="btnRemoveKeyword.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 12pt, style=Bold</value>
@@ -651,8 +651,8 @@
   <data name="btnAddKeyword.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft YaHei, 12pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
+  <data name="&gt;&gt;btnChangeCreater.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="txtText.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -681,8 +681,8 @@
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 32</value>
   </data>
-  <data name="btnChangeDate.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="btnDoneLower.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -706,7 +706,7 @@
     <value>$this</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 308</value>
+    <value>11, 271</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>

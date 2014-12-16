@@ -69,12 +69,7 @@ namespace cn.zuoanqh.open.QingNote.View
 
     private void FrmMain_Load(object sender, EventArgs e)
     {
-      string s = "";
-      IOUtil.inLocalizedEnviroment("ja-JP", () => s += Localization.Messages.Dialog_EditBoxAuthor_Title + "\n\r");
-      IOUtil.inLocalizedEnviroment("en-CA", () => s += Localization.Messages.Dialog_EditBoxAuthor_Title + "\n\r");
-      IOUtil.inLocalizedEnviroment("zh-HANS", () => s += Localization.Messages.Dialog_EditBoxAuthor_Title + "\n\r");
 
-      txtCardContent.Text = s;
     }
 
     private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
@@ -89,7 +84,7 @@ namespace cn.zuoanqh.open.QingNote.View
 
     private void btnNewCard_Click(object sender, EventArgs e)
     {
-      if (cCard != null) new DialogNewCard(cBox).ShowDialog();
+      if (cTree != null) new DialogNewCard(cTree).ShowDialog();
     }
 
     private void btnSwitchCardBox_Click(object sender, EventArgs e)

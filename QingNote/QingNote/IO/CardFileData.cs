@@ -96,14 +96,18 @@ namespace cn.zuoanqh.open.QingNote.IO
     }
 
     public CardFileData()
-    { }
+    {
+      this.lang = Thread.CurrentThread.CurrentUICulture.Name;
+      this.keywords = new HashSet<string>();
+    }
 
-    public CardFileData(string name, string creater, string dateCreated, string text)
+    public CardFileData(string name, string creater, string dateCreated, string text):this()
     {
       this.name = name;
       this.creater = creater;
       this.dateCreated = dateCreated;
       this.text = text;
+
     }
     /// <summary>
     /// write file with this file's lang parameter when it was read from a file. if there's no such parameter, use the current language.

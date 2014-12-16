@@ -13,11 +13,13 @@ namespace cn.zuoanqh.open.QingNote.View
 {
   public partial class DialogNewCard : Form
   {
-    private CardBoxFileData boxData;
-    public DialogNewCard(CardBoxFileData boxData)
+
+    private CardBoxFileData boxData { get { return tree.boxData; } }
+    private CardBoxTree tree;
+    public DialogNewCard(CardBoxTree tree)
     {
       InitializeComponent();
-      this.boxData = boxData;
+      this.tree = tree;
     }
 
     private void lstKeywords_SelectedIndexChanged(object sender, EventArgs e)
@@ -26,25 +28,50 @@ namespace cn.zuoanqh.open.QingNote.View
         IconScheme.Remove_Multiple : IconScheme.Remove_Single;
     }
 
-    private void label2_Click(object sender, EventArgs e)
-    {
-
-    }
-
     private void DialogNewCard_Load(object sender, EventArgs e)
     {
       DateTime now = System.DateTime.Now;
       lblDate.Text = String.Format(Localization.Settings.Format_YMD, now.Year, now.Month, now.Day);
-      lblCreater.Text=IO.SettingsFileData.getSettingItem(Localization.FileKeywords.Settings_UsersName);
+      lblCreater.Text = IO.SettingsFileData.getSettingItem(Localization.FileKeywords.Settings_UsersName);
       txtCategory.Items.AddRange(boxData.categories.ToArray());
       txtChapter.Items.AddRange(boxData.chapters.ToArray());
       txtNewKeyword.Items.AddRange(boxData.keywords.ToArray());
     }
 
-    private void label5_Click(object sender, EventArgs e)
+    private void btnDoneUpper_Click(object sender, EventArgs e)
     {
-
+      onDoneClicked();
     }
 
+    private void btnDoneLower_Click(object sender, EventArgs e)
+    {
+      onDoneClicked();
+    }
+
+    private void onDoneClicked()
+    {
+      CardFileData card = new CardFileData();
+      card.creater = lblCreater.Text;
+      card.name = txtName.Text;
+      card.text = zut.zuwf.ListBox_MkString(lstKeywords, Localization.Settings.Symbol_Item_Seperator[0]);
+      card.dateCreated = lblDate.Text;
+      card.category = txtCategory.Text;
+      card.chapterName = txtChapter.Text;
+      foreach (var s in lstKeywords.Items) card.keywords.Add(s.ToString().Trim());
+      tree.addNewCard(card);
+    }
+
+    private void btnRemoveKeyword_Click(object sender, EventArgs e)
+    {
+      if (lstKeywords.SelectedItems.Count != 0)
+        zut.zuwf.ListBox_RemoveAllSelectedItems(lstKeywords);
+      else
+        lstKeywords.Items.Clear();
+    }
+
+    private void btnAddKeyword_Click(object sender, EventArgs e)
+    {
+      if (txtNewKeyword.Text.Trim().Length > 0) lstKeywords.Items.Add(txtNewKeyword.Text);
+    }
   }
 }

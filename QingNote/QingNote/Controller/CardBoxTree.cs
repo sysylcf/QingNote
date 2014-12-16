@@ -23,7 +23,10 @@ namespace cn.zuoanqh.open.QingNote.IO
     /// </summary>
     public readonly string boxDirectory;
 
-    private readonly string contentDirectory;
+    /// <summary>
+    /// The directory that holds all subfolder(for chapters, dates and category)
+    /// </summary>
+    public readonly string contentDirectory;
     /// <summary>
     /// Creates an empty controller.
     /// </summary>
@@ -111,6 +114,25 @@ namespace cn.zuoanqh.open.QingNote.IO
     public void switchWithNextChapter(int a)
     {
 
+    }
+
+    public void addNewCard(CardFileData c)
+    {
+      string folderName="";
+      switch (boxData.indexing)
+      { 
+        case BoxIndexing.CATEGORY:
+          folderName = c.category; break;
+        case BoxIndexing.CHAPTERS:
+          folderName = c.creater; break;
+        case BoxIndexing.CHRONOLOGICAL:
+          folderName = c.dateCreated; break;
+      }
+      folderName = Path.Combine(contentDirectory, folderName);
+      if (!Directory.Exists(folderName)) Directory.CreateDirectory(folderName);
+      folderName = Path.Combine(folderName, c.name);
+      Directory.CreateDirectory(folderName);
+      c.writeFile(folderName);
     }
 
   }

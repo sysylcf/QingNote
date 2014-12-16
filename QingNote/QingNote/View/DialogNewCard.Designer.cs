@@ -69,6 +69,7 @@
       this.btnDoneUpper.DialogResult = System.Windows.Forms.DialogResult.OK;
       this.btnDoneUpper.Name = "btnDoneUpper";
       this.btnDoneUpper.UseVisualStyleBackColor = true;
+      this.btnDoneUpper.Click += new System.EventHandler(this.btnDoneUpper_Click);
       // 
       // txtCategory
       // 
@@ -90,7 +91,6 @@
       // 
       resources.ApplyResources(this.label2, "label2");
       this.label2.Name = "label2";
-      this.label2.Click += new System.EventHandler(this.label2_Click);
       // 
       // label3
       // 
@@ -113,7 +113,6 @@
       // 
       resources.ApplyResources(this.label5, "label5");
       this.label5.Name = "label5";
-      this.label5.Click += new System.EventHandler(this.label5_Click);
       // 
       // btnAddKeyword
       // 
@@ -121,6 +120,7 @@
       this.btnAddKeyword.BackgroundImage = global::cn.zuoanqh.open.QingNote.IconScheme.UpArrow;
       this.btnAddKeyword.Name = "btnAddKeyword";
       this.btnAddKeyword.UseVisualStyleBackColor = true;
+      this.btnAddKeyword.Click += new System.EventHandler(this.btnAddKeyword_Click);
       // 
       // btnRemoveKeyword
       // 
@@ -128,6 +128,7 @@
       this.btnRemoveKeyword.BackgroundImage = global::cn.zuoanqh.open.QingNote.IconScheme.Remove_Multiple;
       this.btnRemoveKeyword.Name = "btnRemoveKeyword";
       this.btnRemoveKeyword.UseVisualStyleBackColor = true;
+      this.btnRemoveKeyword.Click += new System.EventHandler(this.btnRemoveKeyword_Click);
       // 
       // label6
       // 
@@ -179,6 +180,7 @@
       this.btnDoneLower.DialogResult = System.Windows.Forms.DialogResult.OK;
       this.btnDoneLower.Name = "btnDoneLower";
       this.btnDoneLower.UseVisualStyleBackColor = true;
+      this.btnDoneLower.Click += new System.EventHandler(this.btnDoneLower_Click);
       // 
       // txtNewKeyword
       // 
