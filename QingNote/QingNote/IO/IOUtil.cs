@@ -49,7 +49,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     public static string getPathLast(string path)
     {
       if (path == null) return null;
-      return path.Substring(path.LastIndexOf(@"\"));
+      return zusp.CutLast(path,@"\").Second;
     }
 
     public static string formatNow()

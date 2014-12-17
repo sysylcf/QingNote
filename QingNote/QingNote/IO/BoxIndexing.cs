@@ -47,5 +47,18 @@ namespace cn.zuoanqh.open.QingNote.IO
       return s;
     }
 
+    public static string getCardParentFolderName(CardBoxFileData box, CardFileData card)
+    {
+      switch (box.indexing)
+      {
+        case BoxIndexing.CATEGORY:
+          return card.category; 
+        case BoxIndexing.CHAPTERS:
+          return card.chapterName;
+        case BoxIndexing.CHRONOLOGICAL:
+          return card.dateCreated; 
+      }
+      return null;
+    }
   }
 }

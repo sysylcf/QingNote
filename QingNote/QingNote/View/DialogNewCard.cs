@@ -16,10 +16,14 @@ namespace cn.zuoanqh.open.QingNote.View
 
     private CardBoxFileData boxData { get { return tree.boxData; } }
     private CardBoxTree tree;
+
+    public CardFileData card;
+
     public DialogNewCard(CardBoxTree tree)
     {
       InitializeComponent();
       this.tree = tree;
+      card = null;
     }
 
     private void lstKeywords_SelectedIndexChanged(object sender, EventArgs e)
@@ -50,7 +54,7 @@ namespace cn.zuoanqh.open.QingNote.View
 
     private void onDoneClicked()
     {
-      CardFileData card = new CardFileData();
+      card = new CardFileData();
       card.creater = lblCreater.Text;
       card.name = txtName.Text;
       card.text = zut.zuwf.ListBox_MkString(lstKeywords, Localization.Settings.Symbol_Item_Seperator[0]);

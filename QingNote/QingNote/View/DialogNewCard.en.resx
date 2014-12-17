@@ -183,7 +183,7 @@
     <value>108, 120</value>
   </data>
   <data name="lstKeywords.Size" type="System.Drawing.Size, System.Drawing">
-    <value>266, 148</value>
+    <value>266, 100</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>-10, 118</value>
@@ -198,7 +198,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-10, 246</value>
+    <value>-10, 205</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 52</value>
@@ -210,16 +210,16 @@
     <value>BottomRight</value>
   </data>
   <data name="btnAddKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 270</value>
+    <value>109, 225</value>
   </data>
   <data name="btnRemoveKeyword.Location" type="System.Drawing.Point, System.Drawing">
     <value>378, 120</value>
   </data>
   <data name="btnRemoveKeyword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 148</value>
+    <value>55, 100</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-10, 307</value>
+    <value>-10, 271</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 32</value>
@@ -231,7 +231,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-10, 345</value>
+    <value>-10, 307</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 32</value>
@@ -243,7 +243,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="lblDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 307</value>
+    <value>108, 271</value>
   </data>
   <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>223, 32</value>
@@ -254,8 +254,8 @@
   <data name="btnChangeCreater.Text" xml:space="preserve">
     <value>Edit...</value>
   </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 377</value>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 32</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Text:</value>
@@ -267,7 +267,7 @@
     <value>Done</value>
   </data>
   <data name="txtNewKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 270</value>
+    <value>149, 225</value>
   </data>
   <data name="txtNewKeyword.Size" type="System.Drawing.Size, System.Drawing">
     <value>284, 32</value>

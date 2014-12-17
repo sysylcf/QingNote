@@ -183,7 +183,7 @@
     <value>121, 126</value>
   </data>
   <data name="lstKeywords.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 139</value>
+    <value>254, 112</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 126</value>
@@ -198,7 +198,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 236</value>
+    <value>15, 208</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 63</value>
@@ -211,7 +211,7 @@
     <value>BottomRight</value>
   </data>
   <data name="btnAddKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 267</value>
+    <value>120, 242</value>
   </data>
   <data name="btnAddKeyword.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 36</value>
@@ -220,10 +220,10 @@
     <value>378, 126</value>
   </data>
   <data name="btnRemoveKeyword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 139</value>
+    <value>55, 112</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 307</value>
+    <value>12, 282</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 32</value>
@@ -233,6 +233,9 @@
   </data>
   <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 312</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 32</value>
@@ -244,22 +247,31 @@
     <value>MiddleRight</value>
   </data>
   <data name="lblDate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 307</value>
+    <value>120, 282</value>
   </data>
   <data name="lblDate.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 32</value>
   </data>
   <data name="lblCreater.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 345</value>
+    <value>120, 318</value>
   </data>
   <data name="lblCreater.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 32</value>
   </data>
+  <data name="btnChangeDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>335, 282</value>
+  </data>
   <data name="btnChangeDate.Text" xml:space="preserve">
     <value>修改...</value>
   </data>
+  <data name="btnChangeCreater.Location" type="System.Drawing.Point, System.Drawing">
+    <value>335, 318</value>
+  </data>
   <data name="btnChangeCreater.Text" xml:space="preserve">
     <value>修改...</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-12, 344</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>内容：</value>
@@ -271,7 +283,7 @@
     <value>完成</value>
   </data>
   <data name="txtNewKeyword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 268</value>
+    <value>162, 244</value>
   </data>
   <data name="txtNewKeyword.Size" type="System.Drawing.Size, System.Drawing">
     <value>270, 35</value>

@@ -177,7 +177,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 312</value>
+    <value>11, 271</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 32</value>
@@ -189,7 +189,7 @@
     <value>MiddleRight</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 271</value>
+    <value>-2, 312</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>105, 32</value>

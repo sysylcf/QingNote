@@ -121,7 +121,7 @@ namespace cn.zuoanqh.open.QingNote.IO
       IOUtil.inLocalizedEnviroment(lang, () =>
         {
           string sep = Localization.Settings.Symbol_NameContent_Seperator;
-          string fname = Localization.FileKeywords.FileName_CardBoxInfo + "." + lang.Name + "." + SystemResources.Postfix_File;
+          string fname = Localization.FileKeywords.FileName_CardInfo + "." + lang.Name + "." + SystemResources.Postfix_File;
 
           List<KeyValuePair<string, string>> odata = new List<KeyValuePair<string, string>>();
           odata.Add(new KeyValuePair<string, string>(Localization.FileKeywords.Card_Name, name));

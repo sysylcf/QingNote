@@ -108,7 +108,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     }
     public void moveCardsToDefault(string fromDirectory)
     {
-      moveCards(fromDirectory,boxData.getLocalizedDefaultFolder());
+      moveCards(fromDirectory, boxData.getLocalizedDefaultFolder());
     }
 
     public void switchWithNextChapter(int a)
@@ -116,23 +116,16 @@ namespace cn.zuoanqh.open.QingNote.IO
 
     }
 
-    public void addNewCard(CardFileData c)
+    public void addNewCard(CardFileData card)
     {
-      string folderName="";
-      switch (boxData.indexing)
-      { 
-        case BoxIndexing.CATEGORY:
-          folderName = c.category; break;
-        case BoxIndexing.CHAPTERS:
-          folderName = c.creater; break;
-        case BoxIndexing.CHRONOLOGICAL:
-          folderName = c.dateCreated; break;
-      }
+      string folderName = BoxIndexingHandler.getCardParentFolderName(boxData,card);
+
       folderName = Path.Combine(contentDirectory, folderName);
       if (!Directory.Exists(folderName)) Directory.CreateDirectory(folderName);
-      folderName = Path.Combine(folderName, c.name);
+      folderName = Path.Combine(folderName, card.name);
       Directory.CreateDirectory(folderName);
-      c.writeFile(folderName);
+      card.writeFile(folderName);
+      Directory.CreateDirectory(Path.Combine(folderName, Localization.FileKeywords.Filename_Directory_Attachment));
     }
 
   }
