@@ -155,6 +155,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     }
     public string getKeywords()
     {
+      if (keywords.Count == 0) return "";
       string s = "";
       foreach (string i in keywords)
         s += Localization.Settings.Symbol_Item_Seperator + i;

@@ -93,13 +93,17 @@ namespace cn.zuoanqh.open.QingNote.IO
           loadCard(pair.First, s);
     }
 
-    public void addDirectory()
+    public void addDirectory(string directoryName)
     {
-
+      Directory.CreateDirectory(Path.Combine(contentDirectory,directoryName));
     }
-    public void removeDirectory()
+    /// <summary>
+    /// This will delete all the files in that directory.
+    /// </summary>
+    /// <param name="directoryName"></param>
+    public void removeDirectory(string directoryName)
     {
-
+      Directory.Delete(Path.Combine(contentDirectory, directoryName), true);
     }
     public void moveCards(string fromDirectory, string toDirectory)
     {

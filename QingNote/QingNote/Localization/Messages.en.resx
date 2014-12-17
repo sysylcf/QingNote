@@ -135,6 +135,18 @@
   <data name="Dialog_EditBoxTitle_Title" xml:space="preserve">
     <value>Edit Box Title</value>
   </data>
+  <data name="Dialog_EditCardAuthod_Message" xml:space="preserve">
+    <value>Please enter new date of creation:</value>
+  </data>
+  <data name="Dialog_EditCardAuthor_Title" xml:space="preserve">
+    <value>Edit Card Date</value>
+  </data>
+  <data name="Dialog_EditCardDate_Message" xml:space="preserve">
+    <value>Please enter new author name:</value>
+  </data>
+  <data name="Dialog_EditCardDate_Title" xml:space="preserve">
+    <value>Edit Card Author</value>
+  </data>
   <data name="Dialog_Title_Prefix" xml:space="preserve">
     <value>QingNote - </value>
   </data>
@@ -142,8 +154,7 @@
     <value>Cannot find attribute "{0}" in the file.</value>
   </data>
   <data name="FileIO_FieldValueNotValid" xml:space="preserve">
-    <value>Value for arrtibute "
-{0}" is not valid. Valid values are : {1}</value>
+    <value>Value for arrtibute "{0}" is not valid. Valid values are : {1}</value>
   </data>
   <data name="FileIO_FileMissing" xml:space="preserve">
     <value>Can't find any file.</value>

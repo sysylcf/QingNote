@@ -124,16 +124,28 @@
     <value>修改作者名</value>
   </data>
   <data name="Dialog_EditBoxDate_Message" xml:space="preserve">
-    <value>请输入新的卡盒创建时间：</value>
+    <value>请输入新的卡盒创建日期：</value>
   </data>
   <data name="Dialog_EditBoxDate_Title" xml:space="preserve">
-    <value>修改卡盒创建时间</value>
+    <value>修改卡盒创建日期</value>
   </data>
   <data name="Dialog_EditBoxTitle_Message" xml:space="preserve">
     <value>请输入新的卡盒名：</value>
   </data>
   <data name="Dialog_EditBoxTitle_Title" xml:space="preserve">
     <value>修改卡盒名</value>
+  </data>
+  <data name="Dialog_EditCardAuthod_Message" xml:space="preserve">
+    <value>请输入新的读书卡创建日期：</value>
+  </data>
+  <data name="Dialog_EditCardAuthor_Title" xml:space="preserve">
+    <value>修改读书卡创建日期</value>
+  </data>
+  <data name="Dialog_EditCardDate_Message" xml:space="preserve">
+    <value>请输入新的作者名：</value>
+  </data>
+  <data name="Dialog_EditCardDate_Title" xml:space="preserve">
+    <value>修改作者名</value>
   </data>
   <data name="Dialog_Title_Prefix" xml:space="preserve">
     <value>清笔记 -</value>

@@ -80,7 +80,6 @@ namespace cn.zuoanqh.open.QingNote.View
       }
       nodes[index].Nodes.Add(new TreeNode(child));
     }
-     
 
     public void selectCard(string parent, string name)
     {

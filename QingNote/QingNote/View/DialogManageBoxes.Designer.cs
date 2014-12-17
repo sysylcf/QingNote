@@ -86,6 +86,7 @@
       resources.ApplyResources(this.lstIndexItems, "lstIndexItems");
       this.lstIndexItems.FormattingEnabled = true;
       this.lstIndexItems.Name = "lstIndexItems";
+      this.lstIndexItems.SelectedIndexChanged += new System.EventHandler(this.lstIndexItems_SelectedIndexChanged);
       // 
       // btnSaveBoxInfo
       // 
@@ -194,11 +195,11 @@
       this.btnAddCategory.Name = "btnAddCategory";
       this.btnAddCategory.UseVisualStyleBackColor = true;
       // 
-      // btnRemoveCategory
+      // btnDeleteCategory
       // 
-      resources.ApplyResources(this.btnDeleteCategory, "btnRemoveCategory");
+      resources.ApplyResources(this.btnDeleteCategory, "btnDeleteCategory");
       this.btnDeleteCategory.Image = global::cn.zuoanqh.open.QingNote.IconScheme.Minus;
-      this.btnDeleteCategory.Name = "btnRemoveCategory";
+      this.btnDeleteCategory.Name = "btnDeleteCategory";
       this.btnDeleteCategory.UseVisualStyleBackColor = true;
       // 
       // DialogManageBoxes

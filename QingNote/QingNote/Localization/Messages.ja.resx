@@ -135,6 +135,18 @@
   <data name="Dialog_EditBoxTitle_Title" xml:space="preserve">
     <value>ボックスのタイトルを編集</value>
   </data>
+  <data name="Dialog_EditCardAuthod_Message" xml:space="preserve">
+    <value>新しい日付を入力してください：</value>
+  </data>
+  <data name="Dialog_EditCardAuthor_Title" xml:space="preserve">
+    <value>カードの日付を編集</value>
+  </data>
+  <data name="Dialog_EditCardDate_Message" xml:space="preserve">
+    <value>新しい作成者名を入力してください：</value>
+  </data>
+  <data name="Dialog_EditCardDate_Title" xml:space="preserve">
+    <value>カードの作成者を編集</value>
+  </data>
   <data name="Dialog_Title_Prefix" xml:space="preserve">
     <value>QingNote　ー　</value>
   </data>

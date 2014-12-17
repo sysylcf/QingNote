@@ -157,12 +157,14 @@
       resources.ApplyResources(this.btnChangeDate, "btnChangeDate");
       this.btnChangeDate.Name = "btnChangeDate";
       this.btnChangeDate.UseVisualStyleBackColor = true;
+      this.btnChangeDate.Click += new System.EventHandler(this.btnChangeDate_Click);
       // 
       // btnChangeCreater
       // 
       resources.ApplyResources(this.btnChangeCreater, "btnChangeCreater");
       this.btnChangeCreater.Name = "btnChangeCreater";
       this.btnChangeCreater.UseVisualStyleBackColor = true;
+      this.btnChangeCreater.Click += new System.EventHandler(this.btnChangeCreater_Click);
       // 
       // label10
       // 

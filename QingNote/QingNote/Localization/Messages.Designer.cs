@@ -117,6 +117,42 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        internal static string Dialog_EditCardAuthor_Message {
+            get {
+                return ResourceManager.GetString("Dialog_EditCardAuthod_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Dialog_EditCardAuthor_Title {
+            get {
+                return ResourceManager.GetString("Dialog_EditCardAuthor_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Dialog_EditCardDate_Message {
+            get {
+                return ResourceManager.GetString("Dialog_EditCardDate_Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Dialog_EditCardDate_Title {
+            get {
+                return ResourceManager.GetString("Dialog_EditCardDate_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         internal static string Dialog_Title_Prefix {
             get {
                 return ResourceManager.GetString("Dialog_Title_Prefix", resourceCulture);

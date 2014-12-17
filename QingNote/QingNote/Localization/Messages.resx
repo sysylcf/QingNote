@@ -135,6 +135,18 @@
   <data name="Dialog_EditBoxTitle_Title" xml:space="preserve">
     <value />
   </data>
+  <data name="Dialog_EditCardAuthod_Message" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dialog_EditCardAuthor_Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dialog_EditCardDate_Message" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dialog_EditCardDate_Title" xml:space="preserve">
+    <value />
+  </data>
   <data name="Dialog_Title_Prefix" xml:space="preserve">
     <value />
   </data>

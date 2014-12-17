@@ -77,5 +77,21 @@ namespace cn.zuoanqh.open.QingNote.View
     {
       if (txtNewKeyword.Text.Trim().Length > 0) lstKeywords.Items.Add(txtNewKeyword.Text);
     }
+
+    private void btnChangeDate_Click(object sender, EventArgs e)
+    {
+      zut.zu.DoIfNotNull((s) => lblDate.Text = s, new ZDialog.TextInputDialog(
+        Localization.Messages.Dialog_EditCardDate_Title,
+        Localization.Messages.Dialog_EditCardDate_Message,
+        lblDate.Text).ShowDialogAndFetchInput(this));
+    }
+
+    private void btnChangeCreater_Click(object sender, EventArgs e)
+    {
+      zut.zu.DoIfNotNull((s) => lblCreater.Text = s, new ZDialog.TextInputDialog(
+        Localization.Messages.Dialog_EditCardAuthor_Title,
+        Localization.Messages.Dialog_EditCardAuthor_Message,
+        lblCreater.Text).ShowDialogAndFetchInput(this));
+    }
   }
 }
