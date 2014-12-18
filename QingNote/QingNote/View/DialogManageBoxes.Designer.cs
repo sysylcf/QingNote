@@ -100,8 +100,7 @@
       resources.ApplyResources(this.btnViewBoxContents, "btnViewBoxContents");
       this.btnViewBoxContents.DialogResult = System.Windows.Forms.DialogResult.OK;
       this.btnViewBoxContents.Name = "btnViewBoxContents";
-      this.btnViewBoxContents.UseVisualStyleBackColor = true;
-      // 
+      this.btnViewBoxContents.UseVisualStyleBackColor = true;      // 
       // btnEditDateCreated
       // 
       resources.ApplyResources(this.btnEditDateCreated, "btnEditDateCreated");

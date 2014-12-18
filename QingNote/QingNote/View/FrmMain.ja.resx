@@ -200,6 +200,12 @@
   <data name="lblCardTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="lblCardTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 0, 0</value>
+  </data>
+  <data name="lblCardTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
   <data name="btnOpenAttachmentFolder.Location" type="System.Drawing.Point, System.Drawing">
     <value>636, 426</value>
   </data>

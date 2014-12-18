@@ -75,7 +75,11 @@ namespace cn.zuoanqh.open.QingNote.View
 
     private void btnAddKeyword_Click(object sender, EventArgs e)
     {
-      if (txtNewKeyword.Text.Trim().Length > 0) lstKeywords.Items.Add(txtNewKeyword.Text);
+      if (txtNewKeyword.Text.Trim().Length > 0)
+      {
+        lstKeywords.Items.Add(txtNewKeyword.Text);
+        txtNewKeyword.Text = "";
+      }
     }
 
     private void btnChangeDate_Click(object sender, EventArgs e)

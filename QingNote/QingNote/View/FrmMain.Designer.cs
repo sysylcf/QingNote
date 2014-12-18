@@ -51,9 +51,11 @@
       this.btnEditMeta = new System.Windows.Forms.Button();
       this.btnSaveCard = new System.Windows.Forms.Button();
       this.lblMessage = new System.Windows.Forms.Label();
+      this.pictureBox1 = new System.Windows.Forms.PictureBox();
       this.tctIndexSearch.SuspendLayout();
       this.tabIndex.SuspendLayout();
       this.tabSearch.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       this.SuspendLayout();
       // 
       // lblBoxTitle
@@ -79,6 +81,7 @@
       // 
       resources.ApplyResources(this.tvwCards, "tvwCards");
       this.tvwCards.Name = "tvwCards";
+      this.tvwCards.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvwCards_AfterSelect);
       // 
       // tctIndexSearch
       // 
@@ -90,10 +93,10 @@
       // 
       // tabIndex
       // 
-      resources.ApplyResources(this.tabIndex, "tabIndex");
       this.tabIndex.Controls.Add(this.btnNewCard);
       this.tabIndex.Controls.Add(this.btnMamageBox);
       this.tabIndex.Controls.Add(this.tvwCards);
+      resources.ApplyResources(this.tabIndex, "tabIndex");
       this.tabIndex.Name = "tabIndex";
       this.tabIndex.UseVisualStyleBackColor = true;
       // 
@@ -112,11 +115,11 @@
       // 
       // tabSearch
       // 
-      resources.ApplyResources(this.tabSearch, "tabSearch");
       this.tabSearch.Controls.Add(this.rbtSearchKeywordOnly);
       this.tabSearch.Controls.Add(this.rbtSearchFullText);
       this.tabSearch.Controls.Add(this.txtSearchInput);
       this.tabSearch.Controls.Add(this.lstSearchResults);
+      resources.ApplyResources(this.tabSearch, "tabSearch");
       this.tabSearch.Name = "tabSearch";
       this.tabSearch.UseVisualStyleBackColor = true;
       // 
@@ -158,14 +161,19 @@
       // lstAttachments
       // 
       resources.ApplyResources(this.lstAttachments, "lstAttachments");
+      this.lstAttachments.BackColor = System.Drawing.SystemColors.Window;
+      this.lstAttachments.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
       this.lstAttachments.Name = "lstAttachments";
+      this.lstAttachments.TileSize = new System.Drawing.Size(121, 160);
       this.lstAttachments.UseCompatibleStateImageBehavior = false;
+      this.lstAttachments.SelectedIndexChanged += new System.EventHandler(this.lstAttachments_SelectedIndexChanged);
       // 
       // btnOpenAttachmentFolder
       // 
       resources.ApplyResources(this.btnOpenAttachmentFolder, "btnOpenAttachmentFolder");
       this.btnOpenAttachmentFolder.Name = "btnOpenAttachmentFolder";
       this.btnOpenAttachmentFolder.UseVisualStyleBackColor = true;
+      this.btnOpenAttachmentFolder.Click += new System.EventHandler(this.btnOpenAttachmentFolder_Click);
       // 
       // lblKeywords
       // 
@@ -197,10 +205,17 @@
       this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
       this.lblMessage.Name = "lblMessage";
       // 
+      // pictureBox1
+      // 
+      resources.ApplyResources(this.pictureBox1, "pictureBox1");
+      this.pictureBox1.Name = "pictureBox1";
+      this.pictureBox1.TabStop = false;
+      // 
       // FrmMain
       // 
-      resources.ApplyResources(this, "$this");
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+      resources.ApplyResources(this, "$this");
+      this.Controls.Add(this.pictureBox1);
       this.Controls.Add(this.lblMessage);
       this.Controls.Add(this.btnSaveCard);
       this.Controls.Add(this.btnEditMeta);
@@ -221,6 +236,7 @@
       this.tabIndex.ResumeLayout(false);
       this.tabSearch.ResumeLayout(false);
       this.tabSearch.PerformLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -250,6 +266,7 @@
     private System.Windows.Forms.Button btnSaveCard;
     private System.Windows.Forms.Button btnNewCard;
     private System.Windows.Forms.Label lblMessage;
+    private System.Windows.Forms.PictureBox pictureBox1;
   }
 }
 

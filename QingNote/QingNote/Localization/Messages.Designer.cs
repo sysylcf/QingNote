@@ -119,7 +119,7 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         /// </summary>
         internal static string Dialog_EditCardAuthor_Message {
             get {
-                return ResourceManager.GetString("Dialog_EditCardAuthod_Message", resourceCulture);
+                return ResourceManager.GetString("Dialog_EditCardAuthor_Message", resourceCulture);
             }
         }
         

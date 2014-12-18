@@ -117,170 +117,149 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;btnSaveCard.Name" xml:space="preserve">
-    <value>btnSaveCard</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtSearchInput.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="&gt;&gt;btnMamageBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabSearch.Parent" xml:space="preserve">
-    <value>tctIndexSearch</value>
-  </data>
-  <data name="btnDeleteCard.Text" xml:space="preserve">
-    <value> </value>
+  <data name="lblBoxTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tvwCards.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 6</value>
-  </data>
-  <data name="tabIndex.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 378</value>
-  </data>
-  <data name="&gt;&gt;lblBoxTitle.Name" xml:space="preserve">
-    <value>lblBoxTitle</value>
-  </data>
-  <data name="&gt;&gt;btnCopyPath.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;btnNewCard.Parent" xml:space="preserve">
-    <value>tabIndex</value>
-  </data>
-  <data name="lblKeywords.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 335</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;tvwCards.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="rbtSearchKeywordOnly.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 16</value>
-  </data>
-  <data name="tctIndexSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 51</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnCopyPath.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btnDeleteCard.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="btnSwitchCardBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="lblMessage.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="lblMessage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 470</value>
-  </data>
-  <data name="btnMamageBox.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;lblCardTitle.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="txtSearchInput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 290</value>
-  </data>
-  <data name="&gt;&gt;txtSearchInput.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnCopyPath.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lstAttachments.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>FangSong, 12pt, style=Bold</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>清笔记读书卡（默认语言）</value>
-  </data>
-  <data name="btnMamageBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="lblKeyWords.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 335</value>
-  </data>
-  <data name="lblMessage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>750, 32</value>
+  <data name="lblBoxTitle.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="lblBoxTitle.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 9</value>
   </data>
-  <data name="&gt;&gt;tabIndex.Name" xml:space="preserve">
-    <value>tabIndex</value>
+  <data name="lblBoxTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>517, 39</value>
   </data>
-  <data name="lblCardTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="rbtSearchFullText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 355</value>
-  </data>
-  <data name="lstSearchResults.TabIndex" type="System.Int32, mscorlib">
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblBoxTitle.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="tabSearch.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="lstAttachments.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;lblKeywords.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="lblBoxTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="txtCardContent.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="&gt;&gt;lblBoxTitle.Name" xml:space="preserve">
+    <value>lblBoxTitle</value>
   </data>
-  <data name="btnNewCard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
+  <data name="&gt;&gt;lblBoxTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblBoxTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblBoxTitle.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="btnSwitchCardBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnSwitchCardBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnSwitchCardBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>535, 9</value>
+  </data>
+  <data name="btnSwitchCardBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 39</value>
+  </data>
+  <data name="btnSwitchCardBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnSwitchCardBox.Name" xml:space="preserve">
+    <value>btnSwitchCardBox</value>
+  </data>
+  <data name="&gt;&gt;btnSwitchCardBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSwitchCardBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSwitchCardBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btnCopyPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnCopyPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>666, 9</value>
+  </data>
+  <data name="btnCopyPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 39</value>
+  </data>
+  <data name="btnCopyPath.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnCopyPath.Name" xml:space="preserve">
+    <value>btnCopyPath</value>
+  </data>
+  <data name="&gt;&gt;btnCopyPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCopyPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCopyPath.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="tvwCards.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="tvwCards.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="tvwCards.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 329</value>
+  </data>
+  <data name="tvwCards.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tvwCards.Name" xml:space="preserve">
+    <value>tvwCards</value>
+  </data>
+  <data name="&gt;&gt;tvwCards.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tvwCards.Parent" xml:space="preserve">
+    <value>tabIndex</value>
+  </data>
+  <data name="&gt;&gt;tvwCards.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tctIndexSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="&gt;&gt;tabIndex.Name" xml:space="preserve">
+    <value>tabIndex</value>
+  </data>
+  <data name="&gt;&gt;tabIndex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabIndex.Parent" xml:space="preserve">
+    <value>tctIndexSearch</value>
+  </data>
+  <data name="&gt;&gt;tabIndex.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;tabSearch.Name" xml:space="preserve">
     <value>tabSearch</value>
   </data>
-  <data name="lblBoxTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="&gt;&gt;tabSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnSaveCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>504, 426</value>
+  <data name="&gt;&gt;tabSearch.Parent" xml:space="preserve">
+    <value>tctIndexSearch</value>
   </data>
-  <data name="&gt;&gt;rbtSearchKeywordOnly.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tabSearch.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;btnEditMeta.Name" xml:space="preserve">
-    <value>btnEditMeta</value>
+  <data name="tctIndexSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 51</value>
   </data>
-  <data name="lstAttachments.Location" type="System.Drawing.Point, System.Drawing">
-    <value>645, 109</value>
+  <data name="tctIndexSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 412</value>
   </data>
-  <data name="btnOpenAttachmentFolder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 37</value>
-  </data>
-  <data name="rbtSearchKeywordOnly.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnOpenAttachmentFolder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="&gt;&gt;txtSearchInput.Parent" xml:space="preserve">
-    <value>tabSearch</value>
-  </data>
-  <data name="txtCardContent.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lblBoxTitle.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="tctIndexSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;tctIndexSearch.Name" xml:space="preserve">
     <value>tctIndexSearch</value>
@@ -288,442 +267,556 @@
   <data name="&gt;&gt;tctIndexSearch.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnOpenAttachmentFolder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>645, 426</value>
-  </data>
-  <data name="lblKeyWords.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;btnOpenAttachmentFolder.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;btnCopyPath.Name" xml:space="preserve">
-    <value>btnCopyPath</value>
-  </data>
-  <data name="btnMamageBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 341</value>
-  </data>
-  <data name="tabSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 30</value>
-  </data>
-  <data name="&gt;&gt;tabSearch.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="txtCardContent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 109</value>
-  </data>
-  <data name="btnSaveCard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="tctIndexSearch.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
-  </data>
-  <data name="&gt;&gt;lblKeywords.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="rbtSearchFullText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;btnSwitchCardBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lstSearchResults.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tvwCards.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tvwCards.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 329</value>
-  </data>
-  <data name="&gt;&gt;lblBoxTitle.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="btnEditMeta.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="lblCardTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 55</value>
-  </data>
-  <data name="btnCopyPath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>666, 9</value>
-  </data>
-  <data name="btnDeleteCard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="rbtSearchFullText.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lblKeyWords.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 88</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmMain</value>
-  </data>
-  <data name="lblBoxTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>517, 39</value>
-  </data>
-  <data name="&gt;&gt;lblCardTitle.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;rbtSearchFullText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lstAttachments.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;lstAttachments.Name" xml:space="preserve">
-    <value>lstAttachments</value>
-  </data>
-  <data name="tabIndex.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="lblBoxTitle.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;lblKeyWords.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lstSearchResults.ItemHeight" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="lblBoxTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>794, 558</value>
-  </data>
-  <data name="tvwCards.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom</value>
-  </data>
-  <data name="&gt;&gt;lstSearchResults.Name" xml:space="preserve">
-    <value>lstSearchResults</value>
-  </data>
-  <data name="&gt;&gt;txtSearchInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblKeyWords.Name" xml:space="preserve">
-    <value>lblKeyWords</value>
-  </data>
-  <data name="txtCardContent.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;btnOpenAttachmentFolder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;tctIndexSearch.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btnSwitchCardBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="rbtSearchKeywordOnly.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="txtCardContent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>407, 223</value>
-  </data>
-  <data name="lblMessage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;lblCardTitle.Name" xml:space="preserve">
-    <value>lblCardTitle</value>
-  </data>
-  <data name="&gt;&gt;rbtSearchKeywordOnly.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblKeywords.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;tvwCards.Parent" xml:space="preserve">
-    <value>tabIndex</value>
-  </data>
-  <data name="&gt;&gt;txtCardContent.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="txtSearchInput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 30</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteCard.Name" xml:space="preserve">
-    <value>btnDeleteCard</value>
-  </data>
-  <data name="tvwCards.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;tabSearch.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSaveCard.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lblCardTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btnNewCard.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lblCardTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>534, 51</value>
-  </data>
-  <data name="btnMamageBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 34</value>
-  </data>
-  <data name="&gt;&gt;btnSwitchCardBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;rbtSearchFullText.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lblKeyWords.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnEditMeta.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lstAttachments.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
+  <data name="&gt;&gt;tctIndexSearch.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;btnNewCard.Name" xml:space="preserve">
     <value>btnNewCard</value>
   </data>
-  <data name="&gt;&gt;rbtSearchKeywordOnly.Parent" xml:space="preserve">
-    <value>tabSearch</value>
+  <data name="&gt;&gt;btnNewCard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabIndex.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnNewCard.Parent" xml:space="preserve">
+    <value>tabIndex</value>
+  </data>
+  <data name="&gt;&gt;btnNewCard.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;lstSearchResults.Parent" xml:space="preserve">
-    <value>tabSearch</value>
-  </data>
-  <data name="btnSwitchCardBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 39</value>
-  </data>
-  <data name="&gt;&gt;btnSwitchCardBox.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="tabSearch.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabIndex.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lstSearchResults.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom</value>
-  </data>
-  <data name="&gt;&gt;btnOpenAttachmentFolder.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteCard.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="btnNewCard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 34</value>
-  </data>
-  <data name="rbtSearchFullText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 16</value>
   </data>
   <data name="&gt;&gt;btnMamageBox.Name" xml:space="preserve">
     <value>btnMamageBox</value>
   </data>
-  <data name="&gt;&gt;btnSwitchCardBox.Name" xml:space="preserve">
-    <value>btnSwitchCardBox</value>
-  </data>
-  <data name="btnSwitchCardBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lblCardTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>FangSong, 28pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;lblMessage.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteCard.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnMamageBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtCardContent.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="lblMessage.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="rbtSearchKeywordOnly.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="lstSearchResults.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 264</value>
-  </data>
-  <data name="lstAttachments.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 314</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnNewCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>91, 341</value>
-  </data>
-  <data name="&gt;&gt;txtSearchInput.Name" xml:space="preserve">
-    <value>txtSearchInput</value>
   </data>
   <data name="&gt;&gt;btnMamageBox.Parent" xml:space="preserve">
     <value>tabIndex</value>
   </data>
-  <data name="&gt;&gt;btnSaveCard.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnMamageBox.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnCopyPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSaveCard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnDeleteCard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 37</value>
-  </data>
-  <data name="btnEditMeta.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="btnOpenAttachmentFolder.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;lblMessage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbtSearchFullText.Name" xml:space="preserve">
-    <value>rbtSearchFullText</value>
-  </data>
-  <data name="&gt;&gt;txtCardContent.Name" xml:space="preserve">
-    <value>txtCardContent</value>
-  </data>
-  <data name="&gt;&gt;btnDeleteCard.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblKeywords.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tctIndexSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 412</value>
-  </data>
-  <data name="tabSearch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 378</value>
-  </data>
-  <data name="&gt;&gt;rbtSearchKeywordOnly.Name" xml:space="preserve">
-    <value>rbtSearchKeywordOnly</value>
-  </data>
-  <data name="&gt;&gt;lblMessage.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnCopyPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="&gt;&gt;rbtSearchFullText.Parent" xml:space="preserve">
-    <value>tabSearch</value>
-  </data>
-  <data name="&gt;&gt;lblKeyWords.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btnEditMeta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 426</value>
-  </data>
-  <data name="rbtSearchFullText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom</value>
   </data>
   <data name="tabIndex.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 30</value>
   </data>
-  <data name="&gt;&gt;lblBoxTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tabIndex.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
-  <data name="&gt;&gt;btnOpenAttachmentFolder.Name" xml:space="preserve">
-    <value>btnOpenAttachmentFolder</value>
-  </data>
-  <data name="btnCopyPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 39</value>
-  </data>
-  <data name="&gt;&gt;lblKeywords.Name" xml:space="preserve">
-    <value>lblKeywords</value>
-  </data>
-  <data name="btnEditMeta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 37</value>
-  </data>
-  <data name="&gt;&gt;tvwCards.Name" xml:space="preserve">
-    <value>tvwCards</value>
-  </data>
-  <data name="lblKeyWords.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>776, 511</value>
+  <data name="tabIndex.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 378</value>
   </data>
   <data name="tabIndex.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;btnMamageBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tabIndex.Name" xml:space="preserve">
+    <value>tabIndex</value>
   </data>
-  <data name="&gt;&gt;btnEditMeta.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnNewCard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lstAttachments.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCardTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblMessage.Name" xml:space="preserve">
-    <value>lblMessage</value>
-  </data>
-  <data name="btnNewCard.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="btnSwitchCardBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>535, 9</value>
+  <data name="&gt;&gt;tabIndex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabIndex.Parent" xml:space="preserve">
     <value>tctIndexSearch</value>
   </data>
+  <data name="&gt;&gt;tabIndex.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnNewCard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnNewCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 341</value>
+  </data>
+  <data name="btnNewCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 34</value>
+  </data>
+  <data name="btnNewCard.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnNewCard.Name" xml:space="preserve">
+    <value>btnNewCard</value>
+  </data>
+  <data name="&gt;&gt;btnNewCard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNewCard.Parent" xml:space="preserve">
+    <value>tabIndex</value>
+  </data>
+  <data name="&gt;&gt;btnNewCard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnMamageBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnMamageBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 341</value>
+  </data>
+  <data name="btnMamageBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 34</value>
+  </data>
+  <data name="btnMamageBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btnMamageBox.Name" xml:space="preserve">
+    <value>btnMamageBox</value>
+  </data>
+  <data name="&gt;&gt;btnMamageBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnMamageBox.Parent" xml:space="preserve">
+    <value>tabIndex</value>
+  </data>
+  <data name="&gt;&gt;btnMamageBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rbtSearchKeywordOnly.Name" xml:space="preserve">
+    <value>rbtSearchKeywordOnly</value>
+  </data>
+  <data name="&gt;&gt;rbtSearchKeywordOnly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbtSearchKeywordOnly.Parent" xml:space="preserve">
+    <value>tabSearch</value>
+  </data>
+  <data name="&gt;&gt;rbtSearchKeywordOnly.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rbtSearchFullText.Name" xml:space="preserve">
+    <value>rbtSearchFullText</value>
+  </data>
+  <data name="&gt;&gt;rbtSearchFullText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbtSearchFullText.Parent" xml:space="preserve">
+    <value>tabSearch</value>
+  </data>
+  <data name="&gt;&gt;rbtSearchFullText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtSearchInput.Name" xml:space="preserve">
+    <value>txtSearchInput</value>
+  </data>
+  <data name="&gt;&gt;txtSearchInput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSearchInput.Parent" xml:space="preserve">
+    <value>tabSearch</value>
+  </data>
+  <data name="&gt;&gt;txtSearchInput.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lstSearchResults.Name" xml:space="preserve">
+    <value>lstSearchResults</value>
+  </data>
+  <data name="&gt;&gt;lstSearchResults.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstSearchResults.Parent" xml:space="preserve">
+    <value>tabSearch</value>
+  </data>
   <data name="&gt;&gt;lstSearchResults.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;btnEditMeta.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="tabSearch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 30</value>
+  </data>
+  <data name="tabSearch.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 378</value>
+  </data>
+  <data name="tabSearch.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tabSearch.Name" xml:space="preserve">
+    <value>tabSearch</value>
+  </data>
+  <data name="&gt;&gt;tabSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabSearch.Parent" xml:space="preserve">
+    <value>tctIndexSearch</value>
+  </data>
+  <data name="&gt;&gt;tabSearch.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rbtSearchKeywordOnly.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="rbtSearchKeywordOnly.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="rbtSearchKeywordOnly.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 326</value>
   </data>
-  <data name="tctIndexSearch.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="rbtSearchKeywordOnly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 16</value>
   </data>
-  <data name="btnSaveCard.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="rbtSearchKeywordOnly.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="btnDeleteCard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 426</value>
+  <data name="&gt;&gt;rbtSearchKeywordOnly.Name" xml:space="preserve">
+    <value>rbtSearchKeywordOnly</value>
   </data>
-  <data name="&gt;&gt;tctIndexSearch.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;rbtSearchKeywordOnly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lstSearchResults.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 6</value>
+  <data name="&gt;&gt;rbtSearchKeywordOnly.Parent" xml:space="preserve">
+    <value>tabSearch</value>
   </data>
-  <data name="&gt;&gt;txtCardContent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;rbtSearchKeywordOnly.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rbtSearchFullText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="rbtSearchFullText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbtSearchFullText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 355</value>
+  </data>
+  <data name="rbtSearchFullText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 16</value>
+  </data>
+  <data name="rbtSearchFullText.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;rbtSearchFullText.Name" xml:space="preserve">
+    <value>rbtSearchFullText</value>
+  </data>
+  <data name="&gt;&gt;rbtSearchFullText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbtSearchFullText.Parent" xml:space="preserve">
+    <value>tabSearch</value>
+  </data>
+  <data name="&gt;&gt;rbtSearchFullText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtSearchInput.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="txtSearchInput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 290</value>
+  </data>
+  <data name="txtSearchInput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 30</value>
   </data>
   <data name="txtSearchInput.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btnSaveCard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 37</value>
+  <data name="&gt;&gt;txtSearchInput.Name" xml:space="preserve">
+    <value>txtSearchInput</value>
+  </data>
+  <data name="&gt;&gt;txtSearchInput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSearchInput.Parent" xml:space="preserve">
+    <value>tabSearch</value>
+  </data>
+  <data name="&gt;&gt;txtSearchInput.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lstSearchResults.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom</value>
+  </data>
+  <data name="lstSearchResults.ItemHeight" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lstSearchResults.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="lstSearchResults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 264</value>
+  </data>
+  <data name="lstSearchResults.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lstSearchResults.Name" xml:space="preserve">
+    <value>lstSearchResults</value>
+  </data>
+  <data name="&gt;&gt;lstSearchResults.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstSearchResults.Parent" xml:space="preserve">
+    <value>tabSearch</value>
+  </data>
+  <data name="&gt;&gt;lstSearchResults.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="lblCardTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
+  <data name="lblCardTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>FangSong, 28pt, style=Bold</value>
+  </data>
+  <data name="lblCardTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 55</value>
+  </data>
+  <data name="lblCardTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 51</value>
+  </data>
+  <data name="lblCardTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblCardTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblCardTitle.Name" xml:space="preserve">
+    <value>lblCardTitle</value>
+  </data>
+  <data name="&gt;&gt;lblCardTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCardTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCardTitle.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="txtCardContent.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="txtCardContent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 109</value>
+  </data>
+  <data name="txtCardContent.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtCardContent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>407, 223</value>
+  </data>
+  <data name="txtCardContent.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;txtCardContent.Name" xml:space="preserve">
+    <value>txtCardContent</value>
+  </data>
+  <data name="&gt;&gt;txtCardContent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCardContent.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtCardContent.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lstAttachments.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <data name="lstAttachments.Location" type="System.Drawing.Point, System.Drawing">
+    <value>645, 109</value>
+  </data>
+  <data name="lstAttachments.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 314</value>
+  </data>
+  <data name="lstAttachments.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lstAttachments.Name" xml:space="preserve">
+    <value>lstAttachments</value>
+  </data>
+  <data name="&gt;&gt;lstAttachments.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstAttachments.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lstAttachments.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btnOpenAttachmentFolder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="btnOpenAttachmentFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>645, 426</value>
+  </data>
+  <data name="btnOpenAttachmentFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 37</value>
+  </data>
+  <data name="btnOpenAttachmentFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;btnOpenAttachmentFolder.Name" xml:space="preserve">
+    <value>btnOpenAttachmentFolder</value>
+  </data>
+  <data name="&gt;&gt;btnOpenAttachmentFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOpenAttachmentFolder.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnOpenAttachmentFolder.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblKeywords.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 335</value>
+  </data>
+  <data name="lblKeywords.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="lblKeywords.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lblKeywords.Name" xml:space="preserve">
+    <value>lblKeywords</value>
+  </data>
+  <data name="&gt;&gt;lblKeywords.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblKeywords.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblKeywords.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnDeleteCard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnDeleteCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>231, 426</value>
+  </data>
+  <data name="btnDeleteCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 37</value>
+  </data>
+  <data name="btnDeleteCard.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="btnDeleteCard.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="&gt;&gt;btnDeleteCard.Name" xml:space="preserve">
+    <value>btnDeleteCard</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteCard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteCard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnDeleteCard.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnEditMeta.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnEditMeta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 426</value>
+  </data>
+  <data name="btnEditMeta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 37</value>
+  </data>
+  <data name="btnEditMeta.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;btnEditMeta.Name" xml:space="preserve">
+    <value>btnEditMeta</value>
+  </data>
+  <data name="&gt;&gt;btnEditMeta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnEditMeta.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnEditMeta.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btnSaveCard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="btnSaveCard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 426</value>
+  </data>
+  <data name="btnSaveCard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 37</value>
+  </data>
+  <data name="btnSaveCard.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btnSaveCard.Name" xml:space="preserve">
+    <value>btnSaveCard</value>
+  </data>
+  <data name="&gt;&gt;btnSaveCard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSaveCard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnSaveCard.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblMessage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="lblMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 470</value>
+  </data>
+  <data name="lblMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>750, 32</value>
+  </data>
+  <data name="lblMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lblMessage.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblMessage.Name" xml:space="preserve">
+    <value>lblMessage</value>
+  </data>
+  <data name="&gt;&gt;lblMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblMessage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblMessage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>373, 81</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 192</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
-  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>776, 511</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>FangSong, 12pt, style=Bold</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>794, 558</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>清笔记读书卡（默认语言）</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

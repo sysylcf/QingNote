@@ -175,13 +175,9 @@ namespace cn.zuoanqh.open.QingNote.View
 
     private void lstIndexItems_SelectedIndexChanged(object sender, EventArgs e)
     {
-      //btnDeleteCategory.Enabled = zuwf.ListBox_HaveItemSelected(lstIndexItems);
-      //btnDeleteChapter.Enabled = zuwf.ListBox_HaveItemSelected(lstIndexItems);
-      //btnMoveChapterDown.Enabled = zuwf.ListBox_HaveItemSelected(lstIndexItems);
-      //btnMoveChapterUp.Enabled = zuwf.ListBox_HaveItemSelected(lstIndexItems);
-
       zu.DoToAll((s) => s.Enabled = zuwf.ListBox_HaveItemSelected(lstIndexItems),
         btnDeleteCategory, btnDeleteChapter, btnMoveChapterUp, btnMoveChapterDown);
     }
+
   }
 }

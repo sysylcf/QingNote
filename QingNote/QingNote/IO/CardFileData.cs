@@ -18,6 +18,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     public string name, creater, category, chapterName, dateCreated, text;
     public HashSet<string> keywords;
     private string lang;
+    private string path;
 
     static CardFileData()
     {
@@ -71,8 +72,9 @@ namespace cn.zuoanqh.open.QingNote.IO
           cfd.keywords.UnionWith(zusp.Split(val, Localization.Settings.Symbol_NameContent_Seperator).ToList());
         }
       }
-
+      cfd.path = absolutePath;
       Thread.CurrentThread.CurrentUICulture = stack;
+
       return cfd;
     }
     private static Dictionary<string, string> getDefaults(string lang)
@@ -101,7 +103,8 @@ namespace cn.zuoanqh.open.QingNote.IO
       this.keywords = new HashSet<string>();
     }
 
-    public CardFileData(string name, string creater, string dateCreated, string text):this()
+    public CardFileData(string name, string creater, string dateCreated, string text)
+      : this()
     {
       this.name = name;
       this.creater = creater;
@@ -149,7 +152,7 @@ namespace cn.zuoanqh.open.QingNote.IO
           }
 
           ZDictionaryFileIO.writeFile(odata, sep, absolutePath, fname);
-
+          path = absolutePath;
         });
 
     }
@@ -161,6 +164,21 @@ namespace cn.zuoanqh.open.QingNote.IO
         s += Localization.Settings.Symbol_Item_Seperator + i;
       return s.Substring(1);
     }
-
+    public List<string> getAttachmentFiles()
+    {
+      var attachs = new List<string>();
+      IOUtil.inLocalizedEnviroment(this.lang, () =>
+        {
+          foreach (var s in Directory.GetFiles(Path.Combine(this.path, Localization.FileKeywords.Filename_Directory_Attachment)))
+            attachs.Add(s);
+        });
+      return attachs;
+    }
+    public string getAttachmentPath()
+    {
+      string s = path;
+      IOUtil.inLocalizedEnviroment(this.lang, () => s = Path.Combine(path, Localization.FileKeywords.Filename_Directory_Attachment));
+      return s;
+    }
   }
 }

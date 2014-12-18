@@ -1,21 +1,32 @@
 ﻿using cn.zuoanqh.open.zut;
+using Microsoft.WindowsAPICodePack.Shell;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Windows.Media.Imaging;
+
 
 namespace cn.zuoanqh.open.QingNote.IO
 {
   class IOUtil
   {
     public static IEnumerable<string> ResourceLang = resLang;
-
+    public static readonly ImageList extensionImages = new ImageList();
     private static Lang resLang = new Lang(SystemResources.ResLang);
+    public static Image t;
+    static IOUtil()
+    {
+      extensionImages.ImageSize = new Size(64, 64);
+      extensionImages.ColorDepth = ColorDepth.Depth32Bit;
+    }
 
     public static string getFileLang(string fileName)
     {
@@ -24,6 +35,57 @@ namespace cn.zuoanqh.open.QingNote.IO
       if (s.LastIndexOf(".") < 0) return null;
       s = zusp.CutLast(s, ".").Second;
       return s;
+    }
+    /// <summary>
+    /// i dont know why i had to do all this bs
+    /// </summary>
+    /// <param name="filePath"></param>
+    /// <returns></returns>
+    private static Bitmap GetThumbnail(string filePath)
+    {
+      ShellFile shellFile = ShellFile.FromFilePath(filePath);
+      BitmapSource bitmapSource = shellFile.Thumbnail.MediumBitmapSource;
+
+      double newWidthRatio = 64 / (double)bitmapSource.PixelWidth;
+      double newHeightRatio = ((64 * bitmapSource.PixelHeight) / (double)bitmapSource.PixelWidth) / (double)bitmapSource.PixelHeight;
+
+      System.Windows.Media.Imaging.BitmapSource transformedBitmapSource = new System.Windows.Media.Imaging.TransformedBitmap(
+          bitmapSource,
+          new System.Windows.Media.ScaleTransform(newWidthRatio, newHeightRatio));
+
+      int width = transformedBitmapSource.PixelWidth;
+      int height = transformedBitmapSource.PixelHeight;
+      int stride = width * ((transformedBitmapSource.Format.BitsPerPixel + 7) / 8);
+
+      byte[] bits = new byte[height * stride];
+
+      transformedBitmapSource.CopyPixels(bits, stride, 0);
+
+      unsafe
+      {
+        fixed (byte* pBits = bits)
+        {
+          IntPtr ptr = new IntPtr(pBits);
+
+          System.Drawing.Bitmap bitmap = new System.Drawing.Bitmap(
+              width,
+              height,
+              stride,
+              System.Drawing.Imaging.PixelFormat.Format32bppPArgb,
+              ptr);
+
+          return bitmap;
+        }
+      }
+
+    }
+    public static void loadExtensionIcon(string fname)
+    {
+      var f = new FileInfo(fname);
+      if (!extensionImages.Images.ContainsKey(f.FullName))
+      {
+        extensionImages.Images.Add(f.FullName, GetThumbnail(f.FullName));
+      }
     }
 
     public static string getContentFolderName(string lang)
@@ -49,7 +111,7 @@ namespace cn.zuoanqh.open.QingNote.IO
     public static string getPathLast(string path)
     {
       if (path == null) return null;
-      return zusp.CutLast(path,@"\").Second;
+      return zusp.CutLast(path, @"\").Second;
     }
 
     public static string formatNow()

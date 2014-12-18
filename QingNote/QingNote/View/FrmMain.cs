@@ -19,6 +19,7 @@ namespace cn.zuoanqh.open.QingNote.View
   {
     public static readonly int PADDING = 3;
     public string cBoxPath { get { return cTree.boxDirectory; } }
+    public string cContentPath { get { return cTree.contentDirectory; } }
     private CardBoxTree cTree;
     private CardBoxFileData cBox { get { return cTree.boxData; } }
     private string cardPath;
@@ -38,6 +39,7 @@ namespace cn.zuoanqh.open.QingNote.View
       lblKeywordsDef = lblKeywords.Text;
 
       setPathAndLoad(SettingsFileData.getSettingItem(Localization.FileKeywords.Settings_LastPath));
+      lstAttachments.LargeImageList = IOUtil.extensionImages;
     }
     public void setPathAndLoad(string path)
     {
@@ -85,7 +87,7 @@ namespace cn.zuoanqh.open.QingNote.View
     {
       cTree.loadCard(parent, name);
 
-      cardPath = Path.Combine(cBoxPath, parent, name);
+      cardPath = Path.Combine(cContentPath, parent, name);
       if (cTree.loadedCards.ContainsKey(cardPath))
         selectCard(cTree.loadedCards[cardPath]);
     }
@@ -93,13 +95,22 @@ namespace cn.zuoanqh.open.QingNote.View
     {
       cCard = card;
       lblCardTitle.Text = cCard.name;
-      lblKeywords.Text = cCard.getKeywords();
+      lblKeywords.Text = lblKeywordsDef+ cCard.getKeywords();
       txtCardContent.Text = cCard.text;
+      lstAttachments.BeginUpdate();
+      lstAttachments.Clear();
+      foreach (var s in cCard.getAttachmentFiles())
+      {
+        IOUtil.loadExtensionIcon(s);
+        var i = new ListViewItem(zusp.CutLast(s, @"\").Second, s);
+        lstAttachments.Items.Add(i);
+      }
+      lstAttachments.EndUpdate();
     }
 
     private void FrmMain_Load(object sender, EventArgs e)
     {
-
+     
     }
 
     private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
@@ -109,6 +120,7 @@ namespace cn.zuoanqh.open.QingNote.View
 
     private void btnSaveCard_Click(object sender, EventArgs e)
     {
+      cCard.text = txtCardContent.Text;
       cCard.writeFile(cardPath);
     }
 
@@ -130,12 +142,36 @@ namespace cn.zuoanqh.open.QingNote.View
       var dlgMBoxes = new DialogManageBoxes();
       dlgMBoxes.ShowDialog();
       mountCardTree(dlgMBoxes.cTree);
+      SettingsFileData.setSettingItem(Localization.FileKeywords.Settings_LastPath, cTree.boxDirectory);
     }
 
     private void btnCopyPath_Click(object sender, EventArgs e)
     {
       zu.openDirectory(cBoxPath);
     }
+
+    private void tvwCards_AfterSelect(object sender, TreeViewEventArgs e)
+    {
+      var node = tvwCards.SelectedNode;
+      if (node.Parent == null&&node.Nodes.Count > 0)//selecting a directory - get the first one, if any.
+        selectCard(node.Text, node.Nodes[0].Text);
+      else//actual node 
+        selectCard(node.Parent.Text, node.Text);
+
+      node.Expand();//you want to see the stuff inside without that extra click right?
+    }
+
+    private void btnOpenAttachmentFolder_Click(object sender, EventArgs e)
+    {
+      if (cCard != null) zu.openDirectory(cCard.getAttachmentPath());
+    }
+
+    private void lstAttachments_SelectedIndexChanged(object sender, EventArgs e)
+    {
+      pictureBox1.Image = IOUtil.t;
+    }
+
+
 
   }
 }
