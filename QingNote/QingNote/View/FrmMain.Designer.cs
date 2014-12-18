@@ -51,11 +51,9 @@
       this.btnEditMeta = new System.Windows.Forms.Button();
       this.btnSaveCard = new System.Windows.Forms.Button();
       this.lblMessage = new System.Windows.Forms.Label();
-      this.pictureBox1 = new System.Windows.Forms.PictureBox();
       this.tctIndexSearch.SuspendLayout();
       this.tabIndex.SuspendLayout();
       this.tabSearch.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
       this.SuspendLayout();
       // 
       // lblBoxTitle
@@ -205,17 +203,10 @@
       this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
       this.lblMessage.Name = "lblMessage";
       // 
-      // pictureBox1
-      // 
-      resources.ApplyResources(this.pictureBox1, "pictureBox1");
-      this.pictureBox1.Name = "pictureBox1";
-      this.pictureBox1.TabStop = false;
-      // 
       // FrmMain
       // 
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
       resources.ApplyResources(this, "$this");
-      this.Controls.Add(this.pictureBox1);
       this.Controls.Add(this.lblMessage);
       this.Controls.Add(this.btnSaveCard);
       this.Controls.Add(this.btnEditMeta);
@@ -236,7 +227,6 @@
       this.tabIndex.ResumeLayout(false);
       this.tabSearch.ResumeLayout(false);
       this.tabSearch.PerformLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -266,7 +256,6 @@
     private System.Windows.Forms.Button btnSaveCard;
     private System.Windows.Forms.Button btnNewCard;
     private System.Windows.Forms.Label lblMessage;
-    private System.Windows.Forms.PictureBox pictureBox1;
   }
 }
 

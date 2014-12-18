@@ -12,6 +12,8 @@ using cn.zuoanqh.open.QingNote.IO;
 using cn.zuoanqh.open.zut;
 using cn.zuoanqh.open.ZDialog;
 using System.IO;
+using Microsoft.WindowsAPICodePack.Shell;
+using System.Windows.Media.Imaging;
 
 namespace cn.zuoanqh.open.QingNote.View
 {
@@ -39,7 +41,6 @@ namespace cn.zuoanqh.open.QingNote.View
       lblKeywordsDef = lblKeywords.Text;
 
       setPathAndLoad(SettingsFileData.getSettingItem(Localization.FileKeywords.Settings_LastPath));
-      lstAttachments.LargeImageList = IOUtil.extensionImages;
     }
     public void setPathAndLoad(string path)
     {
@@ -99,12 +100,21 @@ namespace cn.zuoanqh.open.QingNote.View
       txtCardContent.Text = cCard.text;
       lstAttachments.BeginUpdate();
       lstAttachments.Clear();
+      ImageList lst = new ImageList();
+      lst.ImageSize = new Size(32, 32);
+      lstAttachments.LargeImageList = lst;
       foreach (var s in cCard.getAttachmentFiles())
       {
-        IOUtil.loadExtensionIcon(s);
-        var i = new ListViewItem(zusp.CutLast(s, @"\").Second, s);
+        ShellFile shellFile = ShellFile.FromFilePath(s);
+        var bmp= shellFile.Thumbnail.SmallBitmap;
+        //var bmp= icon.ToBitmap();
+        bmp.MakeTransparent(Color.Black);
+        lst.Images.Add(s,bmp);
+        //IOUtil.loadFileThumbnail(s);
+        var i = new ListViewItem(IOUtil.deExtension(s), s);
         lstAttachments.Items.Add(i);
       }
+      lstAttachments.Visible = lstAttachments.Items.Count != 0;
       lstAttachments.EndUpdate();
     }
 
@@ -168,7 +178,6 @@ namespace cn.zuoanqh.open.QingNote.View
 
     private void lstAttachments_SelectedIndexChanged(object sender, EventArgs e)
     {
-      pictureBox1.Image = IOUtil.t;
     }
 
 

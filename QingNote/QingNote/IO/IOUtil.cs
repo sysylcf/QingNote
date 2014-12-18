@@ -19,13 +19,24 @@ namespace cn.zuoanqh.open.QingNote.IO
   class IOUtil
   {
     public static IEnumerable<string> ResourceLang = resLang;
-    public static readonly ImageList extensionImages = new ImageList();
+    //public static readonly ImageList extensionImages = new ImageList();
     private static Lang resLang = new Lang(SystemResources.ResLang);
-    public static Image t;
+    //public static Image t;
     static IOUtil()
     {
-      extensionImages.ImageSize = new Size(64, 64);
-      extensionImages.ColorDepth = ColorDepth.Depth32Bit;
+      //extensionImages.ImageSize = new Size(64,64);
+      //extensionImages.ColorDepth = ColorDepth.Depth32Bit;
+    }
+
+    public static string deExtension(string fname)
+    {
+      if (fname.Contains(@"\")) //if there's directory remove the directories
+        return deExtension(zusp.CutLast(fname, @"\").Second);
+
+      if (fname.Contains(".")) 
+        return zusp.CutLast(fname,".").First;
+      else
+        return fname;
     }
 
     public static string getFileLang(string fileName)
@@ -37,14 +48,14 @@ namespace cn.zuoanqh.open.QingNote.IO
       return s;
     }
     /// <summary>
-    /// i dont know why i had to do all this bs
+    /// i dont know why i had to do all this bs, and for some reason i can't use it without screwing everything up...
     /// </summary>
     /// <param name="filePath"></param>
     /// <returns></returns>
     private static Bitmap GetThumbnail(string filePath)
     {
       ShellFile shellFile = ShellFile.FromFilePath(filePath);
-      BitmapSource bitmapSource = shellFile.Thumbnail.MediumBitmapSource;
+      BitmapSource bitmapSource = shellFile.Thumbnail.ExtraLargeBitmapSource;
 
       double newWidthRatio = 64 / (double)bitmapSource.PixelWidth;
       double newHeightRatio = ((64 * bitmapSource.PixelHeight) / (double)bitmapSource.PixelWidth) / (double)bitmapSource.PixelHeight;
@@ -71,22 +82,23 @@ namespace cn.zuoanqh.open.QingNote.IO
               width,
               height,
               stride,
-              System.Drawing.Imaging.PixelFormat.Format32bppPArgb,
+              System.Drawing.Imaging.PixelFormat.Format32bppArgb,
               ptr);
 
+          bitmap = new Bitmap(filePath);
           return bitmap;
         }
       }
 
     }
-    public static void loadExtensionIcon(string fname)
-    {
-      var f = new FileInfo(fname);
-      if (!extensionImages.Images.ContainsKey(f.FullName))
-      {
-        extensionImages.Images.Add(f.FullName, GetThumbnail(f.FullName));
-      }
-    }
+    //public static void loadFileThumbnail(string fname)
+    //{
+    //  var f = new FileInfo(fname);
+    //  if (!extensionImages.Images.ContainsKey(f.FullName))
+    //  {
+    //    extensionImages.Images.Add(f.FullName, GetThumbnail(f.FullName));
+    //  }
+    //}
 
     public static string getContentFolderName(string lang)
     {
