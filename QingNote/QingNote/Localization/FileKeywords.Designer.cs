@@ -243,6 +243,15 @@ namespace cn.zuoanqh.open.QingNote.Localization {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        internal static string FileName_ChapterFolderPrefix {
+            get {
+                return ResourceManager.GetString("FileName_ChapterFolderPrefix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         internal static string FileName_Directory {
             get {
                 return ResourceManager.GetString("FileName_Directory", resourceCulture);

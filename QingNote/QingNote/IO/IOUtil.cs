@@ -33,8 +33,8 @@ namespace cn.zuoanqh.open.QingNote.IO
       if (fname.Contains(@"\")) //if there's directory remove the directories
         return deExtension(zusp.CutLast(fname, @"\").Second);
 
-      if (fname.Contains(".")) 
-        return zusp.CutLast(fname,".").First;
+      if (fname.Contains("."))
+        return zusp.CutLast(fname, ".").First;
       else
         return fname;
     }
@@ -232,19 +232,30 @@ namespace cn.zuoanqh.open.QingNote.IO
       }
     }
 
-    public static void inLocalizedEnviroment(CultureInfo lang, Action action)
+    public static T inLocalizedEnviroment<T>(CultureInfo lang, Func<T> func)
     {
       CultureInfo stack = Thread.CurrentThread.CurrentUICulture;
       Thread.CurrentThread.CurrentUICulture = lang;
       try
       {
-        action.Invoke();
+        return func.Invoke();
       }
       finally
       {
         Thread.CurrentThread.CurrentUICulture = stack;
       }
     }
+
+    public static T inLocalizedEnviroment<T>(string lang, Func<T> func)
+    {
+      return inLocalizedEnviroment(new CultureInfo(lang), func);
+    }
+
+    public static void inLocalizedEnviroment(CultureInfo lang, Action action)
+    {
+      inLocalizedEnviroment<int>(lang, () => { action.Invoke(); return 0; });
+    }
+
     public static void inLocalizedEnviroment(string lang, Action action)
     {
       inLocalizedEnviroment(new CultureInfo(lang), action);

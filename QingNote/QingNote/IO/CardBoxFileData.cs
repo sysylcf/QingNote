@@ -38,6 +38,8 @@ namespace cn.zuoanqh.open.QingNote.IO
     //  return null;
     //}
 
+    //////////////////////////////////////////////////////////////////////////////////////////
+    //non-static zone below
     public string title, description, dateCreated, creator;
     public BoxIndexing indexing;
     public string lang;

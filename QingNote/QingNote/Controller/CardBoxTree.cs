@@ -122,6 +122,16 @@ namespace cn.zuoanqh.open.QingNote.IO
 
     public void addNewCard(CardFileData card)
     {
+      //update box first
+      if (!boxData.categories.Contains(card.category)) 
+        boxData.categories.Add(card.category);
+      if (!boxData.chapters.Contains(card.chapterName)) 
+        boxData.chapters.Add(card.chapterName);
+      foreach (var keyword in card.keywords)
+        if (!boxData.keywords.Contains(keyword)) boxData.keywords.Add(keyword);
+      boxData.writeFile(boxDirectory);
+
+      //then process card
       string folderName = BoxIndexingHandler.getCardParentFolderName(boxData,card);
 
       folderName = Path.Combine(contentDirectory, folderName);

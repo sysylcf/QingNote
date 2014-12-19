@@ -54,7 +54,10 @@ namespace cn.zuoanqh.open.QingNote.IO
         case BoxIndexing.CATEGORY:
           return card.category; 
         case BoxIndexing.CHAPTERS:
-          return card.chapterName;
+          return string.Format(IOUtil.inLocalizedEnviroment(box.lang, 
+            () => Localization.FileKeywords.FileName_ChapterFolderPrefix+
+              Localization.Settings.Symbol_NameContent_Seperator),
+            box.chapters.IndexOf(card.chapterName)+1)+card.chapterName;//cause it starts at 0!
         case BoxIndexing.CHRONOLOGICAL:
           return card.dateCreated; 
       }

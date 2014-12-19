@@ -201,4 +201,7 @@
   <data name="Filename_Directory_Cardbox" xml:space="preserve">
     <value />
   </data>
+  <data name="FileName_ChapterFolderPrefix" xml:space="preserve">
+    <value />
+  </data>
 </root>
